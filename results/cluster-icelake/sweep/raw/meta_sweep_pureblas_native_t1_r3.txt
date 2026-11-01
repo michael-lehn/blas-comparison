@@ -1,0 +1,25 @@
+_KC = 384
+_L1_BYTES = 49152
+_L2_BYTES = 1310720
+_L3_BYTES = 50331648
+_MR = 2
+_NC = 4088
+_NR = 8
+_SME_LANES = 0
+_SME_MR = 16
+_SME_NR = 16
+backend = "pureblas_native"
+blas_config = "LBTConfig([ILP64] libopenblas64_.so)"
+call_path = "PureBLAS.gemm!(C, A, B), native Julia API (no LBT)"
+env = Dict("MKL_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OMP_PLACES" => "", "ULMBLAS_VARIANT" => "", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "1", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "KMP_AFFINITY" => "", "MKL_THREADING_LAYER" => "SEQUENTIAL", "OMP_PROC_BIND" => "", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "14e56d434680"
+library = "PureBLAS.jl (pure Julia, JIT on this host)"
+sizes_order = "1600,2800,850,1700,750,3000,350,2450,1300,3050,200,3850,700,2850,2400,2200,2950,2100,4000,2750,1000,2350,1900,3450,400,3300,3500,1950,950,2150,1250,3600,1800,2300,3800,2600,500,1650,1050,1350,3550,3250,3650,3700,600,1550,1400,2050,1500,250,100,3350,2700,50,2650,3900,2500,1850,1150,450,1450,650,300,3200,2250,3100,2900,3400,3750,2000,1100,2550,3150,900,1200,1750,800,3950,150,550"
+sme_detected = false
+sme_entry_live = false
+start = "2026-11-02T00:34:16.196"
+thermal_start = "unknown"
+threads_julia = 1
+threads_requested = 1
+version = "0.1.2"

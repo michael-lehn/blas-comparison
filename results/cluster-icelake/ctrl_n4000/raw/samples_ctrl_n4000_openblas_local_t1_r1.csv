@@ -1,0 +1,6 @@
+campaign,backend,threads,round,pid,position,n,sample,calls,wall_s,cpu_s,gflops,cpu_per_wall,alloc_bytes,gc_ns,sme_calls,anchor_ns,thermal,timestamp
+ctrl_n4000,openblas_local,1,1,1998702,1,4000,1,1,1.283749176,1.280949129,99.7080,0.9978,0,0,,1891764,-,-
+ctrl_n4000,openblas_local,1,1,1998702,1,4000,2,1,1.284895159,1.282101290,99.6190,0.9978,0,0,,1947483,-,-
+ctrl_n4000,openblas_local,1,1,1998702,1,4000,3,1,1.319141866,1.316262440,97.0328,0.9978,0,0,,1891557,-,-
+ctrl_n4000,openblas_local,1,1,1998702,1,4000,4,1,1.283585940,1.280789826,99.7206,0.9978,0,0,,1891481,-,-
+ctrl_n4000,openblas_local,1,1,1998702,1,4000,5,1,1.283582334,1.280837037,99.7209,0.9979,0,0,,1891153,-,-

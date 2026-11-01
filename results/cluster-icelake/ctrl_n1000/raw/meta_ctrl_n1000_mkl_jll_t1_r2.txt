@@ -1,0 +1,14 @@
+backend = "mkl_jll"
+blas_config = "LBTConfig([ILP64] libmkl_rt.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("MKL_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OMP_PLACES" => "", "ULMBLAS_VARIANT" => "", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "1", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "KMP_AFFINITY" => "", "MKL_THREADING_LAYER" => "SEQUENTIAL", "OMP_PROC_BIND" => "", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "149411b658e0"
+library = "<repo>/.local/depot/artifacts/27edf95310a71d47422663c3aea849f56efb1360/lib/libmkl_rt.so"
+sizes_order = "1000"
+start = "2026-11-02T00:19:45.802"
+thermal_start = "unknown"
+threading_layer = "sequential"
+threads_julia = 1
+threads_requested = 1
+version = "Intel(R) oneAPI Math Kernel Library Version 2025.2-Product Build 20250620 for Intel(R) 64 architecture applications"

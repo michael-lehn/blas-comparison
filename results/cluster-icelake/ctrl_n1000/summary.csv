@@ -1,0 +1,8 @@
+backend,threads,n,rounds,median_gflops,min_round_median,max_round_median,median_cpu_per_wall
+pureblas_native,1,1000,3,77.279,77.051,77.300,1.00
+pureblas_lbt,1,1000,3,77.336,77.232,77.337,1.00
+ulmblas_skylakex,1,1000,3,91.083,91.013,91.185,1.00
+mkl_jll,1,1000,3,97.747,97.729,97.779,1.00
+openblas_local,1,1000,3,95.345,95.322,95.352,1.00
+openblas,1,1000,3,86.859,86.857,86.859,1.00
+blis_jll,1,1000,3,81.276,81.185,81.354,1.00

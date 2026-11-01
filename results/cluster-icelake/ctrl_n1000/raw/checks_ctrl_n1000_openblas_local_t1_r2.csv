@@ -1,0 +1,2 @@
+campaign,backend,threads,round,pid,position,n,input_crc,method,entry_ratio,freivalds_ratio,hasnan,ok,repeat_identical,c11,c_sum,sme_calls_first
+ctrl_n1000,openblas_local,1,2,1998548,1,1000,539743d3,entries2000+freivalds,0.0014,0.0001,false,true,true,-0.88301738523856632,8367.1545661227574,

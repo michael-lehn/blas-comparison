@@ -1,0 +1,15 @@
+backend = "ulmblas_skylakex"
+blas_config = "LBTConfig([ILP64] libopenblas64_.so, [ILP64] libulmblas_lbt.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("MKL_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OMP_PLACES" => "", "ULMBLAS_VARIANT" => "skylakex", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "1", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "KMP_AFFINITY" => "", "MKL_THREADING_LAYER" => "SEQUENTIAL", "OMP_PROC_BIND" => "", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "14bd92a36e40"
+library = "<repo>/.local/depot/artifacts/99384b6c0a6eb6834c392288fe6ec65649201424/lib/skylakex/libulmblas_lbt.so"
+library_variant_dir = "skylakex"
+sizes_order = "1000"
+start = "2026-11-02T00:20:08.853"
+thermal_start = "unknown"
+threads_julia = 1
+threads_requested = 1
+variant = "skylakex"
+version = "0.1.0"

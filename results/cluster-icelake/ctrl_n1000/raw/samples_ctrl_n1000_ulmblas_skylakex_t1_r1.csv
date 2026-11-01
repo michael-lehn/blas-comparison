@@ -1,0 +1,6 @@
+campaign,backend,threads,round,pid,position,n,sample,calls,wall_s,cpu_s,gflops,cpu_per_wall,alloc_bytes,gc_ns,sme_calls,anchor_ns,thermal,timestamp
+ctrl_n1000,ulmblas_skylakex,1,1,1998452,1,1000,1,3,0.066761558,0.066625266,89.8721,0.9980,0,0,,1902673,-,-
+ctrl_n1000,ulmblas_skylakex,1,1,1998452,1,1000,2,3,0.065917955,0.065794023,91.0222,0.9981,0,0,,1903553,-,-
+ctrl_n1000,ulmblas_skylakex,1,1,1998452,1,1000,3,3,0.065866107,0.065744375,91.0939,0.9982,0,0,,1900137,-,-
+ctrl_n1000,ulmblas_skylakex,1,1,1998452,1,1000,4,3,0.065863502,0.065733267,91.0975,0.9980,0,0,,1902817,-,-
+ctrl_n1000,ulmblas_skylakex,1,1,1998452,1,1000,5,3,0.065873944,0.065739721,91.0831,0.9980,0,0,,1904926,-,-

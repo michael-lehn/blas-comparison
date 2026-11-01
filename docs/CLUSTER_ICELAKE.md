@@ -58,12 +58,12 @@ FMA peak of the core: 105 GFLOP/s with zmm registers and 54 with ymm, the same o
 | PureBLAS.jl, native API | 39 | 62 | 76 | 60 | 73 | 77 | 76 | 82 |
 | PureBLAS.jl, via LBT | 38 | 62 | 76 | 60 | 74 | 77 | 76 | 74 |
 | UlmBLAS.jl | 31 | 56 | 74 | 80 | 84 | 91 | 94 | 96 |
-| oneMKL 2025.2 | 60 | 76 | 86 | 85 | 91 | 98 | 95 | 98 |
+| oneMKL 2025.2 | 60 | 76 | 86 | 85 | 91 | 98 | 95 | 97 |
 | OpenBLAS 0.3.34, local | 64 | 80 | 83 | 85 | 89 | 95 | 98 | 100 |
 | OpenBLAS 0.3.30, Julia | 64 | 80 | 67 | 69 | 76 | 87 | 93 | 97 |
 | BLIS 2.0 | 23 | 50 | 67 | 73 | 77 | 81 | 84 | 84 |
 
-- **Top group:** for n ≥ 1000, local OpenBLAS (median 97.5), oneMKL (96.2), UlmBLAS (93.7) and Julia's OpenBLAS (93.6) are within about 4% of each other, and reach about 89–93% of the FMA peak.
+- **Top group:** for n ≥ 1000, local OpenBLAS (median 97.5), oneMKL (96.0), UlmBLAS (93.7) and Julia's OpenBLAS (93.6) are within about 4% of each other, and reach about 89–93% of the FMA peak.
 - **UlmBLAS.jl and oneMKL:** UlmBLAS reaches 0.98 of oneMKL for n ≥ 1000 and 0.95 for 300 ≤ n ≤ 950, but only 0.52 at n = 50.
 - **PureBLAS.jl against UlmBLAS.jl:** PureBLAS is ahead at n = 50 and 100 (+24%, +11%), mixed at n = 150 and 200, behind from n = 250 on, and at 0.83 for n ≥ 1000. So its small-size lead carries over from the M5, while the larger gap on the plateau doesn't look like the M5's 7%.
 - **A dip in PureBLAS.jl around n = 250–450:** it falls from 76 at n = 200 to 60 at n = 300, and is at 0.66 of UlmBLAS at n = 350. **Hypothesis:** a switch between kernel paths, as its source has [size-dependent routes](https://github.com/el-oso/PureBLAS.jl/blob/512283276b55aa70fe59d91f98f260eba0e8244c/src/blas3/gemm.jl#L3780). Not checked.
@@ -72,7 +72,7 @@ FMA peak of the core: 105 GFLOP/s with zmm registers and 54 with ymm, the same o
 
 Also: [PureBLAS vs UlmBLAS](../plots/cluster-icelake_sweep_t1_pureblas_vs_ulmblas.svg), [vs oneMKL](../plots/cluster-icelake_sweep_t1_vs_mkl.svg), [small sizes](../plots/cluster-icelake_sweep_t1_small.svg).
 
-**Reproducibility:** rounds run on two separate exclusive nodes. For n ≥ 1000, the median throughput ratio between the nodes is 0.996–1.003 per library. For most libraries the rounds differ by a median of at most about 0.5% (`acceptance.md`). There are isolated slow samples, such as OpenBLAS 0.3.30 at n = 2150 (1.46× between rounds), which medians absorb. The scalar anchor flagged no cell in the sweep so far. Correctness: all checks pass, with 0 bytes allocated.
+**Reproducibility:** rounds run on two separate exclusive nodes. For n ≥ 1000, the median throughput ratio between the nodes is 0.997–1.003 per library. The one-size-per-process controls at n = 1000 and 4000 agree with the sweep within 0.3% for every library, including the LBT gap at n = 4000 (73.8 against 81.3), so process state and order don't explain these results. For most libraries the rounds differ by a median of at most about 0.5% (`acceptance.md`). There are isolated slow samples, such as OpenBLAS 0.3.30 at n = 2150 (1.46× between rounds), which medians absorb. The scalar anchor flagged none of the 2800 sweep cells. Correctness: all 2800 checks pass, with 0 bytes allocated.
 
 ## Multi-threaded (measured)
 
@@ -120,7 +120,7 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 
 ## Limitations
 
-- **Sweep and stride sweep are incomplete**; see the status table. Figures for the sweep will be updated.
+- **The stride sweep is incomplete**; see the status table.
 - **One CPU type, one socket for threads.** No Zen runs, and no 64-thread runs.
 - **Turbo on:** frequency wasn't locked, because users can't change it. The FMA peak test agrees across nodes and jobs to 0.02%, and the anchors are tight (p01 and p99 within 3% of the median in the sweep).
 - **PureBLAS.jl defaults:** `tune!()` wasn't run. A tuned install could differ, though GEMM's block sizes are derived rather than calibrated.
@@ -132,7 +132,7 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 |---|---|---|
 | `bc-mt` | 16 and 32 threads, 10 sizes, 3 rounds | Finished |
 | `bc-diag` | Stride route diagnostics | Finished |
-| `bc-sweep-a`, `bc-sweep-b` | n = 50:50:4000, one thread, 5 rounds on two nodes; one-size controls | **Running**: 26 of 35 processes included here; controls to follow |
+| `bc-sweep-a`, `bc-sweep-b` | n = 50:50:4000, one thread, 5 rounds on two nodes; one-size controls at n = 1000, 4000, 3 rounds | Finished |
 | `bc-strided` | Row stride 2, PureBLAS.jl 3 rounds, UlmBLAS.jl 5 | **Running**: no finished process yet |
 
 ## Reproduce
