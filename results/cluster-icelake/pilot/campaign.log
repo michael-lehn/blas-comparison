@@ -1,0 +1,35 @@
+2026-11-01 23:03:33 campaign pilot host=uc2n601.localdomain job=8220085 rounds=1-1 threads=1 cpus=3 numa=0 backends=pureblas_native,pureblas_lbt,ulmblas_skylakex,ulmblas_haswell,openblas,openblas_local,mkl_jll,blis_jll
+2026-11-01 23:03:33 round 1 order openblas_local,mkl_jll,ulmblas_skylakex,blis_jll,pureblas_lbt,openblas,ulmblas_haswell,pureblas_native
+2026-11-01 23:03:33 start pilot_openblas_local_t1_r1 load=12.78 4.52 2.00 1/1763 1995594
+2026-11-01 23:03:54 done  pilot_openblas_local_t1_r1 in 20 s load=9.36 4.27 1.97 1/1762 1995611
+2026-11-01 23:03:54 start pilot_mkl_jll_t1_r1 load=9.36 4.27 1.97 1/1762 1995611
+2026-11-01 23:04:14 done  pilot_mkl_jll_t1_r1 in 20 s load=6.92 4.04 1.94 1/1761 1995633
+2026-11-01 23:04:14 start pilot_ulmblas_skylakex_t1_r1 load=6.92 4.04 1.94 1/1761 1995633
+2026-11-01 23:04:34 done  pilot_ulmblas_skylakex_t1_r1 in 20 s load=5.16 3.83 1.92 1/1761 1995655
+2026-11-01 23:04:34 start pilot_blis_jll_t1_r1 load=5.16 3.83 1.92 1/1761 1995655
+2026-11-01 23:04:54 done  pilot_blis_jll_t1_r1 in 20 s load=3.90 3.63 1.89 1/1762 1995668
+2026-11-01 23:04:54 start pilot_pureblas_lbt_t1_r1 load=3.90 3.63 1.89 1/1762 1995668
+2026-11-01 23:05:14 done  pilot_pureblas_lbt_t1_r1 in 20 s load=3.07 3.46 1.87 1/1762 1995684
+2026-11-01 23:05:14 start pilot_openblas_t1_r1 load=3.07 3.46 1.87 1/1762 1995684
+2026-11-01 23:05:34 done  pilot_openblas_t1_r1 in 20 s load=2.41 3.28 1.85 1/1762 1995711
+2026-11-01 23:05:34 start pilot_ulmblas_haswell_t1_r1 load=2.41 3.28 1.85 1/1762 1995711
+2026-11-01 23:05:54 freq pilot_ulmblas_haswell_t1_r1 cpu3=3300000 kHz load=2.01 3.13 1.83 2/1764 1995723
+2026-11-01 23:06:14 done  pilot_ulmblas_haswell_t1_r1 in 40 s load=1.44 2.93 1.79 1/1762 1995739
+2026-11-01 23:06:14 start pilot_pureblas_native_t1_r1 load=1.44 2.93 1.79 1/1762 1995739
+2026-11-01 23:06:34 done  pilot_pureblas_native_t1_r1 in 20 s load=1.23 2.79 1.76 1/1761 1995761
+2026-11-01 23:06:34 campaign finished
+2026-11-01 23:06:35 campaign pilot host=uc2n601.localdomain job=8220085 rounds=1-1 threads=16 cpus=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 numa=0 backends=pureblas_native,openblas,openblas_local,mkl_jll,blis_jll
+2026-11-01 23:06:35 round 1 order blis_jll,mkl_jll,openblas_local,pureblas_native,openblas
+2026-11-01 23:06:35 start pilot_blis_jll_t16_r1 load=1.23 2.79 1.76 1/1761 1995766
+2026-11-01 23:06:55 done  pilot_blis_jll_t16_r1 in 20 s load=1.01 2.64 1.74 1/1763 1995824
+2026-11-01 23:06:55 start pilot_mkl_jll_t16_r1 load=1.01 2.64 1.74 1/1763 1995824
+OMP: Warning #182: OMP_PLACES: ignored because KMP_AFFINITY has been defined
+OMP: Warning #182: OMP_PROC_BIND: ignored because KMP_AFFINITY has been defined
+2026-11-01 23:07:15 done  pilot_mkl_jll_t16_r1 in 20 s load=2.03 2.76 1.79 1/1764 1995892
+2026-11-01 23:07:15 start pilot_openblas_local_t16_r1 load=2.03 2.76 1.79 1/1764 1995892
+2026-11-01 23:07:35 done  pilot_openblas_local_t16_r1 in 20 s load=1.58 2.61 1.77 1/1764 1995961
+2026-11-01 23:07:35 start pilot_pureblas_native_t16_r1 load=1.58 2.61 1.77 2/1764 1995961
+2026-11-01 23:07:55 done  pilot_pureblas_native_t16_r1 in 20 s load=1.26 2.47 1.74 1/1764 1996003
+2026-11-01 23:07:55 start pilot_openblas_t16_r1 load=1.26 2.47 1.74 1/1764 1996003
+2026-11-01 23:08:15 done  pilot_openblas_t16_r1 in 20 s load=2.05 2.58 1.79 2/1763 1996053
+2026-11-01 23:08:15 campaign finished

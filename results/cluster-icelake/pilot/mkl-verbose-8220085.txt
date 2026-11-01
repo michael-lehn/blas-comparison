@@ -1,0 +1,3 @@
+MKL_VERBOSE oneMKL 2025 Update 2 Product build 20250620 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 512 (Intel(R) AVX-512) with support of Intel(R) Deep Learning Boost (Intel(R) DL Boost), EVEX-encoded AES and Carry-Less Multiplication Quadword instructions, Lnx 2.60GHz ilp64 intel_thread
+MKL_VERBOSE ISAMAX(-4294967293,0x7fffce2f35a0,1) 19.83ms CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1
+MKL_VERBOSE ZDOTC(0x7fffce2f35a0,0,0x7fffce2f35b0,0,0x7fffce2f35b0,0) 1.71ms CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:1

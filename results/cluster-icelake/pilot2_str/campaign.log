@@ -1,0 +1,12 @@
+2026-11-01 23:13:09 campaign pilot2_str host=uc2n601.localdomain job=8220968 rounds=1-1 threads=1 cpus=3 numa=0 backends=ulmblas_strided2,pureblas_strided2
+2026-11-01 23:13:09 round 1 order pureblas_strided2,ulmblas_strided2
+2026-11-01 23:13:09 start pilot2_str_pureblas_strided2_t1_r1 load=0.63 1.24 1.41 1/1770 2000530
+2026-11-01 23:13:29 freq pilot2_str_pureblas_strided2_t1_r1 cpu3=3400000 kHz load=0.53 1.18 1.39 1/1772 2000560
+pureblas_strided2 n=1000 per_call=0.645 samples=3 calls=1
+pureblas_strided2 n=100 per_call=0.00061 samples=3 calls=83
+2026-11-01 23:13:38 done  pilot2_str_pureblas_strided2_t1_r1 in 29 s load=0.60 1.17 1.38 1/1769 2000563
+2026-11-01 23:13:38 start pilot2_str_ulmblas_strided2_t1_r1 load=0.60 1.17 1.38 1/1769 2000563
+ulmblas_strided2 n=1000 per_call=0.0263 samples=3 calls=2
+ulmblas_strided2 n=100 per_call=3.94e-5 samples=3 calls=1269
+2026-11-01 23:13:47 done  pilot2_str_ulmblas_strided2_t1_r1 in 9 s load=0.66 1.16 1.38 1/1769 2000573
+2026-11-01 23:13:47 campaign finished

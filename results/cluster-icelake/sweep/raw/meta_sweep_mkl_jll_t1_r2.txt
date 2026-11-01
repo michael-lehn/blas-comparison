@@ -1,0 +1,14 @@
+backend = "mkl_jll"
+blas_config = "LBTConfig([ILP64] libmkl_rt.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("MKL_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OMP_PLACES" => "", "ULMBLAS_VARIANT" => "", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "1", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "KMP_AFFINITY" => "", "MKL_THREADING_LAYER" => "SEQUENTIAL", "OMP_PROC_BIND" => "", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "1463480178e0"
+library = "<repo>/.local/depot/artifacts/27edf95310a71d47422663c3aea849f56efb1360/lib/libmkl_rt.so"
+sizes_order = "1700,650,3250,600,3600,300,2750,800,3650,3300,250,1900,3900,3000,950,150,450,2000,3200,1550,1050,1400,3100,50,2850,400,850,3950,3850,2300,3800,2400,2100,2450,350,2350,2650,500,2900,1300,3450,2500,700,2200,3150,750,1250,1750,550,2250,3500,2800,1150,3350,2550,1650,1800,3050,1200,3550,2600,2950,1600,2050,1350,3750,1500,1950,1450,4000,1850,900,2700,100,3700,200,1000,2150,3400,1100"
+start = "2026-11-01T23:52:04.272"
+thermal_start = "unknown"
+threading_layer = "sequential"
+threads_julia = 1
+threads_requested = 1
+version = "Intel(R) oneAPI Math Kernel Library Version 2025.2-Product Build 20250620 for Intel(R) 64 architecture applications"

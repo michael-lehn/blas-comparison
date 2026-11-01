@@ -1,0 +1,14 @@
+backend = "openblas_local"
+blas_config = "LBTConfig([ILP64] libopenblas64_.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+config = "OpenBLAS 0.3.34  USE64BITINT NO_LAPACK NO_LAPACKE NO_AFFINITY SKYLAKEX MAX_THREADS=128"
+corename = "SKYLAKEX"
+env = Dict("MKL_NUM_THREADS" => "32", "BLIS_NUM_THREADS" => "32", "OMP_PLACES" => "cores", "ULMBLAS_VARIANT" => "", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "32", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "32", "JULIA_NUM_THREADS" => "32", "KMP_AFFINITY" => "granularity=core,compact", "MKL_THREADING_LAYER" => "INTEL", "OMP_PROC_BIND" => "close", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "15269d6e1cb0"
+library = "<repo>/.local/openblas-0.3.34/lib/libopenblas64_.so"
+sizes_order = "1000,2500,1500,2000,100,3000,3500,4000,500,200"
+start = "2026-11-01T23:23:11.239"
+thermal_start = "unknown"
+threads_julia = 32
+threads_requested = 32

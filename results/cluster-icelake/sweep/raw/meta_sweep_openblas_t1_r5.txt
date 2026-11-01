@@ -1,0 +1,14 @@
+backend = "openblas"
+blas_config = "LBTConfig([ILP64] libopenblas64_.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+config = "OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=512"
+corename = "SkylakeX"
+env = Dict("MKL_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OMP_PLACES" => "", "ULMBLAS_VARIANT" => "", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "1", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "KMP_AFFINITY" => "", "MKL_THREADING_LAYER" => "SEQUENTIAL", "OMP_PROC_BIND" => "", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "148da5cfe680"
+library = "<workspace>/jlart/julia/julia-1.13.3/bin/../lib/julia/libopenblas64_.so"
+sizes_order = "2250,1450,2950,1950,350,2200,3650,1400,3750,2450,1350,200,1650,2500,300,2150,3800,2700,550,3600,1600,1750,2100,150,3200,1000,2650,2000,850,700,1300,2800,4000,800,950,3700,3400,250,2850,1200,3300,400,2750,3500,50,3850,1850,2350,1800,1700,3100,2600,600,3350,2050,1500,450,3900,3450,3050,2400,1250,2550,1100,3550,100,650,3000,1550,750,1900,2300,3250,3950,500,900,3150,2900,1050,1150"
+start = "2026-11-02T00:05:51.612"
+thermal_start = "unknown"
+threads_julia = 1
+threads_requested = 1

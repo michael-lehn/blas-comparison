@@ -1,0 +1,13 @@
+backend = "blis_jll"
+blas_config = "LBTConfig([ILP64] libblis.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("MKL_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OMP_PLACES" => "", "ULMBLAS_VARIANT" => "", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "1", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "KMP_AFFINITY" => "", "MKL_THREADING_LAYER" => "SEQUENTIAL", "OMP_PROC_BIND" => "", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "14bae3696f10"
+library = "<repo>/.local/depot/artifacts/eacdd0e2c05e7af860974c4cb4ff4bc694c3c781/lib/libblis.so"
+sizes_order = "1250,3750,1050,3250,2900,3450,2350,2000,3850,2200,1500,200,3950,3700,1300,1350,150,1600,50,100,2750,850,750,1800,2950,450,2050,2150,3150,2700,2450,1150,400,1200,250,2500,3800,800,950,2800,1100,1700,3200,550,1400,3100,2600,350,1750,1900,1650,900,600,2400,3500,500,2850,3000,2100,700,3300,3550,1850,2250,2550,3900,3050,3650,3350,1950,2300,2650,4000,3400,1450,1550,650,3600,1000,300"
+start = "2026-11-01T23:51:08.746"
+thermal_start = "unknown"
+threads_julia = 1
+threads_requested = 1
+version = "2.0.0+2"

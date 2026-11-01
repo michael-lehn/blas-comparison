@@ -1,0 +1,7 @@
+campaign,backend,threads,round,pid,position,n,sample,calls,wall_s,cpu_s,gflops,cpu_per_wall,alloc_bytes,gc_ns,sme_calls,anchor_ns,thermal,timestamp
+pilot2_str,ulmblas_strided2,1,1,2000564,1,1000,1,2,0.052887933,0.052785950,75.6316,0.9981,0,0,,1890512,-,-
+pilot2_str,ulmblas_strided2,1,1,2000564,1,1000,2,2,0.052160181,0.052061875,76.6869,0.9981,0,0,,1890434,-,-
+pilot2_str,ulmblas_strided2,1,1,2000564,1,1000,3,2,0.052203877,0.052103636,76.6227,0.9981,0,0,,1890478,-,-
+pilot2_str,ulmblas_strided2,1,1,2000564,2,100,1,1269,0.050252451,0.050191132,50.5050,0.9988,0,0,,1919064,-,-
+pilot2_str,ulmblas_strided2,1,1,2000564,2,100,2,1269,0.050216054,0.050160358,50.5416,0.9989,0,0,,1919401,-,-
+pilot2_str,ulmblas_strided2,1,1,2000564,2,100,3,1269,0.050229538,0.050174326,50.5280,0.9989,0,0,,1918965,-,-

@@ -6,8 +6,9 @@ pushfirst!(LOAD_PATH, joinpath(@__DIR__, "..", "src"))
 const ARG = Dict(split(a, '=', limit = 2)[1] => split(a, '=', limit = 2)[2] for a in ARGS)
 backend = ARG["backend"]
 if startswith(backend, "pureblas"); using PureBLAS; end
-if backend == "ulmblas"; using UlmBLAS; end
+if startswith(backend, "ulmblas"); using UlmBLAS; end
 if backend == "blis_jll"; using blis_jll; end
+if backend == "mkl_jll"; using MKL_jll; end
 using BlasBench
 
 # Resolved in this world, so the timed call is a direct compiled call, not a dynamic one.

@@ -9,6 +9,9 @@ It aims to understand *why* they differ, not to declare a winner.
 
 - **[Report](docs/REPORT.md):** results, GEMM analysis, stride analysis, findings, limitations
 - **[Methodology](docs/METHODOLOGY.md):** hardware, versions, thread settings, measurement, correctness checks
+- **[Intel Ice Lake cluster results](docs/CLUSTER_ICELAKE.md):** separate campaign on bwUniCluster 3.0, in progress
+
+Unless a section says otherwise, this page describes the Apple M5 results.
 
 ## Results at a glance
 
@@ -43,7 +46,8 @@ src/        benchmark library: backends, harness, correctness checks, stride har
 scripts/    setup, campaign driver, analysis, plots
 results/    one directory per campaign or experiment: raw/ (samples, checks, metadata), summary, acceptance report, log
 plots/      SVG and PDF; prefix = campaign
-docs/       report, methodology
+docs/       report, methodology, Ice Lake analysis
+cluster/    Ice Lake: Slurm jobs, campaign driver, analysis; results in results/cluster-icelake, plots in plots/cluster-icelake_*
 ```
 
 ## Reproduce

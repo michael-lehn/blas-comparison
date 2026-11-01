@@ -224,7 +224,7 @@ Small sizes, from a repeated run with clean anchors (largest 1.86 ms against a m
 
 ### Where UlmBLAS's stride overhead goes (measured)
 
-Time per flop at n = 4000, compared with contiguous (452 GFLOP/s, 2.21 ms per 10¹² flops):
+Time per flop at n = 4000, compared with contiguous (452 GFLOP/s, 2.21 ms per 10⁹ flops):
 
 | Configuration | GFLOP/s | Extra time | Share |
 |---|---:|---:|---:|

@@ -1,0 +1,6 @@
+2026-11-01 23:12:04 campaign pilot2_plain host=uc2n601.localdomain job=8220968 rounds=1-1 threads=16 cpus=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 numa=0 backends=pureblas_native
+2026-11-01 23:12:05 round 1 order pureblas_native
+2026-11-01 23:12:05 start pilot2_plain_pureblas_native_t16_r1 load=0.27 1.36 1.46 1/1769 2000160
+2026-11-01 23:12:26 freq pilot2_plain_pureblas_native_t16_r1 cpu0=800000 kHz load=0.40 1.30 1.44 3/1801 2000204
+2026-11-01 23:12:28 done  pilot2_plain_pureblas_native_t16_r1 in 23 s load=0.40 1.30 1.44 1/1769 2000218
+2026-11-01 23:12:28 campaign finished

@@ -1,0 +1,15 @@
+backend = "ulmblas_haswell"
+blas_config = "LBTConfig([ILP64] libopenblas64_.so, [ILP64] libulmblas_lbt.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("MKL_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OMP_PLACES" => "", "ULMBLAS_VARIANT" => "haswell", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "1", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "KMP_AFFINITY" => "", "MKL_THREADING_LAYER" => "SEQUENTIAL", "OMP_PROC_BIND" => "", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "14f76c4973a0"
+library = "<repo>/.local/depot/artifacts/99384b6c0a6eb6834c392288fe6ec65649201424/lib/haswell/libulmblas_lbt.so"
+library_variant_dir = "haswell"
+sizes_order = "4000,1000,100"
+start = "2026-11-01T23:05:36.785"
+thermal_start = "unknown"
+threads_julia = 1
+threads_requested = 1
+variant = "skylakex"
+version = "0.1.0"

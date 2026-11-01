@@ -1,0 +1,11 @@
+campaign,backend,threads,round,pid,position,n,input_crc,method,entry_ratio,freivalds_ratio,hasnan,ok,repeat_identical,c11,c_sum,sme_calls_first
+mt,openblas_local,16,3,718452,1,1000,e92842e7,entries2000+freivalds,0.0012,0.0001,false,true,true,-1.405828494085001,2139.666325575467,
+mt,openblas_local,16,3,718452,2,100,8ece680d,full,0.0287,0.0026,false,true,true,1.4891997592182546,-77.673491715714931,
+mt,openblas_local,16,3,718452,3,200,d58998c5,full,0.0179,0.0012,false,true,true,-2.1575605185090208,92.376770523162747,
+mt,openblas_local,16,3,718452,4,1500,52d6ede0,entries2000+freivalds,0.0007,0.0001,false,true,true,-1.4300968486771763,1884.5798498884603,
+mt,openblas_local,16,3,718452,5,2000,77c95155,entries2000+freivalds,0.0003,0.0000,false,true,true,9.9927263995644093,-8179.1027152644292,
+mt,openblas_local,16,3,718452,6,500,2603037d,entries2000+freivalds,0.0027,0.0003,false,true,true,0.59003279477599979,-93.524884036342769,
+mt,openblas_local,16,3,718452,7,4000,db7a10ef,entries2000+freivalds,0.0001,0.0000,false,true,true,-3.0000380325156382,-13073.409409596614,
+mt,openblas_local,16,3,718452,8,3000,68021816,entries2000+freivalds,0.0002,0.0000,false,true,true,-1.4169326140756253,10216.800866018022,
+mt,openblas_local,16,3,718452,9,3500,339f4907,entries2000+freivalds,0.0001,0.0000,false,true,true,1.3955203072020179,4384.3931171668255,
+mt,openblas_local,16,3,718452,10,2500,314fd950,entries2000+freivalds,0.0003,0.0000,false,true,true,-2.2384996714398637,-18816.286644187887,

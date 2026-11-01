@@ -44,15 +44,16 @@ function setup(threads)
         s0 = pb._SME_CALLS[]
         pb.gemm!(C, A, B)
         pb._SME_CALLS[] == s0 || error("the SME kernel ran on a stride-2 C")
-        meta["sme_kernel_calls_for_stride2_C"] = 0
+        Sys.isapple() && (meta["sme_kernel_calls_for_stride2_C"] = 0)
         meta["method"] = string(which(pb.gemm!, (typeof(C), typeof(A), typeof(B))))
-        return pb_gemm!, meta, () -> pb._SME_CALLS[]
+        return pb_gemm!, meta, Sys.isapple() ? (() -> pb._SME_CALLS[]) : (() -> missing)
     else
         um = Main.UlmBLAS
         threads == 1 || error("ulmBLAS is single-threaded")
         meta["call_path"] = "UlmBLAS.mul!(C, A, B) -> ulmblas_dgemm_strided"
         meta["version"] = string(pkgversion(um)); meta["library"] = um.library_path(); meta["variant"] = um.variant()
-        meta["variant"] == "sme" || error("not the SME variant")
+        want = get(ENV, "ULMBLAS_VARIANT", "sme"); got = Sys.isapple() ? meta["variant"] : basename(dirname(meta["library"]))
+        got == want || error("selected variant $got, not $want")
         REAL[] = um.gemm_strided_ptr[Float64]
         um.gemm_strided_ptr[Float64] = @cfunction(spy, Cvoid, (Int64, Int64, Int64, Float64, Ptr{Float64}, Int64, Int64,
                                                                Ptr{Float64}, Int64, Int64, Float64, Ptr{Float64}, Int64, Int64))
@@ -78,7 +79,7 @@ function main()
     s = open(joinpath(out, "samples_$tag.csv"), "w"); println(s, BlasBench.SAMPLE_HEADER)
     c = open(joinpath(out, "checks_$tag.csv"), "w"); println(c, BlasBench.CHECK_HEADER, ",gaps_intact")
     meta["julia"] = string(VERSION); meta["threads_julia"] = Threads.nthreads(); meta["sizes_order"] = join(sizes, ",")
-    meta["env"] = Dict(k => get(ENV, k, "") for k in ("OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "BLIS_NUM_THREADS", "OMP_NUM_THREADS", "JULIA_NUM_THREADS"))
+    meta["env"] = Dict(k => get(ENV, k, "") for k in ("OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "BLIS_NUM_THREADS", "OMP_NUM_THREADS", "JULIA_NUM_THREADS", "ULMBLAS_VARIANT", "JULIA_CPU_TARGET"))
     open(joinpath(out, "meta_$tag.txt"), "w") do io
         for k in sort!(collect(keys(meta))); println(io, k, " = ", repr(meta[k])); end
     end

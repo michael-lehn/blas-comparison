@@ -1,0 +1,48 @@
+# pureblas C2_AB1 n=1000, 9 calls, 1 ms sampling; flat, self and total sample counts
+ Count  Overhead File                                                                Line Function
+ =====  ======== ====                                                                ==== ========
+     6         4 @Base/range.jl                                                      928 iterate
+    10         0 @PureBLAS/src/blas3/gemm.jl                                        1546 _gemm_generic!(tA::Bool, tB::Bool, cA::Bool, cB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::Matrix{Float64}, B::…
+    37         0 @PureBLAS/src/blas3/gemm.jl                                        1552 _gemm_generic!(tA::Bool, tB::Bool, cA::Bool, cB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::Matrix{Float64}, B::…
+    37        37 @Base/float.jl                                                      494 *
+   383       383 @Base/float.jl                                                      497 muladd
+  1000         0 @Base/array.jl                                                     1031 setindex!
+  1000       999 @Base/array.jl                                                     1037 _setindex!
+  1001         0 @Base/subarray.jl                                                   381 setindex!
+  1063      1061 @PureBLAS/src/blas3/gemm.jl                                        1556 _gemm_generic!(tA::Bool, tB::Bool, cA::Bool, cB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::Matrix{Float64}, B::…
+  1374         0 @PureBLAS/src/blas3/gemm.jl                                        1555 _gemm_generic!(tA::Bool, tB::Bool, cA::Bool, cB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::Matrix{Float64}, B::…
+  1627         0 @Base/array.jl                                                      963 getindex
+  1627      1627 @Base/essentials.jl                                                 975 getindex
+  1631         4 @PureBLAS/src/blas3/gemm.jl                                        1554 _gemm_generic!(tA::Bool, tB::Bool, cA::Bool, cB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::Matrix{Float64}, B::…
+  4121         0 /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S          123 [unknown function]
+  4121         0 /lib64/libc.so.6                                                      ? __libc_start_main
+  4121         0 /lib64/libc.so.6                                                      ? __libc_start_call_main
+  4121         0 /cache/build/builder-amdci4-1/julialang/julia-ci/cli/loader_exe.c    58 main
+  4121         0 @juliasrc/jlapi.c                                                  1152 jl_repl_entrypoint
+  4121         0 @juliasrc/jlapi.c                                                   985 true_main
+  4121         0 @juliasrc/julia.h                                                  2319 jl_apply
+  4121         0 @julialib/julia/sys.so                                                ? jfptr__start_57951.1
+  4121         0 @Base/client.jl                                                     577 _start()
+  4121         0 @Base/client.jl                                                     344 exec_options(opts::Base.JLOptions)
+  4121         0 @Base/Base.jl                                                       309 include(mod::Module, _path::String)
+  4121         0 @Base/loading.jl                                                   3124 _include(mapexpr::Function, mod::Module, _path::String)
+  4121         0 @Base/loading.jl                                                   3064 include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+  4121         0 @Base/boot.jl                                                       489 eval(m::Module, e::Any)
+  4121         0 @juliasrc/toplevel.c                                                799 ijl_toplevel_eval_in
+  4121         0 @juliasrc/toplevel.c                                                754 ijl_toplevel_eval
+  4121         0 @juliasrc/toplevel.c                                                683 jl_toplevel_eval_flex
+  4121         0 @juliasrc/toplevel.c                                                585 jl_eval_toplevel_stmts
+  4121         0 @juliasrc/toplevel.c                                                742 jl_toplevel_eval_flex
+  4121         0 @juliasrc/interpreter.c                                             884 jl_interpret_toplevel_thunk
+  4121         0 @juliasrc/interpreter.c                                             679 eval_body
+  4121         0 @juliasrc/interpreter.c                                             194 eval_stmt_value
+  4121         0 @juliasrc/interpreter.c                                             243 eval_value
+  4121         0 @juliasrc/interpreter.c                                             123 do_call
+  4121         0 [any unknown stackframes]
+  4121         0 @BlasComparison/scripts/strided_diagnostics.jl                       82 main()
+  4121         0 @Profile/src/Profile.jl                                              60 macro expansion
+  4121         0 @BlasComparison/scripts/strided_diagnostics.jl                       82 macro expansion
+  4121         0 @BlasComparison/scripts/strided_diagnostics.jl                       16 entry!(C::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, false}, A::Matrix{Float64}…
+  4121         0 @PureBLAS/src/blas3/gemm.jl                                        6014 gemm!
+  4121         0 @PureBLAS/src/blas3/gemm.jl                                        6117 gemm!(C::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, false}, A::Matrix{Float64},…
+Total snapshots: 4121. Utilization: 100% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

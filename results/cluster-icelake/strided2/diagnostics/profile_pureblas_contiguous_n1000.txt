@@ -1,0 +1,70 @@
+# pureblas contiguous n=1000, 108 calls, 1 ms sampling; flat, self and total sample counts
+ Count  Overhead File                                                                Line Function
+ =====  ======== ====                                                                ==== ========
+     5         5 @Base/int.jl                                                         87 +
+     8         8 @Base/promotion.jl                                                  641 ==
+    26        26 @PureBLAS/src/blas3/gemm.jl                                          66 _prefetch
+    32         0 @PureBLAS/src/blas3/gemm.jl                                         619 macro expansion
+    38         0 @PureBLAS/src/blas3/gemm.jl                                         794 _blocked_pc_sweep!(::Val{false}, ::Val{true}, Cp0::Ptr{Float64}, App::Ptr{Float64}, Bpp::Ptr{Float64}, Bp0::Ptr{Float64}, Ap…
+    48         3 @PureBLAS/src/blas3/gemm.jl                                         652 macro expansion
+    79         0 @PureBLAS/src/blas3/gemm.jl                                         320 _pack_A_simd!
+    83         0 @PureBLAS/src/blas3/gemm.jl                                         775 _blocked_pc_sweep!(::Val{false}, ::Val{true}, Cp0::Ptr{Float64}, App::Ptr{Float64}, Bpp::Ptr{Float64}, Bp0::Ptr{Float64}, Ap…
+    83         0 @PureBLAS/src/blas3/gemm.jl                                         461 _pack_A!(Ap::Vector{Float64}, A::Matrix{Float64}, ic::Int64, pc::Int64, mce::Int64, kce::Int64, tA::Bool, alpha::Float64, mr…
+    86         1 @PureBLAS/src/blas3/gemm.jl                                         641 macro expansion
+    86        79 @Base/range.jl                                                      928 iterate
+   121         0 @SIMD/src/arrayops.jl                                                73 vstore
+   121         0 @SIMD/src/arrayops.jl                                                74 vstore
+   121         0 @SIMD/src/LLVM_intrinsics.jl                                        547 store
+   121       121 @SIMD/src/LLVM_intrinsics.jl                                        557 macro expansion
+   139       139 @Base/pointer.jl                                                    314 +
+   279         0 @SIMD/src/arrayops.jl                                                50 vload
+   279         0 @SIMD/src/arrayops.jl                                                51 vload
+   279         0 @SIMD/src/LLVM_intrinsics.jl                                        477 load
+   279       279 @SIMD/src/LLVM_intrinsics.jl                                        486 macro expansion
+   304       304 @Base/pointer.jl                                                    151 unsafe_load
+   621         0 @SIMD/src/simdvec.jl                                                 20 Vec
+   621         0 @SIMD/src/simdvec.jl                                                 15 constantvector
+   621         0 @SIMD/src/LLVM_intrinsics.jl                                        851 constantvector
+   621       621 @SIMD/src/LLVM_intrinsics.jl                                        859 macro expansion
+  1058         0 @PureBLAS/src/blas3/gemm.jl                                         906 _gemm_blocked!(tA::Bool, tB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::Matrix{Float64}, B::Matrix{Float64}, bet…
+  1166         0 @SIMD/src/simdvec.jl                                                463 muladd
+  1166         0 @SIMD/src/LLVM_intrinsics.jl                                        459 fmuladd
+  1166      1165 @SIMD/src/LLVM_intrinsics.jl                                        463 macro expansion
+  1719         0 @PureBLAS/src/blas3/gemm.jl                                         911 _gemm_blocked!(tA::Bool, tB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::Matrix{Float64}, B::Matrix{Float64}, bet…
+  2504         0 @PureBLAS/src/blas3/gemm.jl                                         626 macro expansion
+  2643         3 @PureBLAS/src/blas3/gemm.jl                                         787 _blocked_pc_sweep!(::Val{false}, ::Val{true}, Cp0::Ptr{Float64}, App::Ptr{Float64}, Bpp::Ptr{Float64}, Bp0::Ptr{Float64}, Ap…
+  2678         7 @PureBLAS/src/blas3/gemm.jl                                         614 _microkernel_db!(C::Ptr{Float64}, ldc::Int64, Ap::Ptr{Float64}, Bc::Ptr{Float64}, ldb::Int64, kc::Int64, ::Val{2}, ::Val{2},…
+  2777         0 @BlasComparison/scripts/strided_diagnostics.jl                       16 entry!(C::Matrix{Float64}, A::Matrix{Float64}, B::Matrix{Float64})
+  2777         0 @PureBLAS/src/blas3/gemm.jl                                        6014 gemm!
+  2777         0 @PureBLAS/src/blas3/gemm.jl                                        6105 gemm!(C::Matrix{Float64}, A::Matrix{Float64}, B::Matrix{Float64}; alpha::Float64, beta::Float64, transA::Char, transB::Char)
+  2777         0 @PureBLAS/src/blas3/gemm.jl                                        3597 _gemm_core!
+  2777         0 @PureBLAS/src/blas3/gemm.jl                                        3810 _gemm_core_body!
+  2779         0 /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S          123 [unknown function]
+  2779         0 /lib64/libc.so.6                                                      ? __libc_start_main
+  2779         0 /lib64/libc.so.6                                                      ? __libc_start_call_main
+  2779         0 /cache/build/builder-amdci4-1/julialang/julia-ci/cli/loader_exe.c    58 main
+  2779         0 @juliasrc/jlapi.c                                                  1152 jl_repl_entrypoint
+  2779         0 @juliasrc/jlapi.c                                                   985 true_main
+  2779         0 @juliasrc/julia.h                                                  2319 jl_apply
+  2779         0 @julialib/julia/sys.so                                                ? jfptr__start_57951.1
+  2779         0 @Base/client.jl                                                     577 _start()
+  2779         0 @Base/client.jl                                                     344 exec_options(opts::Base.JLOptions)
+  2779         0 @Base/Base.jl                                                       309 include(mod::Module, _path::String)
+  2779         0 @Base/loading.jl                                                   3124 _include(mapexpr::Function, mod::Module, _path::String)
+  2779         0 @Base/loading.jl                                                   3064 include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+  2779         0 @Base/boot.jl                                                       489 eval(m::Module, e::Any)
+  2779         0 @juliasrc/toplevel.c                                                799 ijl_toplevel_eval_in
+  2779         0 @juliasrc/toplevel.c                                                754 ijl_toplevel_eval
+  2779         0 @juliasrc/toplevel.c                                                683 jl_toplevel_eval_flex
+  2779         0 @juliasrc/toplevel.c                                                585 jl_eval_toplevel_stmts
+  2779         0 @juliasrc/toplevel.c                                                742 jl_toplevel_eval_flex
+  2779         0 @juliasrc/interpreter.c                                             884 jl_interpret_toplevel_thunk
+  2779         0 @juliasrc/interpreter.c                                             679 eval_body
+  2779         0 @juliasrc/interpreter.c                                             194 eval_stmt_value
+  2779         0 @juliasrc/interpreter.c                                             243 eval_value
+  2779         0 @juliasrc/interpreter.c                                             123 do_call
+  2779         0 [any unknown stackframes]
+  2779         0 @BlasComparison/scripts/strided_diagnostics.jl                       82 main()
+  2779         0 @Profile/src/Profile.jl                                              60 macro expansion
+  2779         0 @BlasComparison/scripts/strided_diagnostics.jl                       82 macro expansion
+Total snapshots: 2779. Utilization: 100% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

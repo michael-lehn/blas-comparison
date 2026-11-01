@@ -1,0 +1,21 @@
+name = "BlasComparisonCluster"
+uuid = "7a3d6c52-1f0e-4f6b-9a7e-3c1b2d4e5f61"
+version = "0.1.0"
+
+[deps]
+CRC32c = "8bf52ea8-c179-5cab-976a-9e18b702a9bc"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MKL_jll = "856f044c-d86e-5d09-b602-aeab76dc8ba7"
+OpenBLAS_jll = "4536629a-c528-5b80-bd46-f80d51c5b363"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+PureBLAS = "cc9e14db-574f-4602-bf53-1167cc4b26d2"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+UlmBLAS = "cd55841f-6472-4438-97d9-4c2d8eed3a6b"
+blis_jll = "6136c539-28a5-5bf0-87cc-b183200dce32"
+
+[sources]
+PureBLAS = {url = "https://github.com/el-oso/PureBLAS.jl", rev = "512283276b55aa70fe59d91f98f260eba0e8244c"}
+UlmBLAS = {url = "https://github.com/michael-lehn/UlmBLAS.jl", rev = "c67e43196d621d45c3578e8ce2c1f8917284318c"}

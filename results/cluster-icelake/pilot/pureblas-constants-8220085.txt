@@ -1,0 +1,49 @@
+Precompiling packages...
+   0.5 s  ✓ CRC32c
+   0.5 s  ✓ IfElse
+   0.7 s  ✓ Statistics
+   0.7 s  ✓ Serialization
+   0.8 s  ✓ UlmBLAS
+   0.7 s  ✓ Preferences
+   0.9 s  ✓ LazyArtifacts
+   1.2 s  ✓ InteractiveUtils
+   0.6 s  ✓ PrecompileTools
+   0.7 s  ✓ JLLWrappers
+   0.6 s  ✓ SciMLPublic
+   0.6 s  ✓ CommonWorldInvalidations
+   0.9 s  ✓ TypeContracts
+   0.8 s  ✓ LLVMOpenMP_jll
+   1.2 s  ✓ CpuId
+   1.1 s  ✓ IntelOpenMP_jll
+   1.2 s  ✓ oneTBB_jll
+   0.8 s  ✓ blis_jll
+   1.2 s  ✓ MKL_jll
+   2.9 s  ✓ StrictMode
+   0.7 s  ✓ StrictMode → StrictModeCpuIdExt
+   5.8 s  ✓ SIMD
+   9.7 s  ✓ Static
+   1.0 s  ✓ CPUSummary
+WARNING: @nospecialize annotation only supported on the first 32 arguments.
+WARNING: @nospecialize annotation only supported on the first 32 arguments.
+WARNING: @nospecialize annotation only supported on the first 32 arguments.
+WARNING: @nospecialize annotation only supported on the first 32 arguments.
+WARNING: @nospecialize annotation only supported on the first 32 arguments.
+ 223.6 s  ✓ PureBLAS
+  25 dependencies successfully precompiled in 237 seconds. 28 already precompiled.
+
+  1 dependency had output during precompilation:
+┌ PureBLAS
+│  WARNING: @nospecialize annotation only supported on the first 32 arguments.
+│  WARNING: @nospecialize annotation only supported on the first 32 arguments.
+│  WARNING: @nospecialize annotation only supported on the first 32 arguments.
+│  WARNING: @nospecialize annotation only supported on the first 32 arguments.
+│  WARNING: @nospecialize annotation only supported on the first 32 arguments.
+└  
+_L1_BYTES = 49152
+_L2_BYTES = 1310720
+_L3_BYTES = 50331648
+_MR = 2
+_NR = 8
+_KC = 384
+_NC = 4088
+_SME_F64 = false

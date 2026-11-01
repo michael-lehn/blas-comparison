@@ -1,0 +1,173 @@
+2026-11-01 23:17:03 campaign sweep host=uc2n639.localdomain job=8220994 rounds=4-5 threads=1 cpus=3 numa=0 backends=pureblas_native,pureblas_lbt,ulmblas_skylakex,openblas,openblas_local,mkl_jll,blis_jll
+2026-11-01 23:17:04 round 4 order blis_jll,pureblas_native,ulmblas_skylakex,mkl_jll,openblas_local,openblas,pureblas_lbt
+2026-11-01 23:17:04 start sweep_blis_jll_t1_r4 load=0.26 0.08 0.02 1/1631 1995274
+2026-11-01 23:17:24 freq sweep_blis_jll_t1_r4 cpu3=3300000 kHz load=0.47 0.14 0.05 2/1632 1995296
+2026-11-01 23:17:44 freq sweep_blis_jll_t1_r4 cpu3=3300033 kHz load=0.62 0.19 0.07 2/1632 1995312
+2026-11-01 23:18:04 freq sweep_blis_jll_t1_r4 cpu3=3300000 kHz load=0.73 0.25 0.09 2/1632 1995324
+2026-11-01 23:18:24 freq sweep_blis_jll_t1_r4 cpu3=3300000 kHz load=0.81 0.30 0.11 2/1631 1995353
+2026-11-01 23:18:44 freq sweep_blis_jll_t1_r4 cpu3=3299966 kHz load=0.86 0.34 0.13 2/1631 1995369
+2026-11-01 23:19:04 freq sweep_blis_jll_t1_r4 cpu3=3300000 kHz load=0.90 0.39 0.15 2/1631 1995379
+2026-11-01 23:19:24 freq sweep_blis_jll_t1_r4 cpu3=3299966 kHz load=0.93 0.43 0.17 2/1630 1995399
+2026-11-01 23:19:44 freq sweep_blis_jll_t1_r4 cpu3=3299966 kHz load=0.95 0.46 0.19 2/1631 1995420
+2026-11-01 23:20:04 freq sweep_blis_jll_t1_r4 cpu3=3399965 kHz load=0.97 0.50 0.20 2/1631 1995429
+2026-11-01 23:20:24 freq sweep_blis_jll_t1_r4 cpu3=3299966 kHz load=0.98 0.53 0.22 2/1631 1995451
+2026-11-01 23:20:44 freq sweep_blis_jll_t1_r4 cpu3=3400034 kHz load=0.98 0.56 0.24 2/1631 1995467
+2026-11-01 23:21:05 freq sweep_blis_jll_t1_r4 cpu3=3300000 kHz load=0.99 0.59 0.26 2/1631 1995477
+2026-11-01 23:21:25 freq sweep_blis_jll_t1_r4 cpu3=3300000 kHz load=0.99 0.62 0.27 2/1631 1995501
+2026-11-01 23:21:27 done  sweep_blis_jll_t1_r4 in 263 s load=0.99 0.62 0.27 1/1629 1995502
+2026-11-01 23:21:27 start sweep_pureblas_native_t1_r4 load=0.99 0.62 0.27 1/1629 1992026-2026-11-01 23:21:47 freq sweep_pureblas_native_t1_r4 cpu3=3299966 kHz load=1.00 0.65 0.29 2/162026-11-01 2026-11-01 23:22:07 freq sweep_pureblas_native_t1_r4 cpu3=3300000 kHz load=1.00 0.67 0.32026-11-01 23:22:2026-11-01 23:22:27 freq sweep_pureblas_native_t1_r4 cpu3=3300000 kHz load=1.00 0.2026-11-01 23:22:45 fre2026-11-01 23:22:47 freq sweep_pureblas_native_t1_r4 cpu3=3300000 kHz load=12026-11-01 23:23:05 freq swee2026-11-01 23:23:07 freq sweep_pureblas_native_t1_r4 cpu3=3300000 kHz 2026-11-01 23:23:26 freq sweep_blis2026-11-01 23:23:27 freq sweep_pureblas_native_t1_r4 cpu3=3400032026-11-01 23:23:46 freq sweep_blis_jll_t2026-11-01 23:23:47 freq sweep_pureblas_native_t1_r4 cpu3=2026-11-01 23:24:06 freq sweep_blis_jll_t1_r1 c2026-11-01 23:24:07 freq sweep_pureblas_native_t1_r42026-11-01 23:24:26 freq sweep_blis_jll_t1_r1 cpu3=332026-11-01 23:24:27 freq sweep_pureblas_native2026-11-01 23:24:46 freq sweep_blis_jll_t1_r1 cpu3=3300033 2026-11-01 23:24:47 freq sweep_pureblas_2026-11-01 23:25:06 freq sweep_blis_jll_t1_r1 cpu3=3300000 kHz lo2026-11-01 23:25:07 freq sweep_pur2026-11-01 23:25:26 freq sweep_blis_jll_t1_r1 cpu3=3299966 kHz load=1.02026-11-01 23:25:27 freq sweep_pureblas_native_t1_r4 cpu3=3300000 kHz load=1.00 0.84 0.45 2/1624 1995701
+2026-11-01 23:25:48 freq sweep_pureblas_native_t1_r4 cpu3=3299966 kHz load=1.00 0.85 0.47 2/1624 1995723
+2026-11-01 23:26:01 done  sweep_pureblas_native_t1_r4 in 274 s load=1.00 0.86 0.47 1/1622 1995731
+2026-11-012026-11-01 23:26:07 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300033 kHz load=1.002026-11-01 23:26:21 freq sw2026-11-01 23:26:27 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300000 kHz load=1.02026-11-01 23:26:41 freq swe2026-11-01 23:26:47 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300000 kHz load=1.2026-11-01 23:27:01 freq swee2026-11-01 23:27:07 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300033 kHz load=12026-11-01 23:27:21 freq sweep2026-11-01 23:27:27 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3200000 kHz load=2026-11-01 23:27:41 freq sweep_2026-11-01 23:27:48 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300000 kHz load2026-11-01 23:28:01 freq sweep_u2026-11-01 23:28:08 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300000 kHz loa2026-11-01 23:28:21 freq sweep_ul2026-11-01 23:28:28 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300000 kHz lo2026-11-01 23:28:41 freq sweep_ulm2026-11-01 23:28:48 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300000 kHz l2026-11-01 23:29:01 freq sweep_ulmb2026-11-01 23:29:08 freq sweep_ulmblas_skylakex_t1_r1 cpu3=3300000 kHz 2026-11-01 23:29:21 freq sweep_ulmbl2026-11-01 23:29:28 freq sweep_ulmblas_skylakex_t1_r1 cpu3=888616 kHz 2026-11-01 23:29:41 freq sweep_ulmblas_skylakex_t1_r4 cpu3=3400000 kHz load=1.00 0.94 0.59 2/1623 1995922
+2026-11-01 23:30:00 done  sweep_ulmblas_skylakex_t1_r4 in 239 s load=0.92 0.93 0.60 1/1621 1995928
+2026-11-01 23:30:00 start sweep_mkl_jll_t1_r4 load=0.92 0.93 0.60 1/1621 1995928
+2026-11-01 23:30:20 freq sweep_mkl_jll_t1_r4 cpu3=1028250 kHz load=0.66 0.87 0.58 2/1622 1995958
+2026-11-01 23:30:40 freq sweep_mkl_jll_t1_r4 cpu3=3400000 kHz load=0.76 0.88 0.59 2/1623 1995975
+2026-11-01 23:31:00 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.83 0.89 0.60 2/1623 1995983
+2026-11-01 23:31:20 freq sweep_mkl_jll_t1_r4 cpu3=3400000 kHz load=0.88 0.89 0.61 2/1623 1996005
+2026-11-01 23:31:40 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.91 0.90 0.62 2/1625 1996022
+2026-11-01 23:32:01 freq sweep_mkl_jll_t1_r4 cpu3=3300033 kHz load=0.94 0.91 0.63 2/1623 1996034
+2026-11-01 23:32:21 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.96 0.92 0.64 2/1623 1996058
+2026-11-01 23:32:41 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.97 0.92 0.65 2/1623 1996074
+2026-11-01 23:33:01 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.98 0.93 0.66 2/1623 1996084
+2026-11-01 23:33:21 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.99 0.93 0.66 2/1623 1996109
+2026-11-01 23:33:41 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.99 0.94 0.67 2/1623 1996125
+2026-11-01 23:34:01 freq sweep_mkl_jll_t1_r4 cpu3=3300000 kHz load=0.99 0.94 0.68 2/1623 1996133
+2026-11-01 23:34:12 done  sweep_mkl_jll_t1_r4 in 252 s load=1.00 0.95 0.68 1/1621 1996152
+2026-11-01 23:34:12 start sweep_openblas_local_t1_r4 load=1.00 02026-11-01 23:34:14 freq2026-11-01 23:34:32 freq sweep_openblas_local_t1_r4 cpu3=3300033 kHz load=0.93 0.93 0.68 2/1623 1996164
+2026-11-01 23:34:52 freq sweep_openblas_local_t1_r4 cpu3=3300000 kHz load=0.95 0.94 0.69 2/1623 1996184
+2026-11-01 23:35:12 freq sweep_openblas_local_t1_r4 cpu3=3299966 kHz load=1.03 0.96 0.71 2/1623 1996203
+2026-11-01 23:35:32 freq sweep_openblas_local_t1_r4 cpu3=3300033 kHz load=1.02 0.97 0.72 2/1623 1996212
+2026-11-01 23:35:52 freq sweep_openblas_local_t1_r4 cpu3=3300033 kHz load=1.01 0.97 0.72 2/1622 1996228
+2026-11-01 23:36:12 freq sweep_openblas_local_t1_r4 cpu3=3300000 kHz load=1.01 0.97 0.73 2/1622 1996254
+2026-11-01 23:36:32 freq sweep_openblas_local_t1_r4 cpu3=3300000 kHz load=1.00 0.97 0.74 2/1623 1996265
+2026-11-01 23:36:52 freq sweep_openblas_local_t1_r4 cpu3=3300000 kHz load=1.00 0.98 0.74 2/1623 1996281
+2026-11-01 23:37:13 freq sweep_openblas_local_t1_r4 cpu3=3400170 kHz load=1.00 0.98 0.75 2/1623 1996301
+2026-11-01 23:37:33 freq sweep_openblas_local_t1_r4 cpu3=3300000 kHz load=1.00 0.98 0.75 2/1623 1996311
+2026-11-01 23:37:53 freq sweep_openblas_local_t1_r4 cpu3=3300000 kHz load=1.00 0.98 0.76 2/1623 1996333
+2026-11-01 23:38:01 done  sweep_openblas_local_t1_r4 in 229 s load=1.00 0.98 0.76 1/1621 1996338
+2026-11-01 23:38:01 start sweep_openblas_t1_r2026-11-01 23:38:07 freq sweep_purebl2026-11-01 23:38:21 freq sweep_openblas_t1_r4 cpu3=3300000 kHz lo2026-11-01 23:38:27 freq sweep_pu2026-11-01 23:38:41 freq sweep_openblas_t1_r4 cpu3=3400000 kHz load=02026-11-01 23:38:47 freq swee2026-11-01 23:39:01 freq sweep_openblas_t1_r4 cpu3=3300000 kHz load=0.97 2026-11-01 23:39:07 freq 2026-11-01 23:39:22 freq sweep_openblas_t1_r4 cpu3=3300033 kHz load=0.98 0.982026-11-01 23:39:25 d2026-11-01 23:39:42 freq sweep_openblas_t1_r4 cpu3=3300033 kHz load=0.99 0.98 0.78 2/1624 1996432
+2026-11-01 23:40:02 freq sweep_openblas_t1_r4 cpu3=3200000 kHz load=0.99 0.98 0.79 2/1624 1996442
+2026-11-01 23:40:22 freq sweep_openblas_t1_r4 cpu3=3299966 kHz load=0.99 0.98 0.80 2/1624 1996464
+2026-11-01 23:40:42 freq sweep_openblas_t1_r4 cpu3=3299966 kHz load=1.00 0.98 0.80 2/1624 1996484
+2026-11-01 23:41:02 freq sweep_openblas_t1_r4 cpu3=3300000 kHz load=1.00 0.99 0.81 2/1624 1996494
+2026-11-01 23:41:22 freq sweep_openblas_t1_r4 cpu3=3299966 kHz load=1.00 0.99 0.81 2/1624 1996514
+2026-11-01 23:41:42 freq sweep_openblas_t1_r4 cpu3=3299966 kHz load=1.00 0.99 0.82 2/1624 1996529
+2026-11-01 23:42:00 done  sweep_openblas_t1_r4 in 238 s load=1.00 0.99 0.82 1/1622 1996535
+2026-11-01 23:42:00 start sweep_pureblas_lbt_t1_r4 load=1.00 0.99 0.82 1/1622 1996535
+2026-11-01 23:42:20 freq sweep_pureblas_lbt_t1_r4 cpu3=3400000 kHz load=0.87 0.96 0.82 2/1624 1996566
+2026-11-01 23:42:40 freq sweep_pureblas_lbt_t1_r4 cpu3=3300000 kHz load=0.91 0.96 0.82 2/1624 1996574
+2026-11-01 23:43:00 freq sweep_pureblas_lbt_t1_r4 cpu3=3300033 kHz load=0.93 0.97 0.83 2/1624 1996592
+2026-11-01 23:43:20 freq sweep_pureblas_lbt_t1_r4 cpu3=3299966 kHz load=0.95 0.97 0.83 2/1623 1996615
+2026-11-01 23:43:40 freq sweep_pureblas_lbt_t1_r4 cpu3=3300000 kHz load=0.97 0.97 0.83 2/1623 1996623
+2026-11-01 23:44:00 freq sweep_pureblas_lbt_t1_r4 cpu3=3300000 kHz load=0.98 0.98 0.84 3/1623 1996643
+2026-11-01 23:44:20 freq sweep_pureblas_lbt_t1_r4 cpu3=3300033 kHz load=0.98 0.98 0.84 2/1623 1996667
+2026-11-01 23:44:40 freq sweep_pureblas_lbt_t1_r4 cpu3=3300000 kHz load=0.99 0.98 0.84 2/1623 1996683
+2026-11-01 23:45:00 freq sweep_pureblas_lbt_t1_r4 cpu3=3299966 kHz load=0.99 0.98 0.85 2/1623 1996693
+2026-11-01 23:45:20 freq sweep_pureblas_lbt_t1_r4 cpu3=3400034 kHz load=1.00 0.98 0.85 2/1623 1996718
+2026-11-01 23:45:41 freq sweep_pureblas_lbt_t1_r4 cpu3=3300000 kHz load=1.00 0.99 0.86 2/1623 1996733
+2026-11-01 23:46:01 freq sweep_pureblas_lbt_t1_r4 cpu3=3300000 kHz load=1.00 0.99 0.86 2/1623 1996741
+2026-11-01 23:46:21 freq sweep_pureblas_lbt_t1_r4 cpu3=3399965 kHz load=1.00 0.99 0.86 2/1623 1996765
+2026-11-01 23:46:41 freq sweep_pureblas_lbt_t1_r4 cpu3=3299966 kHz load=1.00 0.99 0.87 2/1623 1996785
+2026-11-01 23:47:01 freq sweep_pureblas_lbt_t1_r4 cpu3=3300000 kHz load=1.00 0.99 0.87 2/1623 1996794
+2026-11-01 23:47:05 done  sweep_pureblas_lbt_t1_r4 in 305 s load=1.00 0.99 0.87 1/1621 1996796
+2026-11-01 23:47:05 round 5 order mkl_jll,blis_jll,openblas_local,pureblas_2026-11-01 23:47:18 freq sweep_openblas_t1_r1 cpu3=3300000 kHz load=1.00 1.00 4.88 2/1648 3077829
+2026-11-01 23:47:22 done  swe2026-11-01 23:47:25 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=0.93 0.98 0.87 2/1623 1996818
+2026-11-01 23:47:45 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=0.95 0.98 0.87 2/1623 1996834
+2026-11-01 23:48:05 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=0.97 0.98 0.88 2/1623 1996846
+2026-11-01 23:48:25 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=0.98 0.98 0.88 2/1623 1996873
+2026-11-01 23:48:45 freq sweep_mkl_jll_t1_r5 cpu3=3299966 kHz load=0.98 0.99 0.89 2/1623 1996889
+2026-11-01 23:49:05 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=1.07 1.00 0.90 2/1623 1996899
+2026-11-01 23:49:25 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=1.05 1.00 0.90 2/1623 1996919
+2026-11-01 23:49:45 freq sweep_mkl_jll_t1_r5 cpu3=3399965 kHz load=1.03 1.00 0.90 2/1623 1996939
+2026-11-01 23:50:05 freq sweep_mkl_jll_t1_r5 cpu3=3400034 kHz load=1.02 1.00 0.91 2/1623 1996948
+2026-11-01 23:50:26 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=1.02 1.00 0.91 2/1623 1996970
+2026-11-01 23:50:46 freq sweep_mkl_jll_t1_r5 cpu3=3300000 kHz load=1.01 1.00 0.91 2/1623 1996986
+2026-11-01 23:51:05 done  sweep_mkl_jll_t1_r5 in 240 s load=1.01 1.00 0.91 1/1620 1996996
+2026-11-01 23:51:05 start sweep_blis_jll_t1_r5 load=1.01 1.00 0.91 1/1620 1996996
+2026-11-01 23:51:25 freq sweep_blis_jll_t1_r5 cpu3=3300000 kHz load=1.00 1.00 0.92 2/1623 1997023
+2026-11-01 23:51:45 freq sweep_blis_jll_t1_r5 cpu3=3300033 kHz load=1.00 1.00 0.92 2/1623 1997039
+2026-11-01 23:52:05 freq sweep_blis_jll_t1_r5 cpu3=3300000 kHz load=1.00 1.00 0.92 2/1624 1997050
+2026-11-01 23:52:26 freq sweep_blis_jll_t1_r5 cpu3=3200000 kHz load=1.00 1.00 0.92 2/1623 1997072
+2026-11-01 23:52:46 freq sweep_blis_jll_t1_r5 cpu3=3300033 kHz load=1.00 1.00 0.92 2/1624 1997093
+2026-11-01 23:53:06 freq sweep_blis_jll_t1_r5 cpu3=3299966 kHz load=1.00 1.00 0.93 2/1624 1997105
+2026-11-01 23:53:26 freq sweep_blis_jll_t1_r5 cpu3=3300000 kHz load=1.00 1.00 0.93 2/1624 1997125
+2026-11-01 23:53:46 freq sweep_blis_jll_t1_r5 cpu3=3300000 kHz load=1.00 1.00 0.93 2/1624 1997141
+2026-11-01 23:54:06 freq sweep_blis_jll_t1_r5 cpu3=3299966 kHz load=1.00 1.00 0.93 2/1624 1997151
+2026-11-01 23:54:26 freq sweep_blis_jll_t1_r5 cpu3=3300000 kHz load=1.00 1.00 0.93 2/1624 1997177
+2026-11-01 23:54:46 freq sweep_blis_jll_t1_r5 cpu3=3300000 kHz load=1.00 1.00 0.94 2/1624 1997193
+2026-11-01 23:55:06 freq sweep_blis_jll_t1_r5 cpu3=3300000 kHz load=1.00 1.00 0.94 2/1624 1997202
+2026-11-01 23:55:26 freq sweep_blis_jll_t1_r5 cpu3=3288930 kHz load=1.00 1.00 0.94 2/1623 1997220
+2026-11-01 23:55:46 freq sweep_blis_jll_t1_r5 cpu3=800000 kHz load=0.78 0.95 0.92 1/1623 1997240
+2026-11-01 23:55:48 done  sweep_blis_jll_t1_r5 in 283 s load=0.72 0.93 0.92 1/1621 1997242
+2026-11-01 23:55:48 start sweep_openblas_local_t1_r5 load=0.72 0.93 0.92 1/1621 1997242
+2026-11-01 23:56:09 freq sweep_openblas_local_t1_r5 cpu3=800000 kHz load=0.59 0.89 0.90 1/1623 1997253
+2026-11-01 23:56:29 freq sweep_openblas_local_t1_r5 cpu3=800000 kHz load=0.42 0.83 0.88 1/1622 1997275
+2026-11-01 23:56:49 freq sweep_openblas_local_t1_r5 cpu3=3399965 kHz load=0.46 0.81 0.88 2/1622 1997293
+2026-11-01 23:57:09 freq sweep_openblas_local_t1_r5 cpu3=3300000 kHz load=0.61 0.82 0.88 2/1622 1997301
+2026-11-01 23:57:29 freq sweep_openblas_local_t1_r5 cpu3=3300000 kHz load=0.72 0.84 0.88 2/1624 1997327
+2026-11-01 23:57:49 freq sweep_openblas_local_t1_r5 cpu3=3300000 kHz load=0.80 0.85 0.89 2/1624 1997345
+2026-11-01 23:58:09 freq sweep_openblas_local_t1_r5 cpu3=3299966 kHz load=0.93 0.87 0.90 2/1624 1997355
+2026-11-01 23:58:29 freq sweep_openblas_local_t1_r5 cpu3=3299966 kHz load=0.95 0.88 0.90 2/1624 1997378
+2026-11-01 23:58:49 freq sweep_openblas_local_t1_r5 cpu3=3300000 kHz load=0.97 0.89 0.91 2/1626 1997402
+2026-11-01 23:59:09 freq sweep_openblas_local_t1_r5 cpu3=3400000 kHz load=0.98 0.90 0.91 2/1626 1997410
+2026-11-01 23:59:30 freq sweep_openblas_local_t1_r5 cpu3=3300000 kHz load=0.98 0.91 0.91 2/1626 1997430
+2026-11-01 23:59:50 freq sweep_openblas_local_t1_r5 cpu3=3300033 kHz load=0.99 0.91 0.91 2/1626 1997448
+2026-11-02 00:00:10 freq sweep_openblas_local_t1_r5 cpu3=3309177 kHz load=0.99 0.92 0.92 2/1626 1997455
+2026-11-02 00:00:30 freq sweep_openblas_local_t1_r5 cpu3=800000 kHz load=1.00 0.93 0.92 1/1624 1997482
+2026-11-02 00:00:30 done  sweep_openblas_local_t1_r5 in 281 s load=1.00 0.93 0.92 1/1624 1997482
+2026-11-02 00:00:30 start sweep_pureblas_lbt_t1_r5 load=1.00 0.93 0.92 1/1624 1997482
+2026-11-02 00:00:50 freq sweep_pureblas_lbt_t1_r5 cpu3=3300033 kHz load=1.00 0.93 0.92 2/1626 1997505
+2026-11-02 00:01:10 freq sweep_pureblas_lbt_t1_r5 cpu3=3299966 kHz load=1.00 0.94 0.92 2/1626 1997535
+2026-11-02 00:01:30 freq sweep_pureblas_lbt_t1_r5 cpu3=3300000 kHz load=1.00 0.94 0.92 2/1626 1997556
+2026-11-02 00:01:50 freq sweep_pureblas_lbt_t1_r5 cpu3=3300000 kHz load=1.00 0.95 0.93 2/1626 1997577
+2026-11-02 00:02:10 freq sweep_pureblas_lbt_t1_r5 cpu3=3300000 kHz load=1.00 0.95 0.93 2/1626 1997585
+2026-11-02 00:02:30 freq sweep_pureblas_lbt_t1_r5 cpu3=3200000 kHz load=1.00 0.95 0.93 2/1625 1997607
+2026-11-02 00:02:50 freq sweep_pureblas_lbt_t1_r5 cpu3=3299966 kHz load=1.00 0.96 0.93 2/1625 1997625
+2026-11-02 00:03:10 freq sweep_pureblas_lbt_t1_r5 cpu3=3299966 kHz load=1.00 0.96 0.93 2/1627 1997645
+2026-11-02 00:03:30 freq sweep_pureblas_lbt_t1_r5 cpu3=3300000 kHz load=1.00 0.97 0.93 2/1625 1997660
+2026-11-02 00:03:51 freq sweep_pureblas_lbt_t1_r5 cpu3=3299966 kHz load=1.00 0.97 0.94 2/1623 1997679
+2026-11-02 00:04:11 freq sweep_pureblas_lbt_t1_r5 cpu3=3300033 kHz load=1.00 0.97 0.94 2/1623 1997702
+2026-11-02 00:04:31 freq sweep_pureblas_lbt_t1_r5 cpu3=3300000 kHz load=1.00 0.97 0.94 2/1623 1997710
+2026-11-02 00:04:51 freq sweep_pureblas_lbt_t1_r5 cpu3=3300000 kHz load=1.00 0.98 0.94 2/1623 1997732
+2026-11-02 00:05:11 freq sweep_pureblas_lbt_t1_r5 cpu3=3400000 kHz load=1.00 0.98 0.94 2/1623 1997751
+2026-11-02 00:05:31 freq sweep_pureblas_lbt_t1_r5 cpu3=3299966 kHz load=1.00 0.98 0.95 2/1623 1997758
+2026-11-02 00:05:35 done  sweep_pureblas_lbt_t1_r5 in 306 s load=0.92 0.96 0.94 1/1621 1997760
+2026-11-02 00:05:35 start sweep_openblas_t1_r5 load=0.92 0.96 0.94 1/1621 1997760
+2026-11-02 00:05:56 freq sweep_openblas_t1_r5 cpu3=800642 kHz load=0.80 0.93 0.93 1/1623 1997779
+2026-11-02 00:06:16 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=0.86 0.94 0.93 2/1623 1997805
+2026-11-02 00:06:36 freq sweep_openblas_t1_r5 cpu3=3299966 kHz load=0.90 0.94 0.94 2/1623 1997815
+2026-11-02 00:06:56 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=0.93 0.95 0.94 2/1623 1997831
+2026-11-02 00:07:16 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=0.95 0.95 0.94 2/1623 1997851
+2026-11-02 00:07:36 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=0.96 0.96 0.94 2/1623 1997861
+2026-11-02 00:07:56 freq sweep_openblas_t1_r5 cpu3=3299966 kHz load=0.98 0.96 0.94 2/1623 1997883
+2026-11-02 00:08:16 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=0.98 0.96 0.95 2/1623 1997907
+2026-11-02 00:08:36 freq sweep_openblas_t1_r5 cpu3=3299966 kHz load=0.99 0.97 0.95 2/1623 1997916
+2026-11-02 00:08:56 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=0.99 0.97 0.95 2/1623 1997932
+2026-11-02 00:09:16 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=1.00 0.97 0.95 2/1623 1997957
+2026-11-02 00:09:36 freq sweep_openblas_t1_r5 cpu3=3300000 kHz load=1.00 0.97 0.95 2/1623 1997967
+2026-11-02 00:09:42 done  sweep_openblas_t1_r5 in 247 s load=1.00 0.98 0.95 1/1621 1997978
+2026-11-02 00:09:42 start sweep_ulmblas_skylakex_t1_r5 load=1.00 0.98 0.95 1/1621 1997978
+2026-11-02 00:10:02 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3307534 kHz load=1.00 0.98 0.96 2/1623 1997989
+2026-11-02 00:10:22 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3400000 kHz load=1.00 0.98 0.96 2/1623 1998013
+2026-11-02 00:10:42 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3299966 kHz load=1.00 0.98 0.96 2/1623 1998033
+2026-11-02 00:11:03 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3300000 kHz load=1.00 0.98 0.96 2/1623 1998041
+2026-11-02 00:11:23 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3299966 kHz load=1.00 0.99 0.96 2/1623 1998063
+2026-11-02 00:11:43 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3300033 kHz load=1.00 0.99 0.97 2/1623 1998078
+2026-11-02 00:12:03 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3300000 kHz load=1.00 0.99 0.97 2/1623 1998086
+2026-11-02 00:12:23 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3300000 kHz load=1.00 0.99 0.97 2/1623 1998114
+2026-11-02 00:12:43 freq sweep_ulmblas_skylakex_t1_r5 cpu3=800437 kHz load=1.00 0.99 0.97 2/1623 1998130
+2026-11-02 00:13:03 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3299966 kHz load=0.94 0.98 0.97 2/1623 1998140
+2026-11-02 00:13:23 freq sweep_ulmblas_skylakex_t1_r5 cpu3=3300033 kHz load=0.96 0.98 0.97 2/1623 1998161
+2026-11-02 00:13:40 done  sweep_ulmblas_skylakex_t1_r5 in 237 s load=0.97 0.98 0.97 1/1621 1998166
+2026-11-02 00:13:40 start sweep_pureblas_native_t1_r5 load=0.97 0.98 0.97 1/1621 1998166
+2026-11-02 00:14:00 freq sweep_pureblas_native_t1_r5 cpu3=3400034 kHz load=0.77 0.93 0.96 2/1623 1998189
+2026-11-02 00:14:20 freq sweep_pureblas_native_t1_r5 cpu3=3300000 kHz load=0.84 0.94 0.96 2/1623 1998213
+2026-11-02 00:14:40 freq sweep_pureblas_native_t1_r5 cpu3=3300000 kHz load=0.88 0.94 0.96 2/1623 1998222
+2026-11-02 00:15:00 freq sweep_pureblas_native_t1_r5 cpu3=3305824 kHz load=0.92 0.95 0.96 2/1623 1998238
+2026-11-02 00:15:20 freq sweep_pureblas_native_t1_r5 cpu3=3400000 kHz load=0.94 0.95 0.96 2/1623 1998263
+2026-11-02 00:15:40 freq sweep_pureblas_native_t1_r5 cpu3=3300000 kHz load=0.96 0.96 0.97 2/1623 1998270
+2026-11-02 00:16:00 freq sweep_pureblas_native_t1_r5 cpu3=3300000 kHz load=0.97 0.96 0.97 2/1623 1998286
+2026-11-02 00:16:20 freq sweep_pureblas_native_t1_r5 cpu3=3299966 kHz load=0.98 0.96 0.97 2/1623 1998310
+p_openblas_local_t1_r2 cpu3=3300000 kHz load=1.00 1.00 1.55 2/1648 3079308
+2026-11-02 00:16:19 freq sweep_openblas_local_t1_r2 cpu3=3299966 kHz load=1.00 1.00 1.54 2/1648 3079318

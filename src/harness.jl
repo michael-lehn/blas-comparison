@@ -1,5 +1,5 @@
 # One matrix size in one process: identical seeded inputs, correctness check, warm-up, timed samples.
-const CLOCK_PROCESS_CPUTIME_ID = 12     # macOS <time.h>
+const CLOCK_PROCESS_CPUTIME_ID = Sys.islinux() ? 2 : 12     # <time.h> of Linux, macOS
 
 function cpu_seconds()
     ts = Ref{NTuple{2,Int64}}((0, 0))
@@ -9,7 +9,7 @@ function cpu_seconds()
 end
 
 "QoS user-interactive: the macOS way to ask for performance cores (no affinity exists)."
-set_qos_interactive() = ccall(:pthread_set_qos_class_self_np, Cint, (UInt32, Cint), 0x21, 0)
+set_qos_interactive() = Sys.isapple() ? ccall(:pthread_set_qos_class_self_np, Cint, (UInt32, Cint), 0x21, 0) : Cint(0)
 
 "Fixed scalar workload that touches only registers: tracks the core clock, not the matrix unit."
 @noinline function anchor_ns()
@@ -138,6 +138,7 @@ function process_metadata(info, thermal_bin)
     d["start"] = string(now())
     d["thermal_start"] = thermal_state(thermal_bin)
     d["env"] = Dict(k => get(ENV, k, "") for k in ("OPENBLAS_NUM_THREADS", "VECLIB_MAXIMUM_THREADS",
-                    "BLIS_NUM_THREADS", "OMP_NUM_THREADS", "JULIA_NUM_THREADS"))
+                    "BLIS_NUM_THREADS", "OMP_NUM_THREADS", "JULIA_NUM_THREADS", "MKL_NUM_THREADS", "MKL_DYNAMIC",
+                    "MKL_THREADING_LAYER", "KMP_AFFINITY", "OMP_PROC_BIND", "OMP_PLACES", "JULIA_EXCLUSIVE", "ULMBLAS_VARIANT"))
     return d
 end

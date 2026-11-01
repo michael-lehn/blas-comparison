@@ -1,0 +1,7 @@
+campaign,backend,threads,round,pid,position,n,sample,calls,wall_s,cpu_s,gflops,cpu_per_wall,alloc_bytes,gc_ns,sme_calls,anchor_ns,thermal,timestamp
+pilot2_excl,pureblas_native,16,1,2000224,1,4000,1,1,0.144150702,2.270905927,887.9596,15.7537,0,0,,1890842,-,-
+pilot2_excl,pureblas_native,16,1,2000224,1,4000,2,1,0.143916052,2.268022575,889.4074,15.7593,0,0,,2052736,-,-
+pilot2_excl,pureblas_native,16,1,2000224,1,4000,3,1,0.143993471,2.264852752,888.9292,15.7289,0,0,,1890609,-,-
+pilot2_excl,pureblas_native,16,1,2000224,2,1000,1,22,0.051257785,0.801338390,858.4062,15.6335,0,0,,1905975,-,-
+pilot2_excl,pureblas_native,16,1,2000224,2,1000,2,22,0.051661673,0.816193115,851.6952,15.7988,0,0,,1906912,-,-
+pilot2_excl,pureblas_native,16,1,2000224,2,1000,3,22,0.051545996,0.809263409,853.6066,15.6998,0,0,,1905104,-,-

@@ -1,0 +1,90 @@
+date 2026-11-01T23:16:32+01:00 host uc2n639 job 8220994 partition cpu_il
+exclusive: OverSubscribe=NO  cpus: 128
+model name	: Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
+microcode	: 0xd000421
+5.14.0-570.149.1.el9_6.x86_64
+PRETTY_NAME="Red Hat Enterprise Linux 9.6 (Plow)"
+governor performance driver intel_pstate
+no_turbo 0 smt on
+thp [always] madvise never
+load 0.14 0.03 0.01 1/1627 1995209; processes of other users: 1
+modules: compiler/gnu/14.2 
+gcc: gcc (GCC) 14.2.0
+julia: julia version 1.13.3
+libraries (Manifest):
+[[deps.MKL_jll]]
+deps = ["Artifacts", "IntelOpenMP_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "oneTBB_jll"]
+git-tree-sha1 = "282cadc186e7b2ae0eeadbd7a4dffed4196ae2aa"
+[[deps.OpenBLAS_jll]]
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
+version = "0.3.30+0"
+[[deps.PureBLAS]]
+deps = ["CPUSummary", "CpuId", "LinearAlgebra", "PrecompileTools", "Preferences", "SIMD", "StrictMode", "TypeContracts"]
+git-tree-sha1 = "3fdc5a05fbd5f26862a9c00c8903a9175e92d196"
+repo-rev = "512283276b55aa70fe59d91f98f260eba0e8244c"
+[[deps.UlmBLAS]]
+deps = ["Artifacts", "Libdl", "LinearAlgebra"]
+git-tree-sha1 = "501e7fbdb0695eee43fd34823e7501383849f6ff"
+repo-rev = "c67e43196d621d45c3578e8ce2c1f8917284318c"
+[[deps.blis_jll]]
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LLVMOpenMP_jll", "Libdl"]
+git-tree-sha1 = "a38da58a1646562191bb6601c7a5e5c61fbfc0ec"
+[[deps.libblastrampoline_jll]]
+deps = ["Artifacts", "Libdl"]
+version = "5.15.0+0"
+--- lscpu
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 57 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  128
+On-line CPU(s) list:                     0-127
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
+CPU family:                              6
+Model:                                   106
+Thread(s) per core:                      2
+Core(s) per socket:                      32
+Socket(s):                               2
+Stepping:                                6
+CPU(s) scaling MHz:                      28%
+CPU max MHz:                             3400.0000
+CPU min MHz:                             800.0000
+BogoMIPS:                                5200.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities
+Virtualization:                          VT-x
+L1d cache:                               3 MiB (64 instances)
+L1i cache:                               2 MiB (64 instances)
+L2 cache:                                80 MiB (64 instances)
+L3 cache:                                96 MiB (2 instances)
+NUMA node(s):                            4
+NUMA node0 CPU(s):                       0-15,64-79
+NUMA node1 CPU(s):                       16-31,80-95
+NUMA node2 CPU(s):                       32-47,96-111
+NUMA node3 CPU(s):                       48-63,112-127
+Vulnerability Gather data sampling:      Mitigation; Microcode
+Vulnerability Indirect target selection: Mitigation; Aligned branch/return thunks
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+--- numactl
+available: 4 nodes (0-3)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79
+node 0 size: 64094 MB
+node 0 free: 61874 MB
+node 1 cpus: 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95
+node 1 size: 64503 MB
+node 1 free: 62103 MB
+node 2 cpus: 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111

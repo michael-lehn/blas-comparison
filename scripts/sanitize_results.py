@@ -5,7 +5,9 @@ as evidence of the load).  Idempotent.  Usage: scripts/sanitize_results.py [repo
 import os, re, sys
 root = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else ".")
 pats = [(re.compile(r"/(?:Users|home)/[^/\s\"']+/tmp/blas-comparison"), "<repo>"), (re.compile(r"~/tmp/blas-comparison"), "<repo>"),
-        (re.compile(r"/private/tmp/[^\s\"']*"), "<tmp>")]
+        (re.compile(r"/private/tmp/[^\s\"']*"), "<tmp>"),
+        (re.compile(r"/pfs/work9/workspace/scratch/[^/\s\"']+/blas-comparison"), "<repo>"),
+        (re.compile(r"/pfs/work9/workspace/scratch/[^/\s\"']+"), "<workspace>"), (re.compile(r"/home/ul/[^\s\"']*"), "<home>"), (re.compile(r"\bul_(?:mlehn|math6)\b"), "<user>")]
 def top(m):  # keep "top=100.0 <process> 8.4 <process> ..."
     return "top=" + " <process> ".join(re.findall(r"(?:^| )(\d+\.\d)(?= )", " " + m.group(1) + " ")) + " <process>"
 for d, _, fs in os.walk(os.path.join(root, "results")):

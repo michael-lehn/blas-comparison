@@ -1,0 +1,13 @@
+backend = "blis_jll"
+blas_config = "LBTConfig([ILP64] libblis.so)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("MKL_NUM_THREADS" => "32", "BLIS_NUM_THREADS" => "32", "OMP_PLACES" => "cores", "ULMBLAS_VARIANT" => "", "MKL_DYNAMIC" => "FALSE", "OPENBLAS_NUM_THREADS" => "32", "VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "32", "JULIA_NUM_THREADS" => "32", "KMP_AFFINITY" => "granularity=core,compact", "MKL_THREADING_LAYER" => "INTEL", "OMP_PROC_BIND" => "close", "JULIA_EXCLUSIVE" => "")
+julia = "1.13.3"
+lbt_dgemm_addr = "151b6b7d5f10"
+library = "<repo>/.local/depot/artifacts/eacdd0e2c05e7af860974c4cb4ff4bc694c3c781/lib/libblis.so"
+sizes_order = "1000,100,200,4000,500,3500,2000,2500,1500,3000"
+start = "2026-11-01T23:27:08.739"
+thermal_start = "unknown"
+threads_julia = 32
+threads_requested = 32
+version = "2.0.0+2"
