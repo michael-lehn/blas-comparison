@@ -123,7 +123,25 @@ The README says it uses a "formula rather than a number measured once". That hol
 | Edges | predicated inside the kernel | predicated or tile buffer |
 
 **Load traffic (analysis):** PureBLAS loads one vector per FMOPA, ulmBLAS 0.75. At 500 GFLOP/s that is about 250 versus 187 GB/s.
-**Hypothesis:** this contributes to the 7% plateau difference. It is not tested separately.
+**Hypothesis:** this contributes to the 7% plateau difference. It is not tested in GEMM itself, and the micro-benchmarks below argue against it for panels that are in cache.
+
+### Micro-benchmarks on one performance core (measured)
+
+Three runs of about 8 s each, `scripts/microbench/ub.c`, [`results/microbench`](../results/microbench). The unrelated single-threaded job was still running, with a 1-minute load of 3–4. Runs agree closely, typically within 1%. They are too short to show thermal limits, so they show a peak, not sustained throughput.
+
+| FMOPA on registers, tiles used | 1 | 2 | 3 | 4 | 8 |
+|---|---:|---:|---:|---:|---:|
+| GFLOP/s | 134 | 267 | 356 | 534 | 533 |
+
+- **Ceiling:** 534 GFLOP/s, reached with 4 tiles; 8 add nothing. The libraries' 400–450 GFLOP/s in GEMM is about 75–85% of that. This matches PureBLAS's source comment that [four tiles saturate issue](https://github.com/el-oso/PureBLAS.jl/blob/512283276b55aa70fe59d91f98f260eba0e8244c/src/blas3/sme_kernel.jl#L54-L56). That comment's "one FMOPA per cycle" would need a clock of about 4.17 GHz here; the clock wasn't measured.
+- **One tile is limited to 134 GFLOP/s.** The 3-tile figure follows from that: its loop uses the busiest tile for 3 of every 8 FMOPAs, and 134 / (3/8) = 356.
+- **Loads from cache-resident panels aren't the limit:** with panels loaded and no C traffic, 16×16 (one load per FMOPA) reaches 532 and 32×16 (0.75 loads) 534 at kc ≥ 1024. Single and multi-vector loads differ by at most about 0.3%. The gap to 534 in GEMM therefore has to come from elsewhere, such as C traffic, packing, cache misses and sustained-load conditions; these aren't separated here.
+- **Small kc costs little:** 505 (16×16) and 519 (32×16) at kc = 64.
+- **Streaming sessions per tile:** starting and stopping streaming mode and ZA for each 16×16 tile cost at most 2.5 ns per tile against one session around all tiles, from kc = 8 to 2048. Disassembly confirms that the switches are present. So on the M5, this design difference shouldn't explain a plateau gap.
+- **A read in place at stride lda:** 532 GFLOP/s for lda = 128, about 516 for lda = 256–1024, and about 492–496 for lda ≥ 2048 (about 7% lower). The pattern isn't simply "powers of two are bad": 2049 is as slow as 2048, while 2056 and 2064 are fast (one run at lda = 4097 and one at 8192 are outliers).
+- **Strided-load test (E4) doesn't measure load limits:** SME reads 1.92 ns per load for almost all strides, about eight times slower than the at most 0.24 ns per load implied by the kernel loops above. The accumulating vector add in that loop is the likely limit, so these figures aren't used here. The scalar column shows a clear rise for 16 KB strides from N = 128 (1.4–2.6 ns) that a 16.5 KB stride doesn't show (0.55 ns), which fits cache-set conflicts at page-multiple strides.
+
+An earlier run under heavier load gave 462 GFLOP/s at 4 tiles, 13% less, so the absolute GFLOP/s in this report are sensitive to competing work.
 
 ## 4. PureBLAS's claims against these measurements
 
@@ -218,7 +236,7 @@ The costs are additive, so packing and tile output can be optimized separately. 
 
 ## 6. Five findings
 
-1. **Very different implementations reach one plateau.** Pure-Julia LLVM IR, C++ intrinsics, BLIS and Accelerate are all at about 400–450 GFLOP/s, which suggests a limit in the SME unit rather than in the software. The remaining differences are 7–10% on the plateau and larger for small n.
+1. **Very different implementations reach one plateau.** Pure-Julia LLVM IR, C++ intrinsics, BLIS and Accelerate are all at about 400–450 GFLOP/s, which suggests a limit in the SME unit rather than in the software. The measured FMOPA ceiling is 534 GFLOP/s, reached with four tiles. The remaining differences are 7–10% on the plateau and larger for small n.
 2. **SME from pure Julia works and is competitive.** PureBLAS generates its SME kernels as LLVM IR with no external code and comes within 7% of a hand-tuned kernel. Its Apple GEMM claims reproduce closely on a different chip.
 3. **Each library loses somewhere else.** PureBLAS leads UlmBLAS by up to 28% for n ≤ 250, UlmBLAS leads by about 7% for n ≥ 300, and Accelerate leads both for n ≤ 1000 and falls behind UlmBLAS above that.
 4. **Stride handling decides by a factor of 40, and it is the route, not the arithmetic.** PureBLAS has three routes at 400, 52 and 7 GFLOP/s, selected by the strides. UlmBLAS loses 35% with strides and keeps its workspace bounded.
@@ -268,7 +286,7 @@ Beyond DGEMM the two projects have different goals. ulmBLAS is a compact BLIS-st
 - **Diagnostics:** one round, three samples per point, so they show sizes of effects rather than precise values. The sizes n = 50, 100, 300 were repeated after the first attempt ran under load.
 - **Power:** the first two minutes of the sweep ran on battery, the rest on AC.
 - **SME code inspection:** [`results/codegen`](../results/codegen) holds PureBLAS's kernel compiled from its own IR with an external `llc`, not Julia's LLVM, so registers and scheduling may differ from what the JIT emits. It shows the expected inner loop: four FMOPAs on four tiles, fed by two A and two B vector loads, with one streaming session around the whole macro-kernel rather than one per tile.
-- **Not done yet:** a clean rerun of the SME micro-benchmarks (FMOPA saturation appeared at 4 tiles in an early contaminated run, so it isn't reported as a result).
+- **Micro-benchmarks:** three short runs with the unrelated job still active; see [section 3](#micro-benchmarks-on-one-performance-core-measured). They are synthetic, and E2 and E5 use data resident in cache.
 - **Not tested:** x86, M1–M4 and M6, block-size tuning by the libraries, other shapes than m = n = k, column strides, other operations than DGEMM.
 - **Sweep rounds differ:** 5 for SME backends, 3 for the slow ones.
 - `pureblas_vs_ulmblas` differences under 5% at individual sizes are within the round-to-round spread (median max/min ratio about 1.06–1.08).
