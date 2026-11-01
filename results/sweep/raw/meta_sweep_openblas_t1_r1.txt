@@ -1,0 +1,14 @@
+backend = "openblas"
+blas_config = "LBTConfig([ILP64] libopenblas64_.0.3.30.dylib)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+config = "OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY neoversen1 MAX_THREADS=512"
+corename = "neoversen1"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "113f66b54"
+library = "<repo>/.local/julia-1.13.3/lib/julia/libopenblas64_.0.3.30.dylib"
+sizes_order = "3300,1750,350,2500,1950,3050,650,950,1050,3250,3600,2900,2550,800,3750,1850,900,3150,2800,3500,1000,1600,2400,2300,850,1450,750,3450,3950,2600,1400,500,2200,3550,250,3700,1550,2050,200,3350,3400,3200,2450,4000,600,3900,1200,2350,1700,1150,3800,3100,2100,550,1900,2000,1350,3650,1650,3850,2700,2950,50,3000,2850,2650,400,1500,1300,300,1250,150,2750,2250,100,1800,700,1100,450,2150"
+start = "2026-11-01T12:33:32.808"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1

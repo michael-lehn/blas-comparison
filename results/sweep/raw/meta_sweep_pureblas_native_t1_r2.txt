@@ -1,0 +1,25 @@
+_KC = 1024
+_L1_BYTES = 131072
+_L2_BYTES = 16777216
+_L3_BYTES = 16777216
+_MR = 2
+_NC = 504
+_NR = 8
+_SME_LANES = 8
+_SME_MR = 16
+_SME_NR = 16
+backend = "pureblas_native"
+blas_config = "LBTConfig([ILP64] libopenblas64_.0.3.30.dylib)"
+call_path = "PureBLAS.gemm!(C, A, B), native Julia API (no LBT)"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "113612b54"
+library = "PureBLAS.jl (pure Julia, JIT on this host)"
+sizes_order = "3500,3900,1250,2850,3750,2950,2800,1400,3800,1850,700,2650,1200,1350,3150,2150,2500,550,1550,3600,2700,2000,2300,1300,1600,150,2600,3650,1800,1000,3400,950,2550,50,2900,3450,3100,250,3350,3550,2250,750,650,400,3250,200,1650,450,3000,1750,600,500,3200,3850,3300,2100,2400,2200,2750,3950,1500,1950,3700,2450,800,1700,1150,850,2050,1050,100,2350,4000,900,1100,350,300,1900,1450,3050"
+sme_detected = true
+sme_entry_live = true
+start = "2026-11-01T12:43:47.509"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1
+version = "0.1.2"

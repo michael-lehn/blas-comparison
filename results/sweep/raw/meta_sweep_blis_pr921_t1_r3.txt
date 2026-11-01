@@ -1,0 +1,12 @@
+backend = "blis_pr921"
+blas_config = "LBTConfig([ILP64] libblis.dylib)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "11a40767c"
+library = "<repo>/.local/blis-pr921/lib/libblis.dylib"
+sizes_order = "2850,3450,300,3550,2450,550,3300,450,3750,1700,1300,1100,1650,900,2150,1800,2250,3000,100,950,150,3400,600,2000,3700,1150,1900,1050,2800,1950,2750,650,2950,2600,2550,750,3050,850,800,3950,50,3500,3800,3850,2700,2400,2350,3650,700,4000,2900,1500,3900,1250,1850,3250,2050,1000,250,500,3600,2300,3100,3150,1200,1750,1450,400,1550,1400,1600,200,2500,350,2650,2100,3350,3200,1350,2200"
+start = "2026-11-01T14:53:59.051"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1

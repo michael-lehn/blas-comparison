@@ -1,0 +1,25 @@
+_KC = 1024
+_L1_BYTES = 131072
+_L2_BYTES = 16777216
+_L3_BYTES = 16777216
+_MR = 2
+_NC = 504
+_NR = 8
+_SME_LANES = 8
+_SME_MR = 16
+_SME_NR = 16
+backend = "pureblas_lbt"
+blas_config = "LBTConfig([ILP64] libopenblas64_.0.3.30.dylib)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "113858094"
+library = "PureBLAS.jl (pure Julia, JIT on this host)"
+sizes_order = "400,450,2150,3750,1300,1350,1000,1450,1600,3500,150,2750,100,4000,3950,2100,600,3000,1500,3800,1150,1950,550,3250,3050,950,2300,200,3850,2550,1800,3400,300,1900,2800,650,850,700,1250,1400,1650,750,3550,2050,2850,2950,2700,3150,1100,3450,800,50,1550,3650,3200,3900,2400,2200,1850,3300,1700,2000,2250,2900,2650,3100,1050,3600,2450,3700,1750,2350,1200,2600,500,350,3350,250,2500,900"
+sme_detected = true
+sme_entry_live = true
+start = "2026-11-01T15:10:30.247"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1
+version = "0.1.2"

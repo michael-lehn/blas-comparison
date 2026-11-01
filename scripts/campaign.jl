@@ -45,8 +45,8 @@ for r in 1:rounds
         t0 = time()
         args = ["backend=$b", "threads=$threads", "round=$r", "sizes=$sizes_all", "campaign=$campaign",
                 "out=$out", "shuffle=$(hash((seed, r, b)) % 1_000_000)",
-                [k * "=" * ARG[k] for k in ("samples", "min_sample", "warmup", "fresh") if haskey(ARG, k)]...]
-        cmd = `$JULIA --project=$ROOT --startup-file=no -t $threads,0 --gcthreads=1 $(joinpath(ROOT, "scripts", "run_one.jl")) $args`
+                [k * "=" * ARG[k] for k in ("samples", "min_sample", "warmup", "fresh", "budget") if haskey(ARG, k)]...]
+        cmd = `$JULIA --project=$ROOT --startup-file=no -t $threads,0 --gcthreads=1 $(joinpath(ROOT, "scripts", get(ARG, "script", "run_one.jl"))) $args`
         ok = success(pipeline(setenv(cmd, merge(Dict(ENV), Dict(env_for(b)))), stdout = logf, stderr = logf))
         log(ok ? "done  " : "FAILED ", tag, " in ", round(Int, time() - t0), " s thermal=", state(), " power: ", power())
         ok && touch(done)

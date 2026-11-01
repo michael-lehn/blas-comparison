@@ -1,0 +1,14 @@
+backend = "ulmblas"
+blas_config = "LBTConfig([ILP64] libopenblas64_.0.3.30.dylib, [ILP64] libulmblas_lbt.dylib)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "1095aa524"
+library = "<repo>/.local/depot/artifacts/df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib"
+sizes_order = "1500,1750,600,2750,3650,2200,300,3050,1050,1850,3450,1900,550,1400,3600,400,2500,3800,100,2000,150,3850,1950,1800,2800,850,250,650,3200,2650,1450,3300,2400,2050,3750,1150,1250,3250,50,800,1650,4000,3700,3000,1700,350,450,700,750,1000,1300,500,3500,2850,200,2250,2150,3950,2300,1350,3100,2950,2100,1550,900,2700,1600,2450,2900,1100,3400,3900,3350,3150,2550,2600,1200,2350,3550,950"
+start = "2026-11-01T15:17:28.046"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1
+variant = "sme"
+version = "0.1.0"

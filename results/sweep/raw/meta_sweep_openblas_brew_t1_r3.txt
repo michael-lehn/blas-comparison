@@ -1,0 +1,14 @@
+backend = "openblas_brew"
+blas_config = "LBTConfig([ILP64] libopenblas64_.0.3.30.dylib)"
+call_path = "direct ccall of dgemm_ (LP64: LBT would need an ILP64 library)"
+config = "OpenBLAS 0.3.34 DYNAMIC_ARCH NO_AFFINITY USE_OPENMP vortexm4 MAX_THREADS=56"
+corename = "vortexm4"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "111b3eb54"
+library = "/opt/homebrew/Cellar/openblas/0.3.34/lib/libopenblasp-r0.3.34.dylib"
+sizes_order = "1350,200,3400,300,1900,2700,3350,2200,2050,3850,3950,3500,1300,2150,500,3450,2100,3650,2950,3150,3900,850,50,1950,4000,2550,2450,600,950,550,3050,2000,1750,3600,1800,1150,250,400,150,100,2600,1400,800,3200,2650,1700,1550,3250,3000,2850,3750,750,2300,1600,3300,3100,1500,3700,1850,450,1200,650,1100,2250,1050,1000,2350,2800,2750,3550,1650,700,350,1250,1450,2900,3800,2500,900,2400"
+start = "2026-11-01T14:45:57.005"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1

@@ -1,0 +1,13 @@
+backend = "accelerate"
+blas_config = "LBTConfig([ILP64] Accelerate)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "18eb427b0"
+library = "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate"
+sizes_order = "3150,150,1400,1900,50,2300,700,2100,1550,2700,4000,3550,550,1600,3050,2650,1050,3750,1200,2250,3350,200,3450,3900,2500,2200,3850,3950,1500,1250,1350,2950,250,1650,950,1150,3400,3300,2800,900,2550,3000,600,2450,3250,3600,450,1450,300,2000,2050,1850,3500,2750,500,1800,2150,850,650,3650,400,3200,1100,350,1300,1700,1750,2900,750,800,3800,1000,2850,3700,100,2600,2350,2400,3100,1950"
+start = "2026-11-01T15:18:38.089"
+symbol = "dgemm\$NEWLAPACK\$ILP64"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1
