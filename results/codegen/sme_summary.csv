@@ -1,0 +1,10 @@
+instruction,static_count
+fmopa,8
+ld1d_to_registers,5
+ld1d_to_za,0
+st1d_from_za,36
+smstart_sm,2
+smstop_sm,2
+zero_za,2
+whilelt,2
+calls,1

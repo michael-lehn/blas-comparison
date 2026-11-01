@@ -33,7 +33,8 @@ Row stride 2: UlmBLAS.jl is about 40 times faster for n ≥ 500, because PureBLA
 | `mt` | 4 threads, 10 sizes, 6 backends, 3 rounds; UlmBLAS.jl is single-threaded | Final |
 | `strided2` | Row stride 2, n = 50:50:4000 | Final: PureBLAS.jl 3 rounds, UlmBLAS.jl 5; 35 of 640 cells excluded for machine load |
 | `strided2/diagnostics` | Which operand and route cost what | Final for now: one round, three samples per point |
-| SME disassembly, micro-benchmarks | Generated code; FMOPA and load limits | **Not done** |
+| `codegen` | Generated code of the generic fallback and SME kernel | Final; SME kernel compiled with external `llc` |
+| Micro-benchmarks | FMOPA and load limits | **Running** |
 
 ## Layout
 
