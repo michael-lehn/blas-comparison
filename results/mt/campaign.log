@@ -1,0 +1,143 @@
+2026-11-01 18:36:35 campaign mt rounds=3 threads=4 backends=openblas,accelerate,blis_jll,blis_pr921,pureblas_native,pureblas_lbt power: Now drawing from 'AC Power'
+2026-11-01 18:36:35 round 1 order pureblas_lbt,blis_pr921,blis_jll,openblas,accelerate,pureblas_native
+2026-11-01 18:36:35 thermal guard: state fair, waiting
+2026-11-01 18:37:05 thermal guard: state fair, waiting
+2026-11-01 18:37:35 thermal guard: state fair, waiting
+2026-11-01 18:38:05 thermal guard: state fair, waiting
+2026-11-01 18:38:35 thermal guard: nominal after 120 s
+2026-11-01 18:38:38 start mt_pureblas_lbt_t4_r1 thermal=nominal load={ 3.84 4.37 4.63 } top=99.7 <process> 36.9 <process> 14.4 <process>
+2026-11-01 18:38:51 done  mt_pureblas_lbt_t4_r1 in 13 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:38:54 start mt_blis_pr921_t4_r1 thermal=nominal load={ 3.86 4.34 4.62 } top=99.0 <process> 39.2 <process> 36.7 <process>
+2026-11-01 18:39:05 done  mt_blis_pr921_t4_r1 in 11 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:39:08 start mt_blis_jll_t4_r1 thermal=nominal load={ 4.12 4.38 4.63 } top=100.0 <process> 77.5 <process> 53.6 <process>
+2026-11-01 18:39:27 done  mt_blis_jll_t4_r1 in 19 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:39:30 start mt_openblas_t4_r1 thermal=nominal load={ 4.79 4.52 4.67 } top=99.0 <process> 96.2 <process> 34.2 <process>
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 3500
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 1500
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 2500
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 4000
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 1000
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 500
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 100
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 3000
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 2000
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 200
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+2026-11-01 18:39:50 done  mt_openblas_t4_r1 in 20 s thermal=fair power: Now drawing from 'AC Power'
+2026-11-01 18:39:50 load guard: load 5.55, waiting
+2026-11-01 18:40:20 load guard: load 5.18, waiting
+2026-11-01 18:40:50 load guard: quiet after 60 s
+2026-11-01 18:40:50 thermal guard: state fair, waiting
+2026-11-01 18:41:20 thermal guard: nominal after 30 s
+2026-11-01 18:41:23 start mt_accelerate_t4_r1 thermal=nominal load={ 4.49 4.58 4.68 } top=99.0 <process> 75.9 <process> 72.0 <process>
+2026-11-01 18:41:33 done  mt_accelerate_t4_r1 in 10 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:41:37 start mt_pureblas_native_t4_r1 thermal=nominal load={ 4.29 4.54 4.66 } top=99.5 <process> 32.7 <process> 18.5 <process>
+2026-11-01 18:41:49 done  mt_pureblas_native_t4_r1 in 13 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:41:49 round 2 order openblas,pureblas_lbt,pureblas_native,accelerate,blis_jll,blis_pr921
+2026-11-01 18:41:52 start mt_openblas_t4_r2 thermal=nominal load={ 4.70 4.61 4.69 } top=98.9 <process> 34.7 <process> 6.2 <process>
+2026-11-01 18:42:13 done  mt_openblas_t4_r2 in 21 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:42:13 load guard: load 5.04, waiting
+2026-11-01 18:42:43 load guard: quiet after 30 s
+2026-11-01 18:42:43 thermal guard: state fair, waiting
+2026-11-01 18:43:13 thermal guard: state fair, waiting
+2026-11-01 18:43:43 thermal guard: nominal after 60 s
+2026-11-01 18:43:46 start mt_pureblas_lbt_t4_r2 thermal=nominal load={ 7.90 5.86 5.16 } top=98.1 <process> 42.5 <process> 39.3 <process>
+2026-11-01 18:43:59 done  mt_pureblas_lbt_t4_r2 in 13 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:43:59 load guard: load 7.38, waiting
+2026-11-01 18:44:29 load guard: load 5.9, waiting
+2026-11-01 18:44:59 load guard: load 5.66, waiting
+2026-11-01 18:45:29 load guard: load 5.32, waiting
+2026-11-01 18:45:59 load guard: quiet after 120 s
+2026-11-01 18:46:02 start mt_pureblas_native_t4_r2 thermal=nominal load={ 4.68 5.31 5.04 } top=98.4 <process> 45.6 <process> 37.5 <process>
+2026-11-01 18:46:14 done  mt_pureblas_native_t4_r2 in 12 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:46:17 start mt_accelerate_t4_r2 thermal=nominal load={ 4.65 5.28 5.03 } top=100.0 <process> 97.9 <process> 63.4 <process>
+2026-11-01 18:46:27 done  mt_accelerate_t4_r2 in 10 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:46:30 start mt_blis_jll_t4_r2 thermal=nominal load={ 4.51 5.21 5.01 } top=100.0 <process> 67.6 <process> 38.2 <process>
+2026-11-01 18:46:48 done  mt_blis_jll_t4_r2 in 18 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:46:52 start mt_blis_pr921_t4_r2 thermal=nominal load={ 4.61 5.20 5.01 } top=100.0 <process> 88.1 <process> 36.7 <process>
+2026-11-01 18:47:02 done  mt_blis_pr921_t4_r2 in 11 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:47:02 round 3 order pureblas_native,blis_jll,pureblas_lbt,accelerate,openblas,blis_pr921
+2026-11-01 18:47:05 start mt_pureblas_native_t4_r3 thermal=nominal load={ 4.64 5.17 5.00 } top=100.0 <process> 98.8 <process> 74.6 <process>
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 1000
+│   backend = "pureblas_native"
+└ @ BlasBench <repo>/src/harness.jl:120
+2026-11-01 18:47:17 done  mt_pureblas_native_t4_r3 in 12 s thermal=fair power: Now drawing from 'AC Power'
+2026-11-01 18:47:17 thermal guard: state fair, waiting
+2026-11-01 18:47:47 thermal guard: state fair, waiting
+2026-11-01 18:48:17 thermal guard: nominal after 60 s
+2026-11-01 18:48:20 start mt_blis_jll_t4_r3 thermal=nominal load={ 4.01 4.89 4.91 } top=99.0 <process> 65.8 <process> 32.3 <process>
+2026-11-01 18:48:38 done  mt_blis_jll_t4_r3 in 18 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:48:41 start mt_pureblas_lbt_t4_r3 thermal=nominal load={ 4.29 4.89 4.91 } top=99.4 <process> 97.0 <process> 39.0 <process>
+2026-11-01 18:48:54 done  mt_pureblas_lbt_t4_r3 in 13 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:48:57 start mt_accelerate_t4_r3 thermal=nominal load={ 4.64 4.94 4.93 } top=100.0 <process> 94.8 <process> 47.4 <process>
+2026-11-01 18:49:07 done  mt_accelerate_t4_r3 in 10 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:49:10 start mt_openblas_t4_r3 thermal=nominal load={ 4.35 4.86 4.90 } top=98.5 <process> 73.9 <process> 33.3 <process>
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 3000
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 100
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 2000
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+┌ Warning: thermal state
+│   th = "fair"
+│   n = 1000
+│   backend = "openblas"
+└ @ BlasBench <repo>/src/harness.jl:120
+2026-11-01 18:49:30 done  mt_openblas_t4_r3 in 20 s thermal=fair power: Now drawing from 'AC Power'
+2026-11-01 18:49:30 load guard: load 5.08, waiting
+2026-11-01 18:50:00 load guard: quiet after 30 s
+2026-11-01 18:50:00 thermal guard: state fair, waiting
+2026-11-01 18:50:30 thermal guard: nominal after 30 s
+2026-11-01 18:50:33 start mt_blis_pr921_t4_r3 thermal=nominal load={ 3.79 4.61 4.80 } top=127.6 <process> 99.7 <process> 21.9 <process>
+2026-11-01 18:50:44 done  mt_blis_pr921_t4_r3 in 11 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:50:44 campaign finished

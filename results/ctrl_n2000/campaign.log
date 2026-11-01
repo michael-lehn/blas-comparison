@@ -1,0 +1,23 @@
+2026-11-01 18:07:07 campaign ctrl_n2000 rounds=3 threads=1 backends=pureblas_native,ulmblas,accelerate power: Now drawing from 'AC Power'
+2026-11-01 18:07:07 round 1 order ulmblas,pureblas_native,accelerate
+2026-11-01 18:07:10 start ctrl_n2000_ulmblas_t1_r1 thermal=nominal load={ 4.36 4.68 5.85 } top=100.0 <process> 98.3 <process> 53.6 <process>
+2026-11-01 18:07:13 done  ctrl_n2000_ulmblas_t1_r1 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:16 start ctrl_n2000_pureblas_native_t1_r1 thermal=nominal load={ 4.22 4.64 5.82 } top=99.0 <process> 26.2 <process> 6.7 <process>
+2026-11-01 18:07:19 done  ctrl_n2000_pureblas_native_t1_r1 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:22 start ctrl_n2000_accelerate_t1_r1 thermal=nominal load={ 4.20 4.63 5.81 } top=99.0 <process> 60.4 <process> 58.3 <process>
+2026-11-01 18:07:25 done  ctrl_n2000_accelerate_t1_r1 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:25 round 2 order pureblas_native,ulmblas,accelerate
+2026-11-01 18:07:28 start ctrl_n2000_pureblas_native_t1_r2 thermal=nominal load={ 4.18 4.62 5.80 } top=99.0 <process> 26.5 <process> 7.3 <process>
+2026-11-01 18:07:32 done  ctrl_n2000_pureblas_native_t1_r2 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:35 start ctrl_n2000_ulmblas_t1_r2 thermal=nominal load={ 4.01 4.58 5.78 } top=97.9 <process> 86.4 <process> 38.1 <process>
+2026-11-01 18:07:38 done  ctrl_n2000_ulmblas_t1_r2 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:41 start ctrl_n2000_accelerate_t1_r2 thermal=nominal load={ 3.77 4.51 5.74 } top=100.0 <process> 86.4 <process> 78.9 <process>
+2026-11-01 18:07:44 done  ctrl_n2000_accelerate_t1_r2 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:44 round 3 order pureblas_native,accelerate,ulmblas
+2026-11-01 18:07:47 start ctrl_n2000_pureblas_native_t1_r3 thermal=nominal load={ 3.62 4.47 5.72 } top=100.0 <process> 67.0 <process> 53.7 <process>
+2026-11-01 18:07:50 done  ctrl_n2000_pureblas_native_t1_r3 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:53 start ctrl_n2000_accelerate_t1_r3 thermal=nominal load={ 3.49 4.43 5.70 } top=99.0 <process> 27.7 <process> 22.3 <process>
+2026-11-01 18:07:56 done  ctrl_n2000_accelerate_t1_r3 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:07:59 start ctrl_n2000_ulmblas_t1_r3 thermal=nominal load={ 3.53 4.42 5.69 } top=99.0 <process> 88.9 <process> 40.9 <process>
+2026-11-01 18:08:02 done  ctrl_n2000_ulmblas_t1_r3 in 3 s thermal=nominal power: Now drawing from 'AC Power'
+2026-11-01 18:08:02 campaign finished

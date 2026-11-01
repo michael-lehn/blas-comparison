@@ -226,3 +226,284 @@ ulmblas_strided2 n=300 per_call=0.000735 samples=5 calls=68
 ulmblas_strided2 n=1150 per_call=0.0355 samples=5 calls=2
 2026-11-01 17:00:06 done  strided2_ulmblas_strided2_t1_r1 in 123 s thermal=fair power: Now drawing from 'AC Power'
 2026-11-01 17:00:06 campaign finished
+2026-11-01 18:50:44 campaign strided2 rounds=3 threads=1 backends=ulmblas_strided2,pureblas_strided2 power: Now drawing from 'AC Power'
+2026-11-01 18:50:44 round 1 order pureblas_strided2,ulmblas_strided2
+2026-11-01 18:50:44 round 2 order ulmblas_strided2,pureblas_strided2
+2026-11-01 18:50:47 start strided2_ulmblas_strided2_t1_r2 thermal=nominal load={ 4.40 4.71 4.83 } top=99.1 <process> 97.7 <process> 35.2 <process>
+ulmblas_strided2 n=2100 per_call=0.0724 samples=5 calls=1
+ulmblas_strided2 n=950 per_call=0.00617 samples=5 calls=9
+ulmblas_strided2 n=2900 per_call=0.172 samples=5 calls=1
+ulmblas_strided2 n=3550 per_call=0.318 samples=5 calls=1
+ulmblas_strided2 n=1150 per_call=0.0136 samples=5 calls=4
+ulmblas_strided2 n=200 per_call=0.000108 samples=5 calls=465
+ulmblas_strided2 n=3600 per_call=0.331 samples=5 calls=1
+ulmblas_strided2 n=2250 per_call=0.0873 samples=5 calls=1
+ulmblas_strided2 n=3800 per_call=0.386 samples=5 calls=1
+ulmblas_strided2 n=1450 per_call=0.0246 samples=5 calls=3
+ulmblas_strided2 n=1650 per_call=0.0336 samples=5 calls=2
+ulmblas_strided2 n=1700 per_call=0.0362 samples=5 calls=2
+ulmblas_strided2 n=3000 per_call=0.193 samples=5 calls=1
+ulmblas_strided2 n=1250 per_call=0.0165 samples=5 calls=4
+ulmblas_strided2 n=150 per_call=5.57e-5 samples=5 calls=898
+ulmblas_strided2 n=2500 per_call=0.119 samples=5 calls=1
+ulmblas_strided2 n=1800 per_call=0.0438 samples=5 calls=2
+ulmblas_strided2 n=3400 per_call=0.297 samples=5 calls=1
+ulmblas_strided2 n=2400 per_call=0.106 samples=5 calls=1
+ulmblas_strided2 n=900 per_call=0.00563 samples=5 calls=9
+ulmblas_strided2 n=2300 per_call=0.0951 samples=5 calls=1
+ulmblas_strided2 n=2950 per_call=0.186 samples=5 calls=1
+ulmblas_strided2 n=1900 per_call=0.0506 samples=5 calls=1
+ulmblas_strided2 n=3900 per_call=0.419 samples=5 calls=1
+ulmblas_strided2 n=50 per_call=6.44e-6 samples=5 calls=7768
+ulmblas_strided2 n=3850 per_call=0.406 samples=5 calls=1
+ulmblas_strided2 n=2600 per_call=0.132 samples=5 calls=1
+ulmblas_strided2 n=850 per_call=0.0047 samples=5 calls=11
+ulmblas_strided2 n=2150 per_call=0.0817 samples=5 calls=1
+ulmblas_strided2 n=2800 per_call=0.159 samples=5 calls=1
+ulmblas_strided2 n=4000 per_call=0.449 samples=5 calls=1
+ulmblas_strided2 n=1950 per_call=0.0526 samples=5 calls=1
+ulmblas_strided2 n=2650 per_call=0.139 samples=5 calls=1
+ulmblas_strided2 n=2050 per_call=0.0735 samples=5 calls=1
+ulmblas_strided2 n=100 per_call=2.56e-5 samples=5 calls=1956
+ulmblas_strided2 n=3700 per_call=0.37 samples=5 calls=1
+ulmblas_strided2 n=1500 per_call=0.0263 samples=5 calls=2
+ulmblas_strided2 n=2550 per_call=0.125 samples=5 calls=1
+ulmblas_strided2 n=350 per_call=0.000384 samples=5 calls=131
+ulmblas_strided2 n=2350 per_call=0.1 samples=5 calls=1
+ulmblas_strided2 n=650 per_call=0.00219 samples=5 calls=23
+ulmblas_strided2 n=1750 per_call=0.0402 samples=5 calls=2
+ulmblas_strided2 n=3450 per_call=0.318 samples=5 calls=1
+ulmblas_strided2 n=300 per_call=0.00027 samples=5 calls=186
+ulmblas_strided2 n=500 per_call=0.000975 samples=5 calls=52
+ulmblas_strided2 n=3050 per_call=0.201 samples=5 calls=1
+ulmblas_strided2 n=550 per_call=0.00132 samples=5 calls=38
+ulmblas_strided2 n=1600 per_call=0.0308 samples=5 calls=2
+ulmblas_strided2 n=1100 per_call=0.0115 samples=5 calls=5
+ulmblas_strided2 n=3750 per_call=0.382 samples=5 calls=1
+ulmblas_strided2 n=2000 per_call=0.0574 samples=5 calls=1
+ulmblas_strided2 n=3100 per_call=0.228 samples=5 calls=1
+ulmblas_strided2 n=2200 per_call=0.0855 samples=5 calls=1
+ulmblas_strided2 n=3150 per_call=0.24 samples=5 calls=1
+ulmblas_strided2 n=3500 per_call=0.319 samples=5 calls=1
+ulmblas_strided2 n=3650 per_call=0.364 samples=5 calls=1
+ulmblas_strided2 n=1000 per_call=0.00741 samples=5 calls=7
+ulmblas_strided2 n=750 per_call=0.00326 samples=5 calls=16
+ulmblas_strided2 n=2450 per_call=0.113 samples=5 calls=1
+ulmblas_strided2 n=3350 per_call=0.287 samples=5 calls=1
+ulmblas_strided2 n=2700 per_call=0.146 samples=5 calls=1
+ulmblas_strided2 n=2750 per_call=0.151 samples=5 calls=1
+ulmblas_strided2 n=1350 per_call=0.0202 samples=5 calls=3
+ulmblas_strided2 n=1050 per_call=0.0103 samples=5 calls=5
+ulmblas_strided2 n=3200 per_call=0.249 samples=5 calls=1
+ulmblas_strided2 n=3950 per_call=0.447 samples=5 calls=1
+ulmblas_strided2 n=800 per_call=0.00382 samples=5 calls=14
+ulmblas_strided2 n=400 per_call=0.000553 samples=5 calls=91
+ulmblas_strided2 n=1200 per_call=0.0143 samples=5 calls=4
+ulmblas_strided2 n=250 per_call=0.000174 samples=5 calls=288
+ulmblas_strided2 n=2850 per_call=0.176 samples=5 calls=1
+ulmblas_strided2 n=450 per_call=0.000793 samples=5 calls=64
+ulmblas_strided2 n=700 per_call=0.00266 samples=5 calls=19
+ulmblas_strided2 n=1850 per_call=0.0464 samples=5 calls=2
+ulmblas_strided2 n=3300 per_call=0.274 samples=5 calls=1
+ulmblas_strided2 n=1300 per_call=0.018 samples=5 calls=3
+ulmblas_strided2 n=3250 per_call=0.267 samples=5 calls=1
+ulmblas_strided2 n=1400 per_call=0.0218 samples=5 calls=3
+ulmblas_strided2 n=600 per_call=0.0017 samples=5 calls=30
+ulmblas_strided2 n=1550 per_call=0.0287 samples=5 calls=2
+2026-11-01 18:52:22 done  strided2_ulmblas_strided2_t1_r2 in 95 s thermal=fair power: Now drawing from 'AC Power'
+2026-11-01 18:52:22 load guard: load 5.26, waiting
+2026-11-01 18:52:52 load guard: quiet after 30 s
+2026-11-01 18:52:52 thermal guard: state fair, waiting
+2026-11-01 18:53:22 thermal guard: state fair, waiting
+2026-11-01 18:53:52 thermal guard: nominal after 60 s
+2026-11-01 18:53:55 start strided2_pureblas_strided2_t1_r2 thermal=nominal load={ 3.96 4.56 4.76 } top=99.0 <process> 93.0 <process> 36.0 <process>
+pureblas_strided2 n=2300 per_call=3.12 samples=5 calls=1
+pureblas_strided2 n=2400 per_call=3.97 samples=5 calls=1
+pureblas_strided2 n=1300 per_call=0.602 samples=5 calls=1
+pureblas_strided2 n=2550 per_call=4.52 samples=5 calls=1
+pureblas_strided2 n=550 per_call=0.0481 samples=5 calls=2
+pureblas_strided2 n=2500 per_call=4.29 samples=5 calls=1
+pureblas_strided2 n=3600 per_call=13.2 samples=5 calls=1
+pureblas_strided2 n=300 per_call=0.00818 samples=5 calls=7
+pureblas_strided2 n=1750 per_call=1.56 samples=5 calls=1
+pureblas_strided2 n=3900 per_call=17.2 samples=5 calls=1
+pureblas_strided2 n=900 per_call=0.211 samples=5 calls=1
+pureblas_strided2 n=1050 per_call=0.323 samples=5 calls=1
+pureblas_strided2 n=450 per_call=0.026 samples=5 calls=2
+pureblas_strided2 n=1500 per_call=1.15 samples=5 calls=1
+pureblas_strided2 n=3750 per_call=15.2 samples=5 calls=1
+pureblas_strided2 n=3150 per_call=9.02 samples=5 calls=1
+pureblas_strided2 n=1650 per_call=1.3 samples=5 calls=1
+pureblas_strided2 n=850 per_call=0.178 samples=5 calls=1
+pureblas_strided2 n=3800 per_call=16.4 samples=5 calls=1
+pureblas_strided2 n=150 per_call=0.00104 samples=5 calls=49
+pureblas_strided2 n=400 per_call=0.0182 samples=5 calls=3
+pureblas_strided2 n=3200 per_call=9.51 samples=5 calls=1
+pureblas_strided2 n=500 per_call=0.037 samples=5 calls=2
+pureblas_strided2 n=2700 per_call=5.77 samples=5 calls=1
+pureblas_strided2 n=2900 per_call=7.11 samples=5 calls=1
+pureblas_strided2 n=3850 per_call=16.8 samples=5 calls=1
+pureblas_strided2 n=950 per_call=0.253 samples=5 calls=1
+pureblas_strided2 n=3300 per_call=10.4 samples=5 calls=1
+pureblas_strided2 n=2100 per_call=2.66 samples=5 calls=1
+pureblas_strided2 n=3500 per_call=12.6 samples=5 calls=1
+pureblas_strided2 n=3450 per_call=11.8 samples=5 calls=1
+pureblas_strided2 n=1350 per_call=0.714 samples=5 calls=1
+pureblas_strided2 n=1100 per_call=0.381 samples=5 calls=1
+pureblas_strided2 n=750 per_call=0.118 samples=5 calls=1
+pureblas_strided2 n=3100 per_call=8.61 samples=5 calls=1
+pureblas_strided2 n=2350 per_call=3.72 samples=5 calls=1
+pureblas_strided2 n=2250 per_call=3.42 samples=5 calls=1
+pureblas_strided2 n=1400 per_call=0.799 samples=5 calls=1
+pureblas_strided2 n=1600 per_call=1.18 samples=5 calls=1
+pureblas_strided2 n=4000 per_call=18.8 samples=5 calls=1
+pureblas_strided2 n=2000 per_call=2.29 samples=5 calls=1
+pureblas_strided2 n=2200 per_call=3.06 samples=5 calls=1
+pureblas_strided2 n=2050 per_call=2.47 samples=5 calls=1
+pureblas_strided2 n=3400 per_call=11.4 samples=5 calls=1
+pureblas_strided2 n=3650 per_call=14.0 samples=5 calls=1
+pureblas_strided2 n=2800 per_call=6.3 samples=5 calls=1
+pureblas_strided2 n=2850 per_call=6.66 samples=5 calls=1
+pureblas_strided2 n=1950 per_call=2.13 samples=5 calls=1
+pureblas_strided2 n=2950 per_call=7.36 samples=5 calls=1
+pureblas_strided2 n=200 per_call=0.00257 samples=5 calls=20
+pureblas_strided2 n=1150 per_call=0.44 samples=5 calls=1
+pureblas_strided2 n=650 per_call=0.0769 samples=5 calls=1
+pureblas_strided2 n=1450 per_call=0.879 samples=5 calls=1
+pureblas_strided2 n=3950 per_call=21.5 samples=5 calls=1
+pureblas_strided2 n=2650 per_call=5.66 samples=5 calls=1
+pureblas_strided2 n=1700 per_call=1.5 samples=5 calls=1
+pureblas_strided2 n=3550 per_call=16.9 samples=5 calls=1
+pureblas_strided2 n=1550 per_call=1.24 samples=5 calls=1
+pureblas_strided2 n=350 per_call=0.0136 samples=5 calls=4
+pureblas_strided2 n=1250 per_call=0.789 samples=5 calls=1
+pureblas_strided2 n=50 per_call=5.33e-5 samples=5 calls=939
+pureblas_strided2 n=3700 per_call=18.0 samples=5 calls=1
+pureblas_strided2 n=2600 per_call=5.75 samples=5 calls=1
+pureblas_strided2 n=1900 per_call=2.11 samples=5 calls=1
+pureblas_strided2 n=600 per_call=0.0675 samples=5 calls=1
+pureblas_strided2 n=1850 per_call=2.14 samples=5 calls=1
+pureblas_strided2 n=3000 per_call=10.1 samples=5 calls=1
+pureblas_strided2 n=700 per_call=0.106 samples=5 calls=1
+pureblas_strided2 n=250 per_call=0.00481 samples=5 calls=11
+pureblas_strided2 n=2450 per_call=4.63 samples=5 calls=1
+pureblas_strided2 n=1800 per_call=1.81 samples=5 calls=1
+pureblas_strided2 n=100 per_call=0.000362 samples=5 calls=138
+pureblas_strided2 n=800 per_call=0.149 samples=5 calls=1
+pureblas_strided2 n=3350 per_call=12.0 samples=5 calls=1
+pureblas_strided2 n=1200 per_call=0.538 samples=5 calls=1
+pureblas_strided2 n=1000 per_call=0.302 samples=5 calls=1
+pureblas_strided2 n=2750 per_call=6.24 samples=5 calls=1
+pureblas_strided2 n=3250 per_call=11.5 samples=5 calls=1
+pureblas_strided2 n=3050 per_call=9.43 samples=5 calls=1
+pureblas_strided2 n=2150 per_call=3.6 samples=5 calls=1
+2026-11-01 19:40:57 done  strided2_pureblas_strided2_t1_r2 in 2822 s thermal=fair power: Now drawing from 'AC Power'
+2026-11-01 19:40:57 round 3 order ulmblas_strided2,pureblas_strided2
+2026-11-01 19:40:57 thermal guard: state fair, waiting
+2026-11-01 19:41:27 thermal guard: state fair, waiting
+2026-11-01 19:41:57 thermal guard: state fair, waiting
+2026-11-01 19:42:27 thermal guard: state fair, waiting
+2026-11-01 19:42:57 thermal guard: state fair, waiting
+2026-11-01 19:43:27 thermal guard: state fair, waiting
+2026-11-01 19:43:57 thermal guard: state fair, waiting
+2026-11-01 19:44:27 thermal guard: state fair, waiting
+2026-11-01 19:44:57 thermal guard: state fair, waiting
+2026-11-01 19:45:27 thermal guard: state fair, waiting
+2026-11-01 19:45:57 thermal guard: nominal after 300 s
+2026-11-01 19:46:00 start strided2_ulmblas_strided2_t1_r3 thermal=nominal load={ 3.16 3.89 4.18 } top=100.0 <process> 96.2 <process> 21.6 <process>
+ulmblas_strided2 n=1650 per_call=0.0336 samples=5 calls=2
+ulmblas_strided2 n=650 per_call=0.00228 samples=5 calls=22
+ulmblas_strided2 n=1050 per_call=0.0098 samples=5 calls=6
+ulmblas_strided2 n=2700 per_call=0.143 samples=5 calls=1
+ulmblas_strided2 n=3850 per_call=0.413 samples=5 calls=1
+ulmblas_strided2 n=3050 per_call=0.195 samples=5 calls=1
+ulmblas_strided2 n=1850 per_call=0.0446 samples=5 calls=2
+ulmblas_strided2 n=1500 per_call=0.0251 samples=5 calls=2
+ulmblas_strided2 n=900 per_call=0.00581 samples=5 calls=9
+ulmblas_strided2 n=2800 per_call=0.159 samples=5 calls=1
+ulmblas_strided2 n=950 per_call=0.00627 samples=5 calls=8
+ulmblas_strided2 n=1600 per_call=0.0311 samples=5 calls=2
+ulmblas_strided2 n=800 per_call=0.00371 samples=5 calls=14
+ulmblas_strided2 n=250 per_call=0.000173 samples=5 calls=290
+ulmblas_strided2 n=2250 per_call=0.0884 samples=5 calls=1
+ulmblas_strided2 n=4000 per_call=0.447 samples=5 calls=1
+ulmblas_strided2 n=2950 per_call=0.19 samples=5 calls=1
+ulmblas_strided2 n=3200 per_call=0.276 samples=5 calls=1
+ulmblas_strided2 n=150 per_call=5.5e-5 samples=5 calls=909
+ulmblas_strided2 n=2150 per_call=0.081 samples=5 calls=1
+ulmblas_strided2 n=2650 per_call=0.142 samples=5 calls=1
+ulmblas_strided2 n=1550 per_call=0.0321 samples=5 calls=2
+ulmblas_strided2 n=1350 per_call=0.024 samples=5 calls=3
+ulmblas_strided2 n=1450 per_call=0.0263 samples=5 calls=2
+ulmblas_strided2 n=500 per_call=0.00109 samples=5 calls=46
+ulmblas_strided2 n=50 per_call=6.37e-6 samples=5 calls=7847
+ulmblas_strided2 n=1900 per_call=0.0488 samples=5 calls=2
+ulmblas_strided2 n=400 per_call=0.000551 samples=5 calls=91
+ulmblas_strided2 n=3950 per_call=0.445 samples=5 calls=1
+ulmblas_strided2 n=1800 per_call=0.042 samples=5 calls=2
+ulmblas_strided2 n=1150 per_call=0.0135 samples=5 calls=4
+ulmblas_strided2 n=2000 per_call=0.0564 samples=5 calls=1
+ulmblas_strided2 n=3250 per_call=0.258 samples=5 calls=1
+ulmblas_strided2 n=300 per_call=0.000278 samples=5 calls=180
+ulmblas_strided2 n=2500 per_call=0.129 samples=5 calls=1
+ulmblas_strided2 n=2400 per_call=0.103 samples=5 calls=1
+ulmblas_strided2 n=2900 per_call=0.177 samples=5 calls=1
+ulmblas_strided2 n=2600 per_call=0.128 samples=5 calls=1
+ulmblas_strided2 n=3700 per_call=0.384 samples=5 calls=1
+ulmblas_strided2 n=2550 per_call=0.129 samples=5 calls=1
+ulmblas_strided2 n=1300 per_call=0.019 samples=5 calls=3
+ulmblas_strided2 n=750 per_call=0.00324 samples=5 calls=16
+ulmblas_strided2 n=2050 per_call=0.0724 samples=5 calls=1
+ulmblas_strided2 n=3450 per_call=0.321 samples=5 calls=1
+ulmblas_strided2 n=1400 per_call=0.023 samples=5 calls=3
+ulmblas_strided2 n=2200 per_call=0.0885 samples=5 calls=1
+ulmblas_strided2 n=1100 per_call=0.0116 samples=5 calls=5
+ulmblas_strided2 n=2750 per_call=0.158 samples=5 calls=1
+ulmblas_strided2 n=3300 per_call=0.269 samples=5 calls=1
+ulmblas_strided2 n=1950 per_call=0.0542 samples=5 calls=1
+ulmblas_strided2 n=2100 per_call=0.0787 samples=5 calls=1
+ulmblas_strided2 n=700 per_call=0.00264 samples=5 calls=19
+ulmblas_strided2 n=2300 per_call=0.0973 samples=5 calls=1
+ulmblas_strided2 n=1250 per_call=0.0169 samples=5 calls=3
+ulmblas_strided2 n=3900 per_call=0.431 samples=5 calls=1
+ulmblas_strided2 n=450 per_call=0.000789 samples=5 calls=64
+ulmblas_strided2 n=3350 per_call=0.292 samples=5 calls=1
+ulmblas_strided2 n=1750 per_call=0.0415 samples=5 calls=2
+ulmblas_strided2 n=350 per_call=0.000381 samples=5 calls=132
+ulmblas_strided2 n=200 per_call=0.000108 samples=5 calls=462
+ulmblas_strided2 n=600 per_call=0.00172 samples=5 calls=30
+ulmblas_strided2 n=3400 per_call=0.294 samples=5 calls=1
+ulmblas_strided2 n=550 per_call=0.0014 samples=5 calls=36
+ulmblas_strided2 n=1700 per_call=0.0379 samples=5 calls=2
+ulmblas_strided2 n=1200 per_call=0.0146 samples=5 calls=4
+ulmblas_strided2 n=100 per_call=2.48e-5 samples=5 calls=2014
+ulmblas_strided2 n=1000 per_call=0.00744 samples=5 calls=7
+ulmblas_strided2 n=2450 per_call=0.114 samples=5 calls=1
+ulmblas_strided2 n=3750 per_call=0.391 samples=5 calls=1
+ulmblas_strided2 n=3150 per_call=0.244 samples=5 calls=1
+ulmblas_strided2 n=3100 per_call=0.231 samples=5 calls=1
+ulmblas_strided2 n=850 per_call=0.0047 samples=5 calls=11
+ulmblas_strided2 n=2850 per_call=0.182 samples=5 calls=1
+ulmblas_strided2 n=3650 per_call=0.36 samples=5 calls=1
+ulmblas_strided2 n=3550 per_call=0.337 samples=5 calls=1
+ulmblas_strided2 n=3600 per_call=0.371 samples=5 calls=1
+ulmblas_strided2 n=3500 per_call=0.325 samples=5 calls=1
+ulmblas_strided2 n=2350 per_call=0.1 samples=5 calls=1
+ulmblas_strided2 n=3000 per_call=0.193 samples=5 calls=1
+ulmblas_strided2 n=3800 per_call=0.41 samples=5 calls=1
+2026-11-01 19:47:36 done  strided2_ulmblas_strided2_t1_r3 in 96 s thermal=fair power: Now drawing from 'AC Power'
+2026-11-01 19:47:36 thermal guard: state fair, waiting
+2026-11-01 19:48:06 thermal guard: state fair, waiting
+2026-11-01 19:48:36 thermal guard: state fair, waiting
+2026-11-01 19:49:06 thermal guard: state fair, waiting
+2026-11-01 19:49:36 thermal guard: state fair, waiting
+2026-11-01 19:50:06 thermal guard: nominal after 150 s
+2026-11-01 19:50:09 start strided2_pureblas_strided2_t1_r3 thermal=nominal load={ 3.70 4.08 4.20 } top=99.6 <process> 94.4 <process> 24.0 <process>
+pureblas_strided2 n=450 per_call=0.0236 samples=5 calls=3
+pureblas_strided2 n=3500 per_call=12.0 samples=5 calls=1
+pureblas_strided2 n=2650 per_call=5.67 samples=5 calls=1
+pureblas_strided2 n=350 per_call=0.0145 samples=5 calls=4
+pureblas_strided2 n=100 per_call=0.00034 samples=5 calls=147
+pureblas_strided2 n=2200 per_call=3.86 samples=5 calls=1
+pureblas_strided2 n=3000 per_call=9.34 samples=5 calls=1
+pureblas_strided2 n=3900 per_call=21.0 samples=5 calls=1

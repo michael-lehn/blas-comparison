@@ -1,0 +1,4 @@
+backend,threads,n,rounds,samples,median_gflops,min_round_median,max_round_median,min_sample,max_sample
+pureblas_native,1,1000,3,15,414.580,398.433,420.568,390.930,443.494
+ulmblas,1,1000,3,15,436.048,424.331,438.094,385.877,450.684
+accelerate,1,1000,3,15,484.342,480.957,484.394,442.012,500.500

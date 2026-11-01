@@ -1,0 +1,6 @@
+campaign,backend,threads,round,pid,position,n,sample,calls,wall_s,cpu_s,gflops,cpu_per_wall,alloc_bytes,gc_ns,sme_calls,anchor_ns,thermal,timestamp
+ctrl_n4000,pureblas_native,1,3,60913,1,4000,1,1,0.295085042,0.294950000,433.7733,0.9995,0,0,1,1407792,-,-
+ctrl_n4000,pureblas_native,1,3,60913,1,4000,2,1,0.304620834,0.304508000,420.1945,0.9996,0,0,1,1431125,-,-
+ctrl_n4000,pureblas_native,1,3,60913,1,4000,3,1,0.296096417,0.296011000,432.2916,0.9997,0,0,1,1415292,-,-
+ctrl_n4000,pureblas_native,1,3,60913,1,4000,4,1,0.298573083,0.298425000,428.7058,0.9995,0,0,1,1446000,-,-
+ctrl_n4000,pureblas_native,1,3,60913,1,4000,5,1,0.297264583,0.297164000,430.5928,0.9997,0,0,1,1419250,-,-

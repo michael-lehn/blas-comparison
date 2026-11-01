@@ -1,0 +1,14 @@
+backend = "ulmblas"
+blas_config = "LBTConfig([ILP64] libopenblas64_.0.3.30.dylib, [ILP64] libulmblas_lbt.dylib)"
+call_path = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+lbt_dgemm_addr = "10cfee524"
+library = "<repo>/.local/depot/artifacts/df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib"
+sizes_order = "1000"
+start = "2026-11-01T18:06:41.919"
+thermal_start = "nominal"
+threads_julia = 1
+threads_requested = 1
+variant = "sme"
+version = "0.1.0"

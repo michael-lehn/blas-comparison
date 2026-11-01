@@ -1,0 +1,11 @@
+campaign,backend,threads,round,pid,position,n,input_crc,method,entry_ratio,freivalds_ratio,hasnan,ok,repeat_identical,c11,c_sum,sme_calls_first
+mt,pureblas_lbt,4,1,69611,1,1000,68d51599,entries2000+freivalds,0.0021,0.0001,false,true,true,-0.22313887229218943,1177.789880548888,1
+mt,pureblas_lbt,4,1,69611,2,100,d362a8d7,full,0.0225,0.0030,false,true,true,0.35478776919208016,-42.934082229494251,1
+mt,pureblas_lbt,4,1,69611,3,1500,bed4de03,entries2000+freivalds,0.0018,0.0001,false,true,true,1.4117065287692212,-95.834546448765536,1
+mt,pureblas_lbt,4,1,69611,4,3500,798124ef,entries2000+freivalds,0.0007,0.0000,false,true,true,-7.2891610778083766,-5403.5858857935746,1
+mt,pureblas_lbt,4,1,69611,5,200,97ae7031,full,0.0157,0.0011,false,true,true,-0.42785309247884762,-485.64265069573474,1
+mt,pureblas_lbt,4,1,69611,6,500,d6bbff70,entries2000+freivalds,0.0048,0.0003,false,true,true,2.4823979275618737,356.09114122422648,1
+mt,pureblas_lbt,4,1,69611,7,2500,7cc61ad4,entries2000+freivalds,0.0008,0.0001,false,true,true,-3.594265509144158,-7944.1108822611759,1
+mt,pureblas_lbt,4,1,69611,8,2000,b4452423,entries2000+freivalds,0.0014,0.0001,false,true,true,4.9960814453814386,13905.804361705093,1
+mt,pureblas_lbt,4,1,69611,9,4000,dc79ffdd,entries2000+freivalds,0.0007,0.0000,false,true,true,12.26065568751905,-23267.789024231402,1
+mt,pureblas_lbt,4,1,69611,10,3000,a458287d,entries2000+freivalds,0.0010,0.0000,false,true,true,-1.0096738254882895,403.77391093924462,1

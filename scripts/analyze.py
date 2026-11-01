@@ -146,7 +146,7 @@ prefix = camp if len(sys.argv) < 3 else sys.argv[2]
 conds = {1: "one thread", 4: "4 threads requested", 10: "10 threads requested"}
 for t in thr:
     tt = f"{prefix}_t{t}"; note = conds.get(t, f"{t} threads")
-    sub = "Apple M5, $C := AB$, $m=n=k$, $\\alpha=1$, $\\beta=0$, " + note + ". Line: median of rounds; band: range of rounds."
+    sub = "Apple M5, $C := AB$, $m=n=k$, $\\alpha=1$, $\\beta=0$, " + note + ". \nLine: median of rounds; band: range of rounds."
     fig, ax = plt.subplots(figsize=(8.2, 5))
     for b in backends: draw(ax, series, b, t)
     ax.set(xlabel="Matrix size $n$", ylabel="GFLOP/s  ($2n^3$ / time)", ylim=(0, None), xlim=(0, max(sizes) * 1.01))

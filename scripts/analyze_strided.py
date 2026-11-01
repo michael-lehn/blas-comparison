@@ -25,7 +25,15 @@ def rd(pattern):
     rows = []
     for f in sorted(glob.glob(pattern)): rows += list(csv.DictReader(open(f)))
     return rows
-samples, checks = rd(os.path.join(RAW, "samples_*.csv")), rd(os.path.join(RAW, "checks_*.csv"))
+# Only finished processes: a .done file marks them, so a round still running is ignored.
+done = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(RAW, "*.done"))}
+def rd_done(kind):
+    rows = []
+    for t in sorted(done):
+        f = os.path.join(RAW, f"{kind}_{t}.csv")
+        if os.path.exists(f): rows += list(csv.DictReader(open(f)))
+    return rows
+samples, checks = rd_done("samples"), rd_done("checks")
 backends = [b for b in (PURE, ULM) if any(s["backend"] == b for s in samples)]
 # A cell (backend, n, round) measured during a machine-wide slowdown does not enter the statistics: its median
 # scalar anchor exceeds 1.25 x the lower quartile of the anchors of its process.  Raw data stay; acceptance.md lists them.
@@ -122,7 +130,8 @@ if xs:
         for r in zip(xs, md, lo, hi): w.writerow([r[0]] + [f"{x:.3f}" for x in r[1:]])
 
 # ---- diagnostics: one figure per library, median of 3 samples, one round; not part of the strided2 results
-d = rd(os.path.join(DIAG, "diag_*.csv"))
+# diag_*_small.csv is left out: taken under load from other work (anchor 1.8 ms against 1.4 ms), to be repeated.
+d = rd(os.path.join(DIAG, "diag_pureblas.csv")) + rd(os.path.join(DIAG, "diag_ulmblas.csv"))
 if d:
     CFG = {"contiguous": ("all strides 1, on Matrix", "#2a78d6", "-", "o"),
            "copy_all": ("stride 2, copied to and from buffers (timed)", "#1baf7a", "--", "v"),
@@ -145,7 +154,8 @@ if d:
             if x: ax.plot(x, [med[(lib, c, n)] for n in x], color=col, ls=ls, marker=mk, ms=5, lw=1.6, label=lab)
         ax.set_yscale("log"); ax.set_yticks([3, 5, 10, 20, 50, 100, 200, 500]); ax.set_yticklabels(["3", "5", "10", "20", "50", "100", "200", "500"])
         ax.minorticks_off(); ax.set_title(title, loc="left", fontsize=10); ax.set_xlabel("Matrix size $n$")
-    axs[0].set_ylabel("GFLOP/s, log scale"); axs[0].legend(loc="center left", bbox_to_anchor=(0, .42), fontsize=7.5)
-    fig.suptitle("Stride diagnostics: which operand and which route cost what (one round, three samples per point)", x=.06, ha="left", fontsize=10)
+    axs[0].set_ylabel("GFLOP/s, log scale")
+    fig.suptitle("Stride diagnostics, not a proposed design: full copies need O(n²) workspace (one round, three samples per point)", x=.06, ha="left", fontsize=10)
+    h, l = axs[0].get_legend_handles_labels(); fig.tight_layout(rect=(0, .12, 1, 1)); fig.legend(h, l, loc="lower center", ncol=3, fontsize=8)
     save(fig, "strided2_diagnostics_routes")
 print("\n".join(L))

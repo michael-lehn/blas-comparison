@@ -1,0 +1,2 @@
+campaign,backend,threads,round,pid,position,n,input_crc,method,entry_ratio,freivalds_ratio,hasnan,ok,repeat_identical,c11,c_sum,sme_calls_first
+ctrl_n2000,pureblas_native,1,1,59614,1,2000,b4452423,entries2000+freivalds,0.0014,0.0001,false,true,true,4.9960814453814386,13905.804361705093,1

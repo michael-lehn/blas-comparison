@@ -1,0 +1,5 @@
+campaign,backend,threads,round,pid,position,n,input_crc,method,entry_ratio,freivalds_ratio,hasnan,ok,repeat_identical,c11,c_sum,sme_calls_first
+fresh,ulmblas,1,3,58547,1,2000,77c95155,entries2000+freivalds,0.0012,0.0000,false,true,n/a,9.9927263995643845,-8179.1027152644238,
+fresh,ulmblas,1,3,58547,2,4000,db7a10ef,entries2000+freivalds,0.0005,0.0000,false,true,n/a,-3.0000380325156337,-13073.409409596547,
+fresh,ulmblas,1,3,58547,3,200,d58998c5,full,0.0179,0.0012,false,true,n/a,-2.1575605185090208,92.376770523162946,
+fresh,ulmblas,1,3,58547,4,1000,e92842e7,entries2000+freivalds,0.0023,0.0001,false,true,n/a,-1.4058284940850017,2139.6663255754706,

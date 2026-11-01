@@ -14,8 +14,21 @@ samples: 72; correctness checks: 24
 | blis_jll | 1 | 1 | 3 | 3/3 | 0.022 | 0.003 | 3/3 | 0.995..1.000 | 0 | n/a |
 
 Input CRC identical across backends for 3/3 (n, round) pairs.
-Largest relative difference of sum(C) between backends: 2.90e-15.
+Largest absolute difference of sum(C) between backends over all (n, round): 5.82e-11 (sum of n^2 floating-point entries; entrywise correctness is the check above).
 Clock anchor (scalar loop): median 1.493 ms, p01 1.404, p99 1.797.
+
+Samples during a machine-wide slowdown (scalar anchor > 1.3 x its median); kept in all statistics, medians absorb them:
+
+| backend | samples flagged | of |
+|---|---|---|
+| pureblas_native | 0 | 9 |
+| pureblas_lbt | 0 | 9 |
+| ulmblas | 0 | 9 |
+| accelerate | 0 | 9 |
+| blis_pr921 | 1 | 9 |
+| openblas | 0 | 9 |
+| openblas_brew | 0 | 9 |
+| blis_jll | 0 | 9 |
 
 | backend | median over sizes of (max/min round median) | worst size |
 |---|---|---|
