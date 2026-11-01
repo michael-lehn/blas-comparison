@@ -1,0 +1,30 @@
+date: 2026-11-01T11:11:35Z
+ProductName:		macOS
+ProductVersion:		26.6
+BuildVersion:		25G72
+Darwin 25.6.0 Darwin Kernel Version 25.6.0: Sat Jul 11 15:26:12 PDT 2026; root:xnu-12377.161.13~4/RELEASE_ARM64_T8142 arm64
+machdep.cpu.brand_string: Apple M5
+hw.model: Mac17,4
+hw.memsize: 34359738368
+hw.pagesize: 16384
+hw.cachelinesize: 128
+hw.perflevel0.physicalcpu: 4
+hw.perflevel1.physicalcpu: 6
+hw.perflevel0.l1dcachesize: 131072
+hw.perflevel0.l2cachesize: 16777216
+hw.perflevel1.l1dcachesize: 65536
+hw.perflevel1.l2cachesize: 6291456
+hw.optional.arm.FEAT_SME: 1
+hw.optional.arm.FEAT_SME2: 1
+hw.optional.arm.FEAT_SME_F64F64: 1
+hw.optional.arm.sme_max_svl_b: 64
+power: Now drawing from 'Battery Power'  -InternalBattery-0 (id=5439587)	94%; discharging; 5:03 remaining present: true 
+ lowpowermode         0
+apple clang: Apple clang version 21.0.0 (clang-2100.3.34.2)
+julia: julia version 1.13.3
+PureBLAS rev: repo-rev = "512283276b55aa70fe59d91f98f260eba0e8244c"
+UlmBLAS rev: repo-rev = "c67e43196d621d45c3578e8ce2c1f8917284318c"
+BLIS PR #921: 235ef8ec097c43ab8299c89071af1b5b5e180843
+Homebrew OpenBLAS: openblas 0.3.34
+ulmBLAS artifact sha256: 523bf75ca5fe7ced0e182285497c2b9408480265ef138832d307e190a3fc3167
+other long-running processes at record time: removed; see docs/METHODOLOGY.md

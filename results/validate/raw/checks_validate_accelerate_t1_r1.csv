@@ -1,0 +1,4 @@
+campaign,backend,threads,round,pid,position,n,input_crc,method,entry_ratio,freivalds_ratio,hasnan,ok,repeat_identical,c11,c_sum,sme_calls_first
+validate,accelerate,1,1,2929,1,100,d362a8d7,full,0.0225,0.0030,false,true,true,0.35478776919208016,-42.934082229494251,
+validate,accelerate,1,1,2929,2,4000,dc79ffdd,entries2000+freivalds,0.0007,0.0000,false,true,true,12.26065568751905,-23267.789024231402,
+validate,accelerate,1,1,2929,3,1000,68d51599,entries2000+freivalds,0.0021,0.0001,false,true,true,-0.22313887229218943,1177.789880548888,

@@ -1,0 +1,257 @@
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.13.3"
+manifest_format = "2.1"
+project_hash = "7981ffdcfab59c081fde2324e2cf379415a99e25"
+
+[[deps.Artifacts]]
+uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+version = "1.11.0"
+
+[[deps.Base64]]
+uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+version = "1.11.0"
+
+[[deps.BlasComparison]]
+deps = ["CRC32c", "Dates", "Libdl", "LinearAlgebra", "OpenBLAS_jll", "Printf", "PureBLAS", "Random", "Statistics", "UlmBLAS", "blis_jll"]
+path = "."
+uuid = "7a3d6c52-1f0e-4f6b-9a7e-3c1b2d4e5f60"
+version = "0.1.0"
+
+[[deps.CPUSummary]]
+deps = ["CpuId", "IfElse", "PrecompileTools", "Preferences", "Static"]
+git-tree-sha1 = "f3a21d7fc84ba618a779d1ed2fcca2e682865bab"
+registries = "General"
+uuid = "2a0fbf3d-bb9c-48f3-b0a9-814d99fd7ab9"
+version = "0.2.7"
+
+[[deps.CRC32c]]
+uuid = "8bf52ea8-c179-5cab-976a-9e18b702a9bc"
+version = "1.11.0"
+
+[[deps.CommonWorldInvalidations]]
+deps = ["PrecompileTools"]
+git-tree-sha1 = "7c4ea0adfb7238bf4678aa36325863fab6163f6f"
+registries = "General"
+uuid = "f70d9fcc-98c5-4d4a-abd7-e4cdeebd8ca8"
+version = "1.2.2"
+
+[[deps.CompilerSupportLibraries_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
+version = "1.5.5+2"
+
+[[deps.CpuId]]
+deps = ["Markdown", "PrecompileTools"]
+git-tree-sha1 = "5dbd5150b96f29553fc3b553c6bfb0eadf7ac204"
+registries = "General"
+uuid = "adafc99b-e345-5852-983c-f28acb93d879"
+version = "0.3.3"
+
+[[deps.Dates]]
+deps = ["Printf"]
+uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
+version = "1.11.0"
+
+[[deps.IfElse]]
+git-tree-sha1 = "debdd00ffef04665ccbb3e150747a77560e8fad1"
+registries = "General"
+uuid = "615f187c-cbe4-4ef1-ba3b-2fcf58d6d173"
+version = "0.1.1"
+
+[[deps.InteractiveUtils]]
+deps = ["Markdown"]
+uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+version = "1.11.0"
+
+[[deps.JLLWrappers]]
+deps = ["Artifacts", "Preferences"]
+git-tree-sha1 = "7204148362dafe5fe6a273f855b8ccbe4df8173e"
+registries = "General"
+uuid = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
+version = "1.8.0"
+
+[[deps.JuliaSyntaxHighlighting]]
+deps = ["StyledStrings"]
+uuid = "ac6e5ff7-fb65-4e79-a425-ec3bc9c03011"
+version = "1.12.0"
+
+[[deps.LLVMOpenMP_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl"]
+git-tree-sha1 = "e5b100780d4d30d63b4618d7930d48af409c1772"
+registries = "General"
+uuid = "1d63c593-3942-5779-bab2-d838dc0a180e"
+version = "23.1.1+0"
+
+[[deps.Libdl]]
+uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+version = "1.11.0"
+
+[[deps.LinearAlgebra]]
+deps = ["Libdl", "OpenBLAS_jll", "libblastrampoline_jll"]
+uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+version = "1.13.0"
+
+[[deps.Markdown]]
+deps = ["Base64", "JuliaSyntaxHighlighting", "StyledStrings"]
+uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+version = "1.11.0"
+
+[[deps.OpenBLAS_jll]]
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
+uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
+version = "0.3.30+0"
+
+[[deps.PrecompileTools]]
+deps = ["Preferences"]
+git-tree-sha1 = "edbeefc7a4889f528644251bdb5fc9ab5348bc2c"
+registries = "General"
+uuid = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
+version = "1.3.4"
+
+[[deps.Preferences]]
+deps = ["TOML"]
+git-tree-sha1 = "aef1987d90dcc2e2cbd919ad10b2d25bcce4f418"
+registries = "General"
+uuid = "21216c6a-2e73-6563-6e65-726566657250"
+version = "1.6.1"
+
+[[deps.Printf]]
+deps = ["Unicode"]
+uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+version = "1.11.0"
+
+[[deps.PureBLAS]]
+deps = ["CPUSummary", "CpuId", "LinearAlgebra", "PrecompileTools", "Preferences", "SIMD", "StrictMode", "TypeContracts"]
+git-tree-sha1 = "3fdc5a05fbd5f26862a9c00c8903a9175e92d196"
+repo-rev = "512283276b55aa70fe59d91f98f260eba0e8244c"
+repo-url = "https://github.com/el-oso/PureBLAS.jl"
+uuid = "cc9e14db-574f-4602-bf53-1167cc4b26d2"
+version = "0.1.2"
+
+    [deps.PureBLAS.extensions]
+    PureBLASForwardDiffExt = "ForwardDiff"
+
+    [deps.PureBLAS.weakdeps]
+    ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+
+[[deps.Random]]
+deps = ["SHA"]
+uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+version = "1.11.0"
+
+[[deps.SHA]]
+uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+version = "1.0.0"
+
+[[deps.SIMD]]
+deps = ["PrecompileTools"]
+git-tree-sha1 = "37ac518b3c924f110d82d50173eaf4ebeaf27ad7"
+registries = "General"
+uuid = "fdea26ae-647d-5447-a871-4b548cad5224"
+version = "3.8.1"
+
+[[deps.SciMLPublic]]
+deps = ["PrecompileTools"]
+git-tree-sha1 = "74685afb51732a464fbce79a72708f7c4203ceb7"
+registries = "General"
+uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
+version = "1.3.0"
+
+[[deps.Serialization]]
+uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+version = "1.11.0"
+
+[[deps.Static]]
+deps = ["CommonWorldInvalidations", "IfElse", "PrecompileTools", "SciMLPublic"]
+git-tree-sha1 = "474a5283ad435618090122872eea6a8165ea6bcf"
+registries = "General"
+uuid = "aedffcd0-7271-4cad-89d0-dc628f76c6d3"
+version = "1.4.6"
+
+[[deps.Statistics]]
+deps = ["LinearAlgebra"]
+git-tree-sha1 = "e2b53ce13a53367e96601081e33d34746b571bad"
+registries = "General"
+uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+version = "1.11.5"
+
+    [deps.Statistics.extensions]
+    SparseArraysExt = ["SparseArrays"]
+
+    [deps.Statistics.weakdeps]
+    SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[[deps.StrictMode]]
+deps = ["InteractiveUtils", "PrecompileTools", "Preferences", "Serialization", "TOML", "TypeContracts"]
+git-tree-sha1 = "0cb0fd7b7ebcca0fe9d2bfe327895465f6a13bbd"
+registries = "General"
+uuid = "0e98b4f4-d0e6-42ac-af0a-707c24852f32"
+version = "0.5.5"
+
+    [deps.StrictMode.extensions]
+    StrictModeCpuIdExt = "CpuId"
+    StrictModeCthulhuExt = "Cthulhu"
+    StrictModeMcaExt = "LLVM_full_jll"
+    StrictModeReviseExt = "Revise"
+
+    [deps.StrictMode.weakdeps]
+    CpuId = "adafc99b-e345-5852-983c-f28acb93d879"
+    Cthulhu = "f68482b8-f384-11e8-15f7-abe071a5a75f"
+    LLVM_full_jll = "a3ccf953-465e-511d-b87f-60a6490c289d"
+    Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+
+[[deps.StyledStrings]]
+uuid = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
+version = "1.11.0"
+
+[[deps.TOML]]
+deps = ["Dates"]
+uuid = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+version = "1.0.3"
+
+[[deps.TypeContracts]]
+deps = ["InteractiveUtils"]
+git-tree-sha1 = "3174673bc819304060faf286a8a58b6b8bb9a269"
+registries = "General"
+uuid = "c7a3f1e2-84b5-4d69-9e0a-1f2b3c4d5e6f"
+version = "0.14.5"
+
+    [deps.TypeContracts.extensions]
+    TypeContractsDocumenterExt = ["Documenter", "Markdown"]
+    TypeContractsREPLExt = "REPL"
+    TypeContractsReviseExt = "Revise"
+
+    [deps.TypeContracts.weakdeps]
+    Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+    Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+    REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+    Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+
+[[deps.UlmBLAS]]
+deps = ["Artifacts", "Libdl", "LinearAlgebra"]
+git-tree-sha1 = "501e7fbdb0695eee43fd34823e7501383849f6ff"
+repo-rev = "c67e43196d621d45c3578e8ce2c1f8917284318c"
+repo-url = "https://github.com/michael-lehn/UlmBLAS.jl"
+uuid = "cd55841f-6472-4438-97d9-4c2d8eed3a6b"
+version = "0.1.0"
+
+[[deps.Unicode]]
+uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+version = "1.11.0"
+
+[[deps.blis_jll]]
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LLVMOpenMP_jll", "Libdl"]
+git-tree-sha1 = "a38da58a1646562191bb6601c7a5e5c61fbfc0ec"
+registries = "General"
+uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+version = "2.0.0+2"
+
+[[deps.libblastrampoline_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "8e850b90-86db-534c-a0d3-1478176c7d93"
+version = "5.15.0+0"
+
+[registries.General]
+url = "https://github.com/JuliaRegistries/General.git"
+uuid = "23338594-aafe-5451-b93e-139f81909106"

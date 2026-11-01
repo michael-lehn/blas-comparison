@@ -1,0 +1,21 @@
+2026-11-01 12:07:56 campaign validate rounds=1 threads=1 backends=pureblas_native,pureblas_lbt,ulmblas,openblas,openblas_brew,accelerate,blis_jll,blis_pr921 power: Now drawing from 'Battery Power'
+2026-11-01 12:07:56 round 1 order accelerate,blis_jll,ulmblas,blis_pr921,pureblas_lbt,openblas_brew,openblas,pureblas_native
+2026-11-01 12:07:56 thermal guard: state fair, waiting
+2026-11-01 12:08:26 thermal guard: nominal after 30 s
+2026-11-01 12:08:29 start validate_accelerate_t1_r1 thermal=nominal load={ 5.80 5.87 4.71 } top=99.7 <process> 23.5 <process> 17.0 <process>
+2026-11-01 12:08:35 done  validate_accelerate_t1_r1 in 6 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:08:38 start validate_blis_jll_t1_r1 thermal=nominal load={ 5.52 5.81 4.70 } top=99.3 <process> 24.9 <process> 16.3 <process>
+2026-11-01 12:08:52 done  validate_blis_jll_t1_r1 in 14 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:08:55 start validate_ulmblas_t1_r1 thermal=nominal load={ 5.56 5.80 4.72 } top=99.0 <process> 82.9 <process> 28.5 <process>
+2026-11-01 12:09:01 done  validate_ulmblas_t1_r1 in 5 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:09:04 start validate_blis_pr921_t1_r1 thermal=nominal load={ 5.08 5.69 4.69 } top=100.0 <process> 93.6 <process> 15.9 <process>
+2026-11-01 12:09:09 done  validate_blis_pr921_t1_r1 in 6 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:09:12 start validate_pureblas_lbt_t1_r1 thermal=nominal load={ 5.06 5.67 4.70 } top=99.8 <process> 20.9 <process> 9.1 <process>
+2026-11-01 12:09:22 done  validate_pureblas_lbt_t1_r1 in 10 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:09:25 start validate_openblas_brew_t1_r1 thermal=nominal load={ 4.91 5.62 4.69 } top=100.0 <process> 28.3 <process> 14.6 <process>
+2026-11-01 12:09:40 done  validate_openblas_brew_t1_r1 in 15 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:09:43 start validate_openblas_t1_r1 thermal=nominal load={ 4.66 5.52 4.68 } top=98.8 <process> 34.7 <process> 13.6 <process>
+2026-11-01 12:09:58 done  validate_openblas_t1_r1 in 15 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:10:01 start validate_pureblas_native_t1_r1 thermal=nominal load={ 4.53 5.45 4.66 } top=100.0 <process> 29.2 <process> 16.4 <process>
+2026-11-01 12:10:07 done  validate_pureblas_native_t1_r1 in 6 s thermal=nominal power: Now drawing from 'Battery Power'
+2026-11-01 12:10:07 campaign finished
