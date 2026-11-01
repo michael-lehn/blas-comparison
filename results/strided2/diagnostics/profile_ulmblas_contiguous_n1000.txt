@@ -1,0 +1,37 @@
+# ulmblas contiguous n=1000, 831 calls, 1 ms sampling; flat, self and total sample counts
+ Count  Overhead File                                                                    Line Function
+ =====  ======== ====                                                                    ==== ========
+    66        66 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS3sme15pack_A_colmajorEllPKdlPd
+    90         0 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS8gepack_BIlddEEvT_S1_bPKT0_S1_S1_PT1_
+    90        90 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS3sme15pack_B_colmajorEllPKdlPd
+  2426      2425 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS3sme21ugemm_32x16_streamingEldPKdS2_dPdlll
+  2586         0 @juliasrc/jlapi.c                                                      1152 jl_repl_entrypoint
+  2586         0 @juliasrc/jlapi.c                                                       985 true_main
+  2586         0 @juliasrc/julia.h                                                      2319 jl_apply
+  2586         0 @julialib/julia/sys.dylib                                                 ? jfptr__start_51249.1
+  2586         0 @Base/client.jl                                                         577 _start()
+  2586         0 @Base/client.jl                                                         344 exec_options(opts::Base.JLOptions)
+  2586         0 @Base/Base.jl                                                           309 include(mod::Module, _path::String)
+  2586         0 @Base/loading.jl                                                       3124 _include(mapexpr::Function, mod::Module, _path::String)
+  2586         0 @Base/loading.jl                                                       3064 include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+  2586         0 @Base/boot.jl                                                           489 eval(m::Module, e::Any)
+  2586         0 @juliasrc/toplevel.c                                                    799 ijl_toplevel_eval_in
+  2586         0 @juliasrc/toplevel.c                                                    754 ijl_toplevel_eval
+  2586         0 @juliasrc/toplevel.c                                                    683 jl_toplevel_eval_flex
+  2586         0 @juliasrc/toplevel.c                                                    585 jl_eval_toplevel_stmts
+  2586         0 @juliasrc/toplevel.c                                                    742 jl_toplevel_eval_flex
+  2586         0 @juliasrc/interpreter.c                                                 884 jl_interpret_toplevel_thunk
+  2586         0 @juliasrc/interpreter.c                                                 675 eval_body
+  2586         0 @juliasrc/interpreter.c                                                 194 eval_stmt_value
+  2586         0 @juliasrc/interpreter.c                                                 123 do_call
+  2586         0 [any unknown stackframes]
+  2586         0 @BlasComparison/scripts/strided_diagnostics.jl                           81 main()
+  2586         0 @Profile/src/Profile.jl                                                  60 macro expansion
+  2586         0 @BlasComparison/scripts/strided_diagnostics.jl                           81 macro expansion
+  2586         0 @BlasComparison/scripts/strided_diagnostics.jl                           16 entry!(C::Matrix{Float64}, A::Matrix{Float64}, B::Matrix{Float64})
+  2586         0 @UlmBLAS/src/strided.jl                                                 108 mul!
+  2586         0 @UlmBLAS/src/strided.jl                                                 123 mul!(C::Matrix{Float64}, A::Matrix{Float64}, B::Matrix{Float64}, α::Bool, β::Bool)
+  2586         0 @UlmBLAS/src/strided.jl                                                  56 gemm_strided!
+  2586         0 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? ulmblas_dgemm_strided
+  2586         0 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS4gemmIldddddEEvT_S1_S1_RKT0_bPKT1_S1_S1_bPKT2_S1_S1_RKT3_PT4_S1_S1_
+Total snapshots: 2586. Utilization: 100% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

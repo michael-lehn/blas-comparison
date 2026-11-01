@@ -3,3 +3,4 @@
 __pycache__/
 .DS_Store
 LocalPreferences.toml
+!scripts/prefs_neon/LocalPreferences.toml

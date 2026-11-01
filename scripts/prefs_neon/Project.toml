@@ -1,0 +1,3 @@
+# Load-path layer for the backend pureblas_neon: PureBLAS's own compile-time switch for its SME kernels.
+[extras]
+PureBLAS = "cc9e14db-574f-4602-bf53-1167cc4b26d2"

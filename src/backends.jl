@@ -1,7 +1,7 @@
 # Backend selection.  Every backend reports what actually runs; a mismatch is an error, never a
 # fallback.  LBT backends are all called the same way: LinearAlgebra.BLAS.gemm! -> dgemm_64_ (ILP64).
 const BACKENDS = ("pureblas_native", "pureblas_lbt", "ulmblas", "openblas", "openblas_brew",
-                  "accelerate", "blis_jll", "blis_pr921")
+                  "accelerate", "blis_jll", "blis_pr921", "pureblas_neon")
 
 const ACCELERATE = "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate"
 const ACCSUFFIX  = "\$NEWLAPACK\$ILP64"
@@ -32,7 +32,7 @@ function setup_backend(name::AbstractString, threads::Int; native_call = nothing
     sme_calls = () -> missing
     call! = lbt_gemm!
     info["call_path"] = "LinearAlgebra.BLAS.gemm! -> LBT -> dgemm (ILP64)"
-    if name == "pureblas_native" || name == "pureblas_lbt"
+    if name == "pureblas_native" || name == "pureblas_lbt" || name == "pureblas_neon"
         pb = Base.require(Main, :PureBLAS)
         Base.invokelatest(pb.set_num_threads, threads)
         info["library"] = "PureBLAS.jl (pure Julia, JIT on this host)"
@@ -43,6 +43,9 @@ function setup_backend(name::AbstractString, threads::Int; native_call = nothing
             info[string(s)] = getproperty(pb, s)
         end
         sme_calls = () -> Base.invokelatest(() -> pb._SME_CALLS[])
+        # pureblas_neon: PureBLAS with its own switch sme_f64 = false (scripts/prefs_neon, set by campaign.jl)
+        (name == "pureblas_neon") == !info["sme_detected"] ||
+            error("$name with _SME_F64 = $(info["sme_detected"]): wrong preference environment")
         if name == "pureblas_lbt"
             Base.invokelatest(pb.activate)
             Base.invokelatest(pb.is_active) || error("PureBLAS.activate() did not take effect")

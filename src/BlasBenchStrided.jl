@@ -52,6 +52,7 @@ function measure!(f!, sme_calls, n; campaign, backend, threads, round, position,
     Cm = Matrix(C)
     v = verify_product(Cm, A0, B0, rng)
     intact = gaps_intact(PC)
+    PC[1:2:2n, :] == Cm || error("the result is not in the parent of C: a copy was written")
     c11 = Cm[1, 1]; csum = sum(Cm)
 
     t0 = time_ns(); wcalls = 0

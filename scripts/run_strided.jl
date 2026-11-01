@@ -1,7 +1,7 @@
 # One backend, row stride 2, one process.  Started by scripts/campaign.jl script=run_strided.jl.
 # Calls: UlmBLAS.mul!(C, A, B) -> ulmblas_dgemm_strided; PureBLAS.gemm!(C, A, B).  Neither goes through
 # LBT: LinearAlgebra.BLAS rejects a row stride other than 1.
-using Random, InteractiveUtils, LinearAlgebra
+using Random, LinearAlgebra
 pushfirst!(LOAD_PATH, joinpath(@__DIR__, "..", "src"))
 const ARG = Dict(split(a, '=', limit = 2)[1] => split(a, '=', limit = 2)[2] for a in ARGS)
 const backend = ARG["backend"]
@@ -37,16 +37,15 @@ function setup(threads)
         meta["_strided1(view)"] = pb._strided1(A)
         pb._strided1(A) && error("expected _strided1(view) == false")
         pb.gemm!(C, A, B)
-        # which methods were compiled for this operand type: the route that was actually taken
-        T = typeof(A)
-        routes = Dict{String,Bool}()
-        for name in (:_gemm_generic!, :_gemm_core_body!, :_gemm_blocked!, :_gemm_sme!, :_gemm_unpacked!)
-            f = getproperty(pb, name)
-            routes[string(name)] = any(m -> any(mi -> mi !== nothing && any(t -> t === T, Base.unwrap_unionall(mi.specTypes).parameters),
-                                                Base.specializations(m)), methods(f))
-        end
-        meta["routes_specialized_for_view_type"] = routes
-        routes["_gemm_generic!"] || error("generic path was not specialized for the view")
+        # Route, from run-time evidence.  (A list of compiled specializations proves nothing: the compiler
+        # also compiles the branches that the stride test rejects at run time.)  The gate of gemm! and of
+        # _gemm_core_body! is _strided1(C), false here; the kernel counter must not move; and the method
+        # receives the SubArray itself.  Profiles in results/strided2/diagnostics name the frames.
+        s0 = pb._SME_CALLS[]
+        pb.gemm!(C, A, B)
+        pb._SME_CALLS[] == s0 || error("the SME kernel ran on a stride-2 C")
+        meta["sme_kernel_calls_for_stride2_C"] = 0
+        meta["method"] = string(which(pb.gemm!, (typeof(C), typeof(A), typeof(B))))
         return pb_gemm!, meta, () -> pb._SME_CALLS[]
     else
         um = Main.UlmBLAS

@@ -1,9 +1,8 @@
 # Runs a measurement campaign: one Julia process per (backend, round), backends in a random order per
 # round, matrix sizes in a random order per process, thermal guard and pause between processes.
 #   .local/bin/julia scripts/campaign.jl campaign=NAME sizes=50:50:4000 rounds=5 samples=7 threads=1 \
-#        backends=a,b,c [min_sample=0.05] [warmup=0.1] [fresh=0] [seed=20261101] [per_size=0]
+#        backends=a,b,c [min_sample=0.05] [warmup=0.1] [fresh=0] [seed=20261101] [script=run_one.jl] [max_load=5]
 # Finished (backend, round) pairs are skipped, so an interrupted campaign can be continued.
-# per_size=1: one process per (backend, round, size).
 using Random
 const ARG = Dict(split(a, '=', limit = 2)[1] => split(a, '=', limit = 2)[2] for a in ARGS)
 const ROOT = abspath(joinpath(@__DIR__, ".."))
@@ -11,7 +10,7 @@ const JULIA = joinpath(ROOT, ".local", "bin", "julia")
 const THERMAL = joinpath(ROOT, ".local", "bin", "thermal")
 campaign = ARG["campaign"]; rounds = parse(Int, get(ARG, "rounds", "5")); threads = parse(Int, get(ARG, "threads", "1"))
 backends = String.(split(ARG["backends"], ',')); seed = parse(Int, get(ARG, "seed", "20261101"))
-perSize = get(ARG, "per_size", "0") == "1"
+maxload = parse(Float64, get(ARG, "max_load", "5"))
 out = joinpath(ROOT, "results", campaign, "raw"); mkpath(out)
 logf = open(joinpath(ROOT, "results", campaign, "campaign.log"), "a")
 log(s...) = (msg = string(Libc.strftime("%F %T", time()), " ", s...); println(msg); println(logf, msg); flush(logf); flush(stdout))
@@ -26,8 +25,20 @@ function wait_nominal()
 end
 function env_for(b)
     t = string(threads)
-    return ("OPENBLAS_NUM_THREADS" => t, "VECLIB_MAXIMUM_THREADS" => t, "BLIS_NUM_THREADS" => t,
+    prefs = b == "pureblas_neon" ? ("JULIA_LOAD_PATH" => "@:" * joinpath(ROOT, "scripts", "prefs_neon") * ":@stdlib",) : ()
+    return (prefs..., "OPENBLAS_NUM_THREADS" => t, "VECLIB_MAXIMUM_THREADS" => t, "BLIS_NUM_THREADS" => t,
             "OMP_NUM_THREADS" => t, "JULIA_NUM_THREADS" => t, "JULIA_DEPOT_PATH" => joinpath(ROOT, ".local", "depot"))
+end
+# Other users of the machine: do not start a process while the 1-minute load is high.  Waits at most 30 min,
+# then starts anyway and logs it; the scalar anchor in each sample records what happened during the run.
+load1() = parse(Float64, split(strip(read(`sysctl -n vm.loadavg`, String)))[2])
+function wait_quiet()
+    t0 = time()
+    while load1() > maxload
+        time() - t0 > 1800 && (log("load guard: gave up at load ", load1()); return)
+        log("load guard: load ", load1(), ", waiting"); sleep(30)
+    end
+    time() - t0 > 1 && log("load guard: quiet after ", round(Int, time() - t0), " s")
 end
 sizes_all = get(ARG, "sizes", "50:50:4000")
 log("campaign ", campaign, " rounds=", rounds, " threads=", threads, " backends=", join(backends, ","), " power: ", power())
@@ -38,7 +49,7 @@ for r in 1:rounds
         tag = "$(campaign)_$(b)_t$(threads)_r$(r)"
         done = joinpath(out, tag * ".done")
         isfile(done) && continue
-        wait_nominal(); sleep(3)
+        wait_quiet(); wait_nominal(); sleep(3)
         load = strip(read(`sysctl -n vm.loadavg`, String))
         top = strip(read(pipeline(`ps -Ao pcpu,comm -r`, `sed -n 2,4p`), String))
         log("start ", tag, " thermal=", state(), " load=", load, " top=", replace(top, r"\s+" => " "))

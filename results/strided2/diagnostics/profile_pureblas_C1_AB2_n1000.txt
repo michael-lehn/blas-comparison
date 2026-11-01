@@ -1,0 +1,67 @@
+# pureblas C1_AB2 n=1000, 101 calls, 1 ms sampling; flat, self and total sample counts
+ Count  Overhead File                                             Line Function
+ =====  ======== ====                                             ==== ========
+     6         0 @Base/abstractarray.jl                          1398 _to_linear_index
+     6         0 @Base/abstractarray.jl                          3074 _sub2ind
+     6         0 @Base/abstractarray.jl                           102 axes
+     6         6 @Base/essentials.jl                               10 size
+     6         6 @Base/essentials.jl                              975 getindex
+    12         0 @PureBLAS/src/blas3/gemm.jl                      474 _pack_A!(Ap::Vector{Float64}, A::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, fal…
+    12         0 @Base/subarray.jl                                311 getindex
+    12         0 @Base/array.jl                                   963 getindex
+    12        12 @PureBLAS/src/blas3/gemm.jl                      478 _pack_A!(Ap::Vector{Float64}, A::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, fal…
+    23         1 @PureBLAS/src/blas3/gemm.jl                      479 _pack_A!(Ap::Vector{Float64}, A::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, fal…
+    28         0 @PureBLAS/src/blas3/gemm.jl                      902 _gemm_blocked!(tA::Bool, tB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::SubArray{Float64, 2, Matrix{Float64}, Tu…
+    28         0 @PureBLAS/src/blas3/gemm.jl                      507 _pack_B!
+    28         0 @PureBLAS/src/blas3/gemm.jl                      529 _pack_B_val!(Bp::Vector{Float64}, B::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}},…
+    28         0 @Base/simdloop.jl                                 77 macro expansion
+    28         0 @PureBLAS/src/blas3/gemm.jl                      530 macro expansion
+    31         0 @SIMD/src/simdvec.jl                              20 Vec
+    31         0 @SIMD/src/simdvec.jl                              15 constantvector
+    31         0 @SIMD/src/LLVM_intrinsics.jl                     851 constantvector
+    31        31 @SIMD/src/LLVM_intrinsics.jl                     859 macro expansion
+    52         0 @PureBLAS/src/blas3/gemm.jl                      476 _pack_A!(Ap::Vector{Float64}, A::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, fal…
+    60        60 @PureBLAS/src/blas3/gemm.jl                        ? _pack_A!(Ap::Vector{Float64}, A::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, fal…
+    74         0 @SIMD/src/simdvec.jl                             463 muladd
+    74         0 @SIMD/src/LLVM_intrinsics.jl                     459 fmuladd
+    74        74 @SIMD/src/LLVM_intrinsics.jl                     463 macro expansion
+    80         0 @Base/array.jl                                  1020 setindex!
+    80        80 @Base/array.jl                                  1025 _setindex!
+   159         0 @PureBLAS/src/blas3/gemm.jl                      775 _blocked_pc_sweep!(::Val{true}, ::Val{false}, Cp0::Ptr{Float64}, App::Ptr{Float64}, Bpp::Ptr{Float64}, Bp0::Ptr{Float64}, Ap…
+  1071      1071 @Base/pointer.jl                                 151 unsafe_load
+  1180         0 @PureBLAS/src/blas3/gemm.jl                      104 macro expansion
+  1209      1208 @Base/promotion.jl                               641 ==
+  1215         6 @PureBLAS/src/blas3/gemm.jl                      119 macro expansion
+  1231        22 @Base/range.jl                                   928 iterate
+  2397         0 @PureBLAS/src/blas3/gemm.jl                      818 _blocked_pc_sweep!(::Val{true}, ::Val{false}, Cp0::Ptr{Float64}, App::Ptr{Float64}, Bpp::Ptr{Float64}, Bp0::Ptr{Float64}, Ap…
+  2397         0 @PureBLAS/src/blas3/gemm.jl                      142 _microkernel!(C::Ptr{Float64}, ldc::Int64, Ap::Ptr{Float64}, Bp::Ptr{Float64}, kc::Int64, ::Val{2}, ::Val{8}, ::Val{true})
+  2557         0 @PureBLAS/src/blas3/gemm.jl                      918 _gemm_blocked!(tA::Bool, tB::Bool, m::Int64, n::Int64, k::Int64, alpha::Float64, A::SubArray{Float64, 2, Matrix{Float64}, Tu…
+  2585         0 @juliasrc/jlapi.c                               1152 jl_repl_entrypoint
+  2585         0 @juliasrc/jlapi.c                                985 true_main
+  2585         0 @juliasrc/julia.h                               2319 jl_apply
+  2585         0 @julialib/julia/sys.dylib                          ? jfptr__start_51249.1
+  2585         0 @Base/client.jl                                  577 _start()
+  2585         0 @Base/client.jl                                  344 exec_options(opts::Base.JLOptions)
+  2585         0 @Base/Base.jl                                    309 include(mod::Module, _path::String)
+  2585         0 @Base/loading.jl                                3124 _include(mapexpr::Function, mod::Module, _path::String)
+  2585         0 @Base/loading.jl                                3064 include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+  2585         0 @Base/boot.jl                                    489 eval(m::Module, e::Any)
+  2585         0 @juliasrc/toplevel.c                             799 ijl_toplevel_eval_in
+  2585         0 @juliasrc/toplevel.c                             754 ijl_toplevel_eval
+  2585         0 @juliasrc/toplevel.c                             683 jl_toplevel_eval_flex
+  2585         0 @juliasrc/toplevel.c                             585 jl_eval_toplevel_stmts
+  2585         0 @juliasrc/toplevel.c                             742 jl_toplevel_eval_flex
+  2585         0 @juliasrc/interpreter.c                          884 jl_interpret_toplevel_thunk
+  2585         0 @juliasrc/interpreter.c                          675 eval_body
+  2585         0 @juliasrc/interpreter.c                          194 eval_stmt_value
+  2585         0 @juliasrc/interpreter.c                          123 do_call
+  2585         0 @BlasComparison/scripts/strided_diagnostics.jl    81 main()
+  2585         0 @Profile/src/Profile.jl                           60 macro expansion
+  2585         0 @BlasComparison/scripts/strided_diagnostics.jl    81 macro expansion
+  2585         0 @BlasComparison/scripts/strided_diagnostics.jl    16 entry!(C::Matrix{Float64}, A::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, false}…
+  2585         0 @PureBLAS/src/blas3/gemm.jl                     6014 gemm!
+  2585         0 @PureBLAS/src/blas3/gemm.jl                     6105 gemm!(C::Matrix{Float64}, A::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, false},…
+  2585         0 @PureBLAS/src/blas3/gemm.jl                     3597 _gemm_core!
+  2585         0 @PureBLAS/src/blas3/gemm.jl                     3810 _gemm_core_body!
+  2587         2 [any unknown stackframes]
+Total snapshots: 2587. Utilization: 100% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

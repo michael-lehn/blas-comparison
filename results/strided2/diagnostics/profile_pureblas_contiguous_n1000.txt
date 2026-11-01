@@ -1,0 +1,43 @@
+# pureblas contiguous n=1000, 750 calls, 1 ms sampling; flat, self and total sample counts
+ Count  Overhead File                                                                     Line Function
+ =====  ======== ====                                                                     ==== ========
+    66        66 @Base/pointer.jl                                                         151 unsafe_load
+   104         0 @PureBLAS/src/blas3/sme_kernel.jl                                        795 _sme_gemm!(C::Ptr{Float64}, ldc::Int64, A::Ptr{Float64}, lda::Int64, B::Ptr{Float64}, ldb::Int64, m::Int64, n::Int64, k::I…
+   104         0 @PureBLAS/src/blas3/sme_kernel.jl                                        429 _sme_packb!
+   127       127 @Base/pointer.jl                                                         178 unsafe_store!
+   189         0 @PureBLAS/src/blas3/sme_kernel.jl                                        470 _sme_pack_A!(Ap::Ptr{Float64}, A::Ptr{Float64}, lda::Int64, ic::Int64, pc::Int64, mce::Int64, kce::Int64, kpad::Int64, alp…
+   193         0 @PureBLAS/src/blas3/sme_kernel.jl                                        816 _sme_gemm!(C::Ptr{Float64}, ldc::Int64, A::Ptr{Float64}, lda::Int64, B::Ptr{Float64}, ldb::Int64, m::Int64, n::Int64, k::I…
+  2250         0 @PureBLAS/src/blas3/sme_kernel.jl                                        825 _sme_gemm!(C::Ptr{Float64}, ldc::Int64, A::Ptr{Float64}, lda::Int64, B::Ptr{Float64}, ldb::Int64, m::Int64, n::Int64, k::I…
+  2250         0 @PureBLAS/src/blas3/sme_kernel.jl                                        315 _sme_macro!
+  2547         0 @PureBLAS/src/blas3/gemm.jl                                             6105 gemm!(C::Matrix{Float64}, A::Matrix{Float64}, B::Matrix{Float64}; alpha::Float64, beta::Float64, transA::Char, transB::Cha…
+  2547         0 @PureBLAS/src/blas3/gemm.jl                                             3597 _gemm_core!
+  2547         0 @PureBLAS/src/blas3/gemm.jl                                             3741 _gemm_core_body!
+  2547         0 @PureBLAS/src/blas3/sme_kernel.jl                                       2851 _gemm_sme!(C::Matrix{Float64}, A::Matrix{Float64}, B::Matrix{Float64}, alpha::Float64, beta::Float64, m::Int64, n::Int64, …
+  2547         0 @BlasComparison/.local/depot/compiled/v1.13/PureBLAS/ZtEIz_yWbzL.dylib     ? jlcapi__sme_entry_cabi_255642
+  2547         0 @PureBLAS/src/blas3/sme_kernel.jl                                        894 _sme_entry_cabi(C::Ptr{Float64}, ldc::Int64, A::Ptr{Float64}, lda::Int64, B::Ptr{Float64}, ldb::Int64, m::Int64, n::Int64,…
+  2548         0 @juliasrc/jlapi.c                                                       1152 jl_repl_entrypoint
+  2548         0 @juliasrc/jlapi.c                                                        985 true_main
+  2548         0 @juliasrc/julia.h                                                       2319 jl_apply
+  2548         0 @julialib/julia/sys.dylib                                                  ? jfptr__start_51249.1
+  2548         0 @Base/client.jl                                                          577 _start()
+  2548         0 @Base/client.jl                                                          344 exec_options(opts::Base.JLOptions)
+  2548         0 @Base/Base.jl                                                            309 include(mod::Module, _path::String)
+  2548         0 @Base/loading.jl                                                        3124 _include(mapexpr::Function, mod::Module, _path::String)
+  2548         0 @Base/loading.jl                                                        3064 include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+  2548         0 @Base/boot.jl                                                            489 eval(m::Module, e::Any)
+  2548         0 @juliasrc/toplevel.c                                                     799 ijl_toplevel_eval_in
+  2548         0 @juliasrc/toplevel.c                                                     754 ijl_toplevel_eval
+  2548         0 @juliasrc/toplevel.c                                                     683 jl_toplevel_eval_flex
+  2548         0 @juliasrc/toplevel.c                                                     585 jl_eval_toplevel_stmts
+  2548         0 @juliasrc/toplevel.c                                                     742 jl_toplevel_eval_flex
+  2548         0 @juliasrc/interpreter.c                                                  884 jl_interpret_toplevel_thunk
+  2548         0 @juliasrc/interpreter.c                                                  675 eval_body
+  2548         0 @juliasrc/interpreter.c                                                  194 eval_stmt_value
+  2548         0 @juliasrc/interpreter.c                                                  123 do_call
+  2548      2353 [any unknown stackframes]
+  2548         0 @BlasComparison/scripts/strided_diagnostics.jl                            81 main()
+  2548         0 @Profile/src/Profile.jl                                                   60 macro expansion
+  2548         0 @BlasComparison/scripts/strided_diagnostics.jl                            81 macro expansion
+  2548         0 @BlasComparison/scripts/strided_diagnostics.jl                            16 entry!(C::Matrix{Float64}, A::Matrix{Float64}, B::Matrix{Float64})
+  2548         0 @PureBLAS/src/blas3/gemm.jl                                             6014 gemm!
+Total snapshots: 2548. Utilization: 100% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.

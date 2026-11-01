@@ -1,0 +1,38 @@
+# ulmblas C2_AB2 n=1000, 555 calls, 1 ms sampling; flat, self and total sample counts
+ Count  Overhead File                                                                    Line Function
+ =====  ======== ====                                                                    ==== ========
+    98        10 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS5ugemmIlEEvT_S1_S1_RKdPS2_S4_S3_PdS1_S1_S4_S4_
+   127       127 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS8gepack_BIlddEEvT_S1_bPKT0_S1_S1_PT1_
+   239       239 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLASL9pack_MRxkILi1ElEEvT0_bPKdS1_S1_Pd
+  1872      1871 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS3sme21ugemm_32x16_streamingEldPKdS2_dPdlll
+  2114       330 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS5ugemmIldEEvT_RKT0_PS3_S5_S4_PS2_S1_S1_S5_S5_
+  2575         0 @juliasrc/jlapi.c                                                      1152 jl_repl_entrypoint
+  2575         0 @juliasrc/jlapi.c                                                       985 true_main
+  2575         0 @juliasrc/julia.h                                                      2319 jl_apply
+  2575         0 @julialib/julia/sys.dylib                                                 ? jfptr__start_51249.1
+  2575         0 @Base/client.jl                                                         577 _start()
+  2575         0 @Base/client.jl                                                         344 exec_options(opts::Base.JLOptions)
+  2575         0 @Base/Base.jl                                                           309 include(mod::Module, _path::String)
+  2575         0 @Base/loading.jl                                                       3124 _include(mapexpr::Function, mod::Module, _path::String)
+  2575         0 @Base/loading.jl                                                       3064 include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+  2575         0 @Base/boot.jl                                                           489 eval(m::Module, e::Any)
+  2575         0 @juliasrc/toplevel.c                                                    799 ijl_toplevel_eval_in
+  2575         0 @juliasrc/toplevel.c                                                    754 ijl_toplevel_eval
+  2575         0 @juliasrc/toplevel.c                                                    683 jl_toplevel_eval_flex
+  2575         0 @juliasrc/toplevel.c                                                    585 jl_eval_toplevel_stmts
+  2575         0 @juliasrc/toplevel.c                                                    742 jl_toplevel_eval_flex
+  2575         0 @juliasrc/interpreter.c                                                 884 jl_interpret_toplevel_thunk
+  2575         0 @juliasrc/interpreter.c                                                 675 eval_body
+  2575         0 @juliasrc/interpreter.c                                                 194 eval_stmt_value
+  2575         0 @juliasrc/interpreter.c                                                 123 do_call
+  2575         0 [any unknown stackframes]
+  2575         0 @BlasComparison/scripts/strided_diagnostics.jl                           81 main()
+  2575         0 @Profile/src/Profile.jl                                                  60 macro expansion
+  2575         0 @BlasComparison/scripts/strided_diagnostics.jl                           81 macro expansion
+  2575         0 @BlasComparison/scripts/strided_diagnostics.jl                           16 entry!(C::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, false},…
+  2575         0 @UlmBLAS/src/strided.jl                                                 108 mul!
+  2575         0 @UlmBLAS/src/strided.jl                                                 123 mul!(C::SubArray{Float64, 2, Matrix{Float64}, Tuple{StepRange{Int64, Int64}, UnitRange{Int64}}, false}, A…
+  2575         0 @UlmBLAS/src/strided.jl                                                  56 gemm_strided!
+  2575         0 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? ulmblas_dgemm_strided
+  2576         0 @BlasComparison/…df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib    ? _ZN7ulmBLAS4gemmIldddddEEvT_S1_S1_RKT0_bPKT1_S1_S1_bPKT2_S1_S1_RKT3_PT4_S1_S1_
+Total snapshots: 2579. Utilization: 100% across all threads and tasks. Use the `groupby` kwarg to break down by thread and/or task.
