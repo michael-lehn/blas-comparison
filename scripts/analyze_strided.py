@@ -130,8 +130,8 @@ if xs:
         for r in zip(xs, md, lo, hi): w.writerow([r[0]] + [f"{x:.3f}" for x in r[1:]])
 
 # ---- diagnostics: one figure per library, median of 3 samples, one round; not part of the strided2 results
-# diag_*_small.csv is left out: taken under load from other work (anchor 1.8 ms against 1.4 ms), to be repeated.
-d = rd(os.path.join(DIAG, "diag_pureblas.csv")) + rd(os.path.join(DIAG, "diag_ulmblas.csv"))
+# diag_*_small.csv holds n = 50, 100, 300, repeated once the first attempt was found to be under load from other work.
+d = sum((rd(os.path.join(DIAG, f"diag_{lib}{s}.csv")) for lib in ("pureblas", "ulmblas") for s in ("", "_small")), [])
 if d:
     CFG = {"contiguous": ("all strides 1, on Matrix", "#2a78d6", "-", "o"),
            "copy_all": ("stride 2, copied to and from buffers (timed)", "#1baf7a", "--", "v"),

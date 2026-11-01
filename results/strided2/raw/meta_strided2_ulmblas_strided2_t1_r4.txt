@@ -1,0 +1,12 @@
+backend = "ulmblas_strided2"
+call_path = "UlmBLAS.mul!(C, A, B) -> ulmblas_dgemm_strided"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "1", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "BLIS_NUM_THREADS" => "1", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+library = "<repo>/.local/depot/artifacts/df95c3ac3be4096b495cd8df171fa3fd96990b18/lib/sme/libulmblas_lbt.dylib"
+operands = "view(P, 1:2:2n, 1:n), row stride 2, column stride 2n"
+sizes_order = "2150,1550,700,3500,3100,2200,250,3900,2250,2000,3400,100,2550,1600,400,1800,150,350,1200,2300,1150,3350,1850,750,2650,2750,3950,3450,1400,1000,3300,1450,1950,800,1250,3600,3800,2500,2400,3150,2700,2950,850,4000,2600,3700,3850,950,1900,50,550,3200,2100,200,2900,3250,1700,2800,3000,600,1350,900,2850,1750,2350,450,500,1500,3050,2450,650,3650,2050,300,1650,1050,3550,1300,3750,1100"
+strides_at_c_call(rA,cA,rB,cB,rC,cC) = "(2, 80, 2, 80, 2, 80) for n=40"
+threads_julia = 1
+threads_requested = 1
+variant = "sme"
+version = "0.1.0"

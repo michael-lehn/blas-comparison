@@ -32,14 +32,14 @@ GFLOP/s, median over rounds. ![GFLOP/s](../plots/sweep_t1_gflops.svg)
 ![PureBLAS vs UlmBLAS](../plots/sweep_t1_pureblas_vs_ulmblas.svg)
 Also: [vs OpenBLAS](../plots/sweep_t1_vs_openblas.svg), [vs Accelerate](../plots/sweep_t1_vs_accelerate.svg).
 
-**Row stride 2 (measured; preliminary: PureBLAS 2 of 3 rounds, UlmBLAS 3 of 5).** UlmBLAS is about 40 times faster
-for n ≥ 500. Essentially all of that gap comes from PureBLAS's generic fallback ([section 5](#5-non-unit-row-strides)).
+**Row stride 2 (measured; all planned rounds: PureBLAS 3, UlmBLAS 5).** UlmBLAS is about 40 times faster
+for n ≥ 500 (median 39, range 32–49 over sizes). Essentially all of that gap comes from PureBLAS's generic fallback ([section 5](#5-non-unit-row-strides)).
 
 | n | 50 | 100 | 200 | 500 | 1000 | 2000 | 4000 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| PureBLAS.jl | 5.8 | 5.8 | 6.5 | 6.3 | 6.9 | 6.9 | 6.9 |
-| UlmBLAS.jl | 39 | 79 | 149 | 250 | 273 | 284 | 284 |
-| speedup | 6.5 | 13 | 23 | 40 | 40 | 41 | 41 |
+| PureBLAS.jl | 6.2 | 6.0 | 6.5 | 6.1 | 6.7 | 6.9 | 6.8 |
+| UlmBLAS.jl | 39 | 79 | 149 | 250 | 281 | 284 | 284 |
+| speedup | 6.3 | 12 | 23 | 41 | 41 | 41 | 42 |
 
 ![GFLOP/s, stride 2](../plots/strided2_t1_gflops.svg)
 ![Speedup, stride 2](../plots/strided2_t1_speedup_ulmblas_vs_pureblas.svg)
@@ -186,10 +186,23 @@ Diagnostic runs (one round, three samples, `results/strided2/diagnostics`, [plot
 | UlmBLAS, stride 2 + full copies *(diagnostic)* | 156 | 278 | 346 | 389 | 407 | 419 |
 
 - **Size of the gap:** at n = 4000, UlmBLAS/PureBLAS is 292/7.2, about 41×.
-- **Without the fallback the sign reverses:** PureBLAS with copies (365) would be ahead of UlmBLAS's direct path (292). So the route accounts for more than the whole gap; the strides themselves do not.
+- **Without the fallback the sign reverses at large n:** PureBLAS with copies (365) would be ahead of UlmBLAS's direct path (292). So the route accounts for more than the whole gap; the strides themselves do not.
+- **For small n the two are about equal, and copying gains nothing:** see the table below. PureBLAS with copies is level with UlmBLAS's direct path, and UlmBLAS's direct path is level with its own copies. The benefit of copies only appears at larger n (+43% at n = 4000, 419 against 292), which is exactly where the workspace would be largest.
 - **Inside PureBLAS's 54×** (387 to 7.2): about 25× comes from leaving the SME path for the scalar loop (387 to 15) on contiguous data. The further 2× (15 to 7.2) comes from the stride of C: with C stride 2 and A, B stride 1 it is already 7.6. **Hypothesis:** the contiguous loop vectorizes and the strided one does not. To be checked in the generated code.
 - **Profile (n = 1000):** in PureBLAS, 2572 of 2580 samples are in `_setindex!` under `_gemm_generic!`, which confirms the route at run time.
 - **Why the speedup is smaller for small n:** PureBLAS is flat at about 6–7, while UlmBLAS's tile and packing overhead dominates for small n, so its throughput climbs from 39 to about 250 by n = 500.
+
+Small sizes, from a repeated run with clean anchors (largest 1.86 ms against a median of 1.41–1.52 ms; one round, three samples):
+
+| GFLOP/s | n = 50 | 100 | 300 |
+|---|---:|---:|---:|
+| PureBLAS, contiguous (SME) | 183 | 278 | 367 |
+| PureBLAS, `_gemm_generic!` on `Matrix` | 14 | 19 | 17 |
+| PureBLAS, all strides 2 | 7.0 | 6.5 | 6.7 |
+| PureBLAS, stride 2 + full copies *(diagnostic)* | 41 | 77 | 190 |
+| UlmBLAS, contiguous | 151 | 238 | 382 |
+| UlmBLAS, all strides 2 | 38 | 79 | 199 |
+| UlmBLAS, stride 2 + full copies *(diagnostic)* | 39 | 70 | 210 |
 
 ### Where UlmBLAS's stride overhead goes (measured)
 
@@ -251,8 +264,8 @@ Beyond DGEMM the two projects have different goals. ulmBLAS is a compact BLIS-st
 
 - **One machine, passively cooled.** MacBook Air, Apple M5. The thermal state reached "fair" repeatedly, and the guard waited between processes. Sustained performance on an actively cooled machine may differ.
 - **Competing load.** An unrelated single-threaded job ran throughout at 100%, and for part of the time compiler jobs ran too. Load was logged and a scalar anchor is recorded per sample; see [Methodology](METHODOLOGY.md). Absolute numbers are about 7–11% below ulmBLAS's own M5 measurement ([`M5_EXPERIMENTS.md`](https://github.com/michael-lehn/ulmBLAS/blob/6c554eec707e22f118bae5dcaea10ad9945aac54/M5_EXPERIMENTS.md): 498 GFLOP/s, against 444–461 here).
-- **Stride results are preliminary:** 29 of 400 cells are excluded for machine-wide slowdown (raw data kept); one PureBLAS size (n = 50) currently has a single clean round. More rounds are running.
-- **Diagnostics:** one round, three samples per point. The runs at n = 50, 100, 300 were under load and are not shown or used here; they will be repeated.
+- **Stride exclusions:** 35 of 640 cells are excluded for machine-wide slowdown (raw data kept), 20 of them from UlmBLAS's round 1. Every size keeps at least one clean round, but two PureBLAS sizes (n = 1250, 3350) have only one and eight have two, including n = 50. PureBLAS's rounds also differ more (up to 1.5× at n = 700, median 1.16×) than UlmBLAS's (median 1.05×), so read the speedup as "about 40×", not to two digits.
+- **Diagnostics:** one round, three samples per point, so they show sizes of effects rather than precise values. The sizes n = 50, 100, 300 were repeated after the first attempt ran under load.
 - **Power:** the first two minutes of the sweep ran on battery, the rest on AC.
 - **Not done yet:** disassembly of the generated SME code; a clean rerun of the SME micro-benchmarks (FMOPA saturation appeared at 4 tiles in an early contaminated run, so it isn't reported as a result).
 - **Not tested:** x86, M1–M4 and M6, block-size tuning by the libraries, other shapes than m = n = k, column strides, other operations than DGEMM.

@@ -18,7 +18,7 @@ One thread, contiguous: all SME implementations reach about 400–450 GFLOP/s, 7
 
 ![DGEMM with row stride 2](plots/strided2_t1_gflops.svg)
 
-Row stride 2 (preliminary): UlmBLAS.jl is about 40 times faster for n ≥ 500, because PureBLAS.jl uses a generic scalar fallback for a C with non-unit stride. That fallback is documented upstream as a correctness path, not a fast one. Copying operands to contiguous buffers is used in the report **only as a diagnostic**, not as a proposed optimization: it would need O(n²) workspace, unsuitable for a general-purpose BLAS.
+Row stride 2: UlmBLAS.jl is about 40 times faster for n ≥ 500, because PureBLAS.jl uses a generic scalar fallback for a C with non-unit stride. That fallback is documented upstream as a correctness path, not a fast one. Copying operands to contiguous buffers is used in the report **only as a diagnostic**, not as a proposed optimization: it would need O(n²) workspace, unsuitable for a general-purpose BLAS.
 
 ## Status
 
@@ -31,8 +31,8 @@ Row stride 2 (preliminary): UlmBLAS.jl is about 40 times faster for n ≥ 500, b
 | `ctrl_n1000`, `ctrl_n2000`, `ctrl_n4000` | One size per process, 3 rounds | Final |
 | `neon` | PureBLAS.jl with SME off, 3 rounds | Final |
 | `mt` | 4 threads, 10 sizes, 6 backends, 3 rounds; UlmBLAS.jl is single-threaded | Final |
-| `strided2` | Row stride 2, n = 50:50:4000 | **Preliminary:** PureBLAS.jl 2 of 3 rounds, UlmBLAS.jl 3 of 5 |
-| `strided2/diagnostics` | Which operand and route cost what | **Preliminary:** one round; small sizes to be repeated |
+| `strided2` | Row stride 2, n = 50:50:4000 | Final: PureBLAS.jl 3 rounds, UlmBLAS.jl 5; 35 of 640 cells excluded for machine load |
+| `strided2/diagnostics` | Which operand and route cost what | Final for now: one round, three samples per point |
 | SME disassembly, micro-benchmarks | Generated code; FMOPA and load limits | **Not done** |
 
 ## Layout
