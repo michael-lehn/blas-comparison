@@ -1770,3 +1770,684 @@ pureblas_strided2 n=750 per_call=0.272 samples=5 calls=1
 2026-11-02 06:46:58 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2173529
 pureblas_strided2 n=3850 per_call=71.0 samples=5 calls=1
 2026-11-02 06:47:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2173555
+2026-11-02 06:47:38 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2173563
+pureblas_strided2 n=1600 per_call=4.17 samples=5 calls=1
+pureblas_strided2 n=300 per_call=0.0163 samples=5 calls=4
+2026-11-02 06:47:58 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2173581
+2026-11-02 06:48:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2173608
+2026-11-02 06:48:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173616
+2026-11-02 06:48:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2173636
+2026-11-02 06:49:19 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173658
+2026-11-02 06:49:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173665
+2026-11-02 06:49:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173681
+2026-11-02 06:50:19 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1678 2173709
+2026-11-02 06:50:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173717
+2026-11-02 06:50:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173733
+2026-11-02 06:51:19 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173755
+2026-11-02 06:51:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173763
+2026-11-02 06:52:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173783
+2026-11-02 06:52:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173808
+2026-11-02 06:52:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2173816
+2026-11-02 06:53:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173834
+2026-11-02 06:53:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2173860
+2026-11-02 06:53:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2173868
+2026-11-02 06:54:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.14 1.03 1.01 2/1678 2173885
+2026-11-02 06:54:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.23 1.06 1.02 2/1678 2173909
+2026-11-02 06:54:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.17 1.06 1.02 2/1678 2173916
+pureblas_strided2 n=3650 per_call=60.5 samples=5 calls=1
+2026-11-02 06:55:00 freq strided2_pureblas_strided2_t1_r3 cpu3=800000 kHz load=1.04 1.04 1.01 1/1678 2173936
+2026-11-02 06:55:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.83 0.98 0.99 2/1678 2173957
+2026-11-02 06:55:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.88 0.99 1.00 2/1678 2173965
+2026-11-02 06:56:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=0.91 0.99 1.00 2/1678 2173981
+pureblas_strided2 n=1950 per_call=8.74 samples=5 calls=1
+2026-11-02 06:56:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.94 0.99 1.00 2/1678 2174008
+2026-11-02 06:56:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.96 0.99 1.00 2/1678 2174016
+2026-11-02 06:57:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.97 0.99 1.00 2/1678 2174034
+2026-11-02 06:57:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.98 1.00 1.00 2/1677 2174054
+2026-11-02 06:57:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1678 2174063
+2026-11-02 06:58:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1678 2174088
+2026-11-02 06:58:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1678 2174114
+2026-11-02 06:58:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2174122
+2026-11-02 06:59:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174140
+2026-11-02 06:59:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174164
+2026-11-02 06:59:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2174174
+2026-11-02 07:00:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2174192
+2026-11-02 07:00:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174214
+2026-11-02 07:00:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2174228
+2026-11-02 07:01:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2174262
+2026-11-02 07:01:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174282
+2026-11-02 07:01:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174298
+pureblas_strided2 n=3350 per_call=46.6 samples=5 calls=1
+2026-11-02 07:02:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174308
+2026-11-02 07:02:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174334
+pureblas_strided2 n=1800 per_call=6.78 samples=5 calls=1
+2026-11-02 07:02:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174350
+2026-11-02 07:03:02 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174362
+2026-11-02 07:03:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174382
+2026-11-02 07:03:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.07 1.02 1.00 2/1677 2174402
+pureblas_strided2 n=2150 per_call=12.1 samples=5 calls=1
+2026-11-02 07:04:02 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.05 1.01 1.00 2/1677 2174412
+2026-11-02 07:04:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.03 1.01 1.00 2/1677 2174434
+2026-11-02 07:04:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.02 1.01 1.00 2/1677 2174449
+2026-11-02 07:05:02 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.01 1.00 2/1677 2174459
+2026-11-02 07:05:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.01 1.01 1.00 2/1677 2174481
+2026-11-02 07:05:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3300033 kHz load=1.01 1.00 1.00 2/1677 2174497
+2026-11-02 07:06:02 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2174508
+2026-11-02 07:06:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174530
+2026-11-02 07:06:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174550
+2026-11-02 07:07:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2174560
+2026-11-02 07:07:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2174580
+2026-11-02 07:07:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174596
+2026-11-02 07:08:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174608
+2026-11-02 07:08:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174637
+pureblas_strided2 n=3150 per_call=38.6 samples=5 calls=1
+pureblas_strided2 n=1100 per_call=0.859 samples=5 calls=1
+pureblas_strided2 n=400 per_call=0.0416 samples=5 calls=2
+2026-11-02 07:08:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.92 0.98 0.99 2/1677 2174653
+pureblas_strided2 n=900 per_call=0.47 samples=5 calls=1
+pureblas_strided2 n=1300 per_call=1.73 samples=5 calls=1
+pureblas_strided2 n=700 per_call=0.222 samples=5 calls=1
+2026-11-02 07:09:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.94 0.99 1.00 2/1677 2174663
+2026-11-02 07:09:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.96 0.99 1.00 2/1677 2174683
+pureblas_strided2 n=1550 per_call=3.65 samples=5 calls=1
+2026-11-02 07:09:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.97 0.99 1.00 2/1677 2174702
+2026-11-02 07:10:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.98 0.99 1.00 2/1677 2174712
+2026-11-02 07:10:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.99 0.99 1.00 2/1677 2174734
+2026-11-02 07:10:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1677 2174750
+2026-11-02 07:11:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2174760
+pureblas_strided2 n=2400 per_call=16.8 samples=5 calls=1
+2026-11-02 07:11:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174784
+2026-11-02 07:11:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174800
+2026-11-02 07:12:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174810
+2026-11-02 07:12:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174832
+2026-11-02 07:12:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2174852
+2026-11-02 07:13:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174864
+2026-11-02 07:13:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174884
+2026-11-02 07:13:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174900
+2026-11-02 07:14:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174910
+2026-11-02 07:14:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1676 2174936
+2026-11-02 07:14:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174953
+2026-11-02 07:15:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2174963
+2026-11-02 07:15:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2174981
+2026-11-02 07:15:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2175001
+2026-11-02 07:16:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2175011
+2026-11-02 07:16:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2175032
+2026-11-02 07:16:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2175048
+2026-11-02 07:17:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2175058
+pureblas_strided2 n=3450 per_call=51.0 samples=5 calls=1
+2026-11-02 07:17:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2175082
+2026-11-02 07:17:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2175098
+2026-11-02 07:18:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2175110
+2026-11-02 07:18:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2175134
+2026-11-02 07:18:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1677 2175154
+2026-11-02 07:19:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1678 2175165
+2026-11-02 07:19:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2175185
+2026-11-02 07:19:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175201
+2026-11-02 07:20:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175211
+2026-11-02 07:20:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175237
+2026-11-02 07:20:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2175253
+2026-11-02 07:21:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2175263
+2026-11-02 07:21:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175283
+pureblas_strided2 n=3100 per_call=36.8 samples=5 calls=1
+pureblas_strided2 n=1050 per_call=0.748 samples=5 calls=1
+2026-11-02 07:21:45 freq strided2_pureblas_strided2_t1_r3 cpu3=887592 kHz load=1.00 1.00 1.00 1/1678 2175303
+pureblas_strided2 n=1200 per_call=1.19 samples=5 calls=1
+2026-11-02 07:22:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175313
+2026-11-02 07:22:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2175335
+2026-11-02 07:22:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175351
+2026-11-02 07:23:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2175362
+2026-11-02 07:23:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175386
+2026-11-02 07:23:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2175402
+2026-11-02 07:24:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175412
+2026-11-02 07:24:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175434
+2026-11-02 07:24:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175454
+2026-11-02 07:25:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2175464
+2026-11-02 07:25:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175483
+pureblas_strided2 n=2950 per_call=31.6 samples=5 calls=1
+2026-11-02 07:25:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2175499
+2026-11-02 07:26:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2175509
+2026-11-02 07:26:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175535
+pureblas_strided2 n=1850 per_call=7.4 samples=5 calls=1
+pureblas_strided2 n=50 per_call=6.91e-5 samples=5 calls=724
+2026-11-02 07:26:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2175551
+2026-11-02 07:27:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175561
+2026-11-02 07:27:27 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175581
+2026-11-02 07:27:47 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2175601
+2026-11-02 07:28:07 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175612
+2026-11-02 07:28:27 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175636
+2026-11-02 07:28:47 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175652
+2026-11-02 07:29:07 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2175662
+2026-11-02 07:29:27 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2175686
+pureblas_strided2 n=2800 per_call=26.9 samples=5 calls=1
+2026-11-02 07:29:47 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175703
+2026-11-02 07:30:07 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175713
+2026-11-02 07:30:27 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2175735
+2026-11-02 07:30:47 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1677 2175755
+2026-11-02 07:31:07 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175767
+2026-11-02 07:31:27 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175787
+2026-11-02 07:31:47 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1678 2175803
+2026-11-02 07:32:08 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1678 2175813
+2026-11-02 07:32:28 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2175839
+2026-11-02 07:32:48 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175856
+2026-11-02 07:33:08 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175871
+2026-11-02 07:33:28 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1679 2175891
+2026-11-02 07:33:48 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175913
+2026-11-02 07:34:08 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175921
+2026-11-02 07:34:28 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175943
+2026-11-02 07:34:48 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175960
+2026-11-02 07:35:08 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1679 2175968
+2026-11-02 07:35:28 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2175990
+2026-11-02 07:35:48 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2176008
+2026-11-02 07:36:08 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2176017
+2026-11-02 07:36:28 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2176039
+2026-11-02 07:36:48 freq strided2_pureblas_strided2_t1_r3 cpu3=3300033 kHz load=1.00 1.00 1.00 2/1679 2176061
+2026-11-02 07:37:09 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2176069
+2026-11-02 07:37:29 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2176089
+pureblas_strided2 n=3800 per_call=68.3 samples=5 calls=1
+2026-11-02 07:37:49 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=0.93 0.98 1.00 2/1679 2176107
+2026-11-02 07:38:09 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=0.95 0.99 1.00 2/1679 2176117
+2026-11-02 07:38:29 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.96 0.99 1.00 2/1679 2176145
+2026-11-02 07:38:49 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.97 0.99 1.00 2/1679 2176163
+2026-11-02 07:39:09 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.98 0.99 1.00 2/1679 2176171
+2026-11-02 07:39:29 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 0.99 1.00 2/1679 2176191
+2026-11-02 07:39:49 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.99 1.00 1.00 2/1679 2176213
+2026-11-02 07:40:09 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1679 2176221
+2026-11-02 07:40:29 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2176243
+2026-11-02 07:40:49 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2176261
+2026-11-02 07:41:09 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1679 2176269
+pureblas_strided2 n=2900 per_call=30.0 samples=5 calls=1
+2026-11-02 07:41:29 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176294
+2026-11-02 07:41:49 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176312
+2026-11-02 07:42:10 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176322
+2026-11-02 07:42:30 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176344
+2026-11-02 07:42:50 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176367
+2026-11-02 07:43:10 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1680 2176376
+2026-11-02 07:43:30 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 3/1680 2176396
+2026-11-02 07:43:50 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176414
+2026-11-02 07:44:10 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1680 2176422
+2026-11-02 07:44:30 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176448
+2026-11-02 07:44:50 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176466
+2026-11-02 07:45:10 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176474
+2026-11-02 07:45:30 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1680 2176493
+2026-11-02 07:45:50 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1680 2176516
+2026-11-02 07:46:10 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1680 2176523
+2026-11-02 07:46:30 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1680 2176546
+2026-11-02 07:46:50 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1680 2176564
+2026-11-02 07:47:10 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176573
+2026-11-02 07:47:31 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2176597
+2026-11-02 07:47:51 freq strided2_pureblas_strided2_t1_r3 cpu3=3300033 kHz load=1.00 1.00 1.00 2/1678 2176615
+pureblas_strided2 n=3600 per_call=57.9 samples=5 calls=1
+pureblas_strided2 n=1250 per_call=1.42 samples=5 calls=1
+2026-11-02 07:48:11 freq strided2_pureblas_strided2_t1_r3 cpu3=800000 kHz load=0.92 0.98 0.99 1/1678 2176625
+2026-11-02 07:48:31 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.94 0.99 1.00 2/1678 2176649
+2026-11-02 07:48:51 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=0.96 0.99 1.00 2/1678 2176671
+2026-11-02 07:49:11 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=0.97 0.99 1.00 2/1678 2176679
+2026-11-02 07:49:31 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.98 0.99 1.00 2/1678 2176699
+2026-11-02 07:49:51 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.99 0.99 1.00 2/1678 2176716
+2026-11-02 07:50:11 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1680 2176736
+pureblas_strided2 n=2450 per_call=18.0 samples=5 calls=1
+2026-11-02 07:50:31 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176750
+2026-11-02 07:50:51 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176768
+pureblas_strided2 n=1650 per_call=4.94 samples=5 calls=1
+2026-11-02 07:51:11 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2176788
+2026-11-02 07:51:31 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176796
+pureblas_strided2 n=1700 per_call=5.53 samples=5 calls=1
+2026-11-02 07:51:52 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2176819
+pureblas_strided2 n=1500 per_call=3.23 samples=5 calls=1
+2026-11-02 07:52:12 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176841
+pureblas_strided2 n=1450 per_call=2.86 samples=5 calls=1
+2026-11-02 07:52:32 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176850
+2026-11-02 07:52:52 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176870
+pureblas_strided2 n=1750 per_call=6.13 samples=5 calls=1
+pureblas_strided2 n=500 per_call=0.0809 samples=5 calls=1
+2026-11-02 07:53:12 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176894
+2026-11-02 07:53:32 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176902
+2026-11-02 07:53:52 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176920
+2026-11-02 07:54:12 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176942
+2026-11-02 07:54:32 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176950
+pureblas_strided2 n=2350 per_call=15.8 samples=5 calls=1
+2026-11-02 07:54:52 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176972
+2026-11-02 07:55:12 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2176991
+2026-11-02 07:55:32 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2176998
+2026-11-02 07:55:52 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177016
+2026-11-02 07:56:12 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177042
+2026-11-02 07:56:32 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177049
+pureblas_strided2 n=2300 per_call=14.8 samples=5 calls=1
+2026-11-02 07:56:52 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177067
+2026-11-02 07:57:13 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177088
+2026-11-02 07:57:33 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177096
+2026-11-02 07:57:53 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.07 1.02 1.00 2/1678 2177121
+2026-11-02 07:58:13 freq strided2_pureblas_strided2_t1_r3 cpu3=3307572 kHz load=1.05 1.01 1.00 2/1678 2177148
+2026-11-02 07:58:33 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.03 1.01 1.00 2/1678 2177156
+2026-11-02 07:58:53 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.01 1.00 2/1678 2177174
+2026-11-02 07:59:13 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.01 1.00 2/1678 2177198
+pureblas_strided2 n=2700 per_call=24.2 samples=5 calls=1
+2026-11-02 07:59:33 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.94 0.99 1.00 2/1678 2177206
+2026-11-02 07:59:53 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.96 0.99 1.00 2/1678 2177223
+2026-11-02 08:00:13 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.97 0.99 1.00 2/1678 2177245
+2026-11-02 08:00:33 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.98 1.00 1.00 2/1678 2177253
+pureblas_strided2 n=2050 per_call=10.4 samples=5 calls=1
+2026-11-02 08:00:53 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1678 2177275
+2026-11-02 08:01:13 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1678 2177313
+2026-11-02 08:01:33 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 1.00 1.00 2/1678 2177320
+2026-11-02 08:01:54 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177338
+2026-11-02 08:02:14 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177364
+2026-11-02 08:02:34 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177372
+2026-11-02 08:02:54 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177392
+pureblas_strided2 n=2550 per_call=20.2 samples=5 calls=1
+pureblas_strided2 n=600 per_call=0.14 samples=5 calls=1
+pureblas_strided2 n=1150 per_call=0.991 samples=5 calls=1
+2026-11-02 08:03:14 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177413
+2026-11-02 08:03:34 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177421
+2026-11-02 08:03:54 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177443
+2026-11-02 08:04:14 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177465
+2026-11-02 08:04:34 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177473
+2026-11-02 08:04:54 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177490
+2026-11-02 08:05:14 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177513
+2026-11-02 08:05:34 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177520
+2026-11-02 08:05:54 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177538
+2026-11-02 08:06:14 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177561
+pureblas_strided2 n=2850 per_call=28.4 samples=5 calls=1
+2026-11-02 08:06:34 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1678 2177571
+2026-11-02 08:06:55 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1678 2177593
+2026-11-02 08:07:15 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177613
+2026-11-02 08:07:35 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2177621
+pureblas_strided2 n=2000 per_call=9.56 samples=5 calls=1
+pureblas_strided2 n=800 per_call=0.333 samples=5 calls=1
+2026-11-02 08:07:55 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2177641
+2026-11-02 08:08:15 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2177668
+2026-11-02 08:08:35 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2177676
+2026-11-02 08:08:55 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2177695
+2026-11-02 08:09:15 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2177715
+2026-11-02 08:09:35 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1677 2177723
+pureblas_strided2 n=2500 per_call=19.1 samples=5 calls=1
+2026-11-02 08:09:55 freq strided2_pureblas_strided2_t1_r3 cpu3=1616395 kHz load=1.00 1.00 1.00 1/1677 2177744
+2026-11-02 08:10:15 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2177766
+2026-11-02 08:10:35 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2177776
+2026-11-02 08:10:55 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2177792
+2026-11-02 08:11:15 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2177816
+2026-11-02 08:11:36 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2177826
+2026-11-02 08:11:56 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2177842
+2026-11-02 08:12:16 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2177864
+2026-11-02 08:12:36 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2177874
+2026-11-02 08:12:56 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2177897
+2026-11-02 08:13:16 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2177917
+2026-11-02 08:13:36 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2177927
+2026-11-02 08:13:56 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2177943
+2026-11-02 08:14:16 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1676 2177969
+2026-11-02 08:14:36 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2177979
+2026-11-02 08:14:56 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2177995
+pureblas_strided2 n=3300 per_call=44.4 samples=5 calls=1
+2026-11-02 08:15:16 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2178014
+2026-11-02 08:15:36 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2178023
+2026-11-02 08:15:56 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2178043
+2026-11-02 08:16:16 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2178065
+2026-11-02 08:16:36 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2178074
+2026-11-02 08:16:57 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2178091
+2026-11-02 08:17:17 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2178114
+2026-11-02 08:17:37 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2178125
+2026-11-02 08:17:57 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2178143
+2026-11-02 08:18:17 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2178167
+2026-11-02 08:18:37 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2178177
+2026-11-02 08:18:57 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.06 1.02 1.00 2/1677 2178197
+2026-11-02 08:19:17 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.12 1.03 1.01 2/1677 2178217
+2026-11-02 08:19:37 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.08 1.03 1.01 2/1677 2178227
+2026-11-02 08:19:57 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.12 1.04 1.01 2/1677 2178243
+2026-11-02 08:20:17 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.16 1.05 1.01 2/1677 2178269
+2026-11-02 08:20:37 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.11 1.05 1.01 2/1677 2178279
+pureblas_strided2 n=3400 per_call=48.8 samples=5 calls=1
+2026-11-02 08:20:57 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.14 1.06 1.02 2/1677 2178295
+2026-11-02 08:21:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.11 1.06 1.01 2/1677 2178315
+2026-11-02 08:21:38 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.08 1.05 1.01 2/1677 2178325
+pureblas_strided2 n=1900 per_call=8.05 samples=5 calls=1
+2026-11-02 08:21:58 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.12 1.07 1.02 2/1677 2178345
+2026-11-02 08:22:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.08 1.06 1.01 2/1677 2178367
+2026-11-02 08:22:38 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.06 1.06 1.01 2/1677 2178377
+2026-11-02 08:22:58 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.12 1.07 1.02 2/1677 2178395
+2026-11-02 08:23:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.09 1.06 1.01 2/1677 2178419
+2026-11-02 08:23:38 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.06 1.06 1.01 2/1677 2178429
+2026-11-02 08:23:58 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.04 1.05 1.01 2/1677 2178444
+2026-11-02 08:24:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.03 1.05 1.01 2/1677 2178467
+2026-11-02 08:24:38 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.05 1.01 2/1677 2178477
+2026-11-02 08:24:58 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.01 1.04 1.00 2/1677 2178497
+2026-11-02 08:25:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.01 1.04 1.00 2/1677 2178516
+2026-11-02 08:25:38 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.01 1.03 1.00 2/1677 2178525
+2026-11-02 08:25:58 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.03 1.00 2/1677 2178541
+2026-11-02 08:26:18 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.03 1.00 2/1677 2178567
+2026-11-02 08:26:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.03 1.00 2/1677 2178577
+2026-11-02 08:26:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.02 1.00 2/1677 2178593
+2026-11-02 08:27:19 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.02 1.00 2/1677 2178613
+2026-11-02 08:27:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.02 1.00 2/1677 2178623
+2026-11-02 08:27:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.02 1.00 2/1677 2178644
+2026-11-02 08:28:19 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.02 1.00 2/1677 2178668
+2026-11-02 08:28:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.01 1.00 2/1677 2178678
+2026-11-02 08:28:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1677 2178694
+2026-11-02 08:29:19 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.01 1.00 2/1677 2178718
+2026-11-02 08:29:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1677 2178728
+2026-11-02 08:29:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1677 2178744
+2026-11-02 08:30:19 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2178766
+2026-11-02 08:30:39 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1676 2178776
+2026-11-02 08:30:59 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1677 2178797
+pureblas_strided2 n=4000 per_call=79.9 samples=5 calls=1
+2026-11-02 08:31:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1677 2178817
+2026-11-02 08:31:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2178828
+2026-11-02 08:32:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.00 1.00 2/1677 2178844
+2026-11-02 08:32:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.14 1.03 1.01 2/1677 2178870
+2026-11-02 08:32:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.10 1.03 1.01 2/1677 2178880
+2026-11-02 08:33:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.07 1.03 1.01 2/1677 2178898
+2026-11-02 08:33:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.05 1.02 1.00 2/1677 2178918
+2026-11-02 08:33:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.04 1.02 1.00 2/1677 2178928
+2026-11-02 08:34:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.02 1.00 2/1677 2178948
+2026-11-02 08:34:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.02 1.02 1.00 2/1677 2178971
+2026-11-02 08:34:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.01 1.02 1.00 2/1677 2178980
+2026-11-02 08:35:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.01 1.02 1.00 2/1677 2178996
+2026-11-02 08:35:20 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1677 2179018
+2026-11-02 08:35:40 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1676 2179028
+2026-11-02 08:36:00 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 1.01 1.00 2/1676 2179044
+2026-11-02 08:36:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1676 2179066
+2026-11-02 08:36:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1676 2179076
+2026-11-02 08:37:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.06 1.02 1.00 2/1676 2179096
+2026-11-02 08:37:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.04 1.02 1.00 2/1676 2179116
+2026-11-02 08:37:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.03 1.02 1.00 2/1676 2179126
+2026-11-02 08:38:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.01 1.00 2/1676 2179145
+2026-11-02 08:38:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.09 1.03 1.00 2/1676 2179173
+pureblas_strided2 n=3700 per_call=63.1 samples=5 calls=1
+2026-11-02 08:38:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.06 1.03 1.00 2/1676 2179183
+pureblas_strided2 n=1000 per_call=0.644 samples=5 calls=1
+pureblas_strided2 n=250 per_call=0.00879 samples=5 calls=6
+2026-11-02 08:39:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.04 1.03 1.00 2/1676 2179199
+2026-11-02 08:39:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.03 1.02 1.00 2/1676 2179219
+2026-11-02 08:39:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.02 1.00 2/1676 2179231
+2026-11-02 08:40:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.08 1.04 1.00 2/1677 2179252
+2026-11-02 08:40:21 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.05 1.03 1.00 2/1677 2179274
+2026-11-02 08:40:41 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.04 1.03 1.00 2/1677 2179292
+2026-11-02 08:41:01 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.03 1.03 1.00 2/1677 2179300
+2026-11-02 08:41:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.08 1.04 1.00 2/1677 2179323
+2026-11-02 08:41:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.06 1.04 1.00 2/1676 2179341
+2026-11-02 08:42:02 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.04 1.03 1.00 2/1677 2179350
+2026-11-02 08:42:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.03 1.03 1.00 2/1677 2179372
+2026-11-02 08:42:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.03 1.00 2/1677 2179394
+2026-11-02 08:43:02 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.01 1.02 1.00 2/1677 2179404
+2026-11-02 08:43:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.01 1.02 1.00 2/1679 2179426
+pureblas_strided2 n=3250 per_call=42.5 samples=5 calls=1
+2026-11-02 08:43:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.01 1.02 1.00 2/1679 2179444
+pureblas_strided2 n=1400 per_call=2.48 samples=5 calls=1
+2026-11-02 08:44:02 freq strided2_pureblas_strided2_t1_r3 cpu3=800000 kHz load=0.92 1.00 0.99 1/1679 2179452
+2026-11-02 08:44:22 freq strided2_pureblas_strided2_t1_r3 cpu3=800000 kHz load=0.66 0.94 0.97 1/1679 2179478
+2026-11-02 08:44:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.69 0.93 0.97 2/1679 2179496
+2026-11-02 08:45:02 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.78 0.93 0.97 2/1680 2179504
+2026-11-02 08:45:22 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=0.84 0.94 0.97 2/1680 2179522
+2026-11-02 08:45:42 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=0.89 0.94 0.97 2/1680 2179544
+2026-11-02 08:46:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.92 0.95 0.98 2/1680 2179552
+2026-11-02 08:46:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.94 0.95 0.98 2/1680 2179574
+2026-11-02 08:46:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=0.96 0.95 0.98 2/1680 2179592
+2026-11-02 08:47:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.97 0.96 0.98 2/1680 2179600
+2026-11-02 08:47:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.98 0.96 0.98 2/1680 2179626
+2026-11-02 08:47:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 0.97 0.99 2/1680 2179642
+2026-11-02 08:48:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=0.99 0.97 0.99 2/1680 2179651
+2026-11-02 08:48:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3300033 kHz load=1.00 0.97 0.99 2/1678 2179678
+pureblas_strided2 n=3050 per_call=35.0 samples=5 calls=1
+pureblas_strided2 n=550 per_call=0.108 samples=5 calls=1
+2026-11-02 08:48:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 0.97 0.99 2/1678 2179698
+2026-11-02 08:49:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 0.98 0.99 2/1678 2179706
+2026-11-02 08:49:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 0.98 1.00 2/1678 2179728
+2026-11-02 08:49:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.00 0.98 1.00 2/1678 2179743
+2026-11-02 08:50:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 0.98 1.00 2/1678 2179751
+2026-11-02 08:50:23 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 0.98 1.00 2/1678 2179779
+2026-11-02 08:50:43 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 0.99 1.00 2/1678 2179795
+2026-11-02 08:51:03 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 0.99 1.00 2/1678 2179803
+2026-11-02 08:51:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 0.99 1.00 2/1678 2179826
+pureblas_strided2 n=2750 per_call=25.6 samples=5 calls=1
+pureblas_strided2 n=650 per_call=0.178 samples=5 calls=1
+2026-11-02 08:51:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 0.99 1.00 2/1679 2179847
+pureblas_strided2 n=1350 per_call=2.12 samples=5 calls=1
+2026-11-02 08:52:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 0.99 1.00 2/1679 2179855
+2026-11-02 08:52:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2179879
+2026-11-02 08:52:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1679 2179895
+2026-11-02 08:53:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2179904
+2026-11-02 08:53:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1679 2179930
+2026-11-02 08:53:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1679 2179947
+2026-11-02 08:54:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1679 2179955
+pureblas_strided2 n=2600 per_call=21.5 samples=5 calls=1
+2026-11-02 08:54:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1679 2179979
+pureblas_strided2 n=850 per_call=0.403 samples=5 calls=1
+pureblas_strided2 n=150 per_call=0.00198 samples=5 calls=26
+pureblas_strided2 n=950 per_call=0.554 samples=5 calls=1
+pureblas_strided2 n=200 per_call=0.00458 samples=5 calls=11
+2026-11-02 08:54:44 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1679 2179999
+2026-11-02 08:55:04 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2180006
+2026-11-02 08:55:24 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1679 2180026
+2026-11-02 08:55:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1679 2180042
+2026-11-02 08:56:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2180050
+2026-11-02 08:56:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1679 2180078
+2026-11-02 08:56:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2180094
+2026-11-02 08:57:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2180102
+2026-11-02 08:57:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1678 2180124
+2026-11-02 08:57:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.08 1.02 1.01 2/1678 2180144
+2026-11-02 08:58:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.06 1.01 1.00 2/1678 2180154
+2026-11-02 08:58:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.04 1.01 1.00 2/1678 2180182
+2026-11-02 08:58:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.03 1.01 1.00 2/1678 2180198
+2026-11-02 08:59:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.02 1.01 1.00 2/1678 2180206
+2026-11-02 08:59:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.08 1.02 1.00 2/1678 2180232
+2026-11-02 08:59:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.06 1.02 1.00 2/1678 2180248
+2026-11-02 09:00:05 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.04 1.02 1.00 2/1678 2180256
+2026-11-02 09:00:25 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.03 1.02 1.00 2/1678 2180280
+2026-11-02 09:00:45 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.02 1.02 1.00 2/1678 2180300
+pureblas_strided2 n=3550 per_call=55.6 samples=5 calls=1
+2026-11-02 09:01:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.01 1.01 1.00 2/1678 2180326
+2026-11-02 09:01:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3399965 kHz load=1.01 1.01 1.00 2/1677 2180347
+2026-11-02 09:01:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1677 2180363
+2026-11-02 09:02:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1677 2180371
+2026-11-02 09:02:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.01 1.00 2/1677 2180399
+2026-11-02 09:02:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2180415
+2026-11-02 09:03:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2180425
+2026-11-02 09:03:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3300033 kHz load=1.00 1.00 1.00 2/1677 2180447
+2026-11-02 09:03:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2180467
+2026-11-02 09:04:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400034 kHz load=1.00 1.00 1.00 2/1677 2180475
+2026-11-02 09:04:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1677 2180499
+2026-11-02 09:04:46 freq strided2_pureblas_strided2_t1_r3 cpu3=3301162 kHz load=1.00 1.00 1.00 2/1678 2180516
+2026-11-02 09:05:06 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2180523
+2026-11-02 09:05:26 freq strided2_pureblas_strided2_t1_r3 cpu3=3400000 kHz load=1.00 1.00 1.00 2/1678 2180547
+2026-11-02 09:05:47 freq strided2_pureblas_strided2_t1_r3 cpu3=3300000 kHz load=1.00 1.00 1.00 2/1678 2180563
+pureblas_strided2 n=3200 per_call=40.5 samples=5 calls=1
+2026-11-02 09:06:07 freq strided2_pureblas_strided2_t1_r3 cpu3=800000 kHz load=0.78 0.95 0.98 1/1678 2180572
+2026-11-02 09:06:20 done  strided2_pureblas_strided2_t1_r3 in 11432 s load=0.61 0.90 0.97 1/1676 2180593
+2026-11-02 09:06:20 campaign finished
+2026-11-02 09:07:29 campaign strided2 host=uc2n655.localdomain job=8220996 rounds=4-5 threads=1 cpus=3 numa=0 backends=ulmblas_strided2
+2026-11-02 09:07:31 round 4 order ulmblas_strided2
+2026-11-02 09:07:31 start strided2_ulmblas_strided2_t1_r4 load=0.24 0.73 0.90 1/1676 2180652
+2026-11-02 09:07:52 freq strided2_ulmblas_strided2_t1_r4 cpu3=3400000 kHz load=0.23 0.68 0.88 2/1678 2180672
+ulmblas_strided2 n=2150 per_call=0.259 samples=5 calls=1
+ulmblas_strided2 n=1550 per_call=0.0976 samples=5 calls=1
+ulmblas_strided2 n=700 per_call=0.00903 samples=5 calls=6
+ulmblas_strided2 n=3500 per_call=1.17 samples=5 calls=1
+ulmblas_strided2 n=3100 per_call=0.81 samples=5 calls=1
+2026-11-02 09:08:12 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.45 0.71 0.88 2/1678 2180703
+ulmblas_strided2 n=2200 per_call=0.275 samples=5 calls=1
+ulmblas_strided2 n=250 per_call=0.000475 samples=5 calls=106
+ulmblas_strided2 n=3900 per_call=1.63 samples=5 calls=1
+ulmblas_strided2 n=2250 per_call=0.294 samples=5 calls=1
+ulmblas_strided2 n=2000 per_call=0.206 samples=5 calls=1
+2026-11-02 09:08:32 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300033 kHz load=0.61 0.73 0.89 2/1678 2180711
+ulmblas_strided2 n=3400 per_call=1.06 samples=5 calls=1
+ulmblas_strided2 n=100 per_call=3.94e-5 samples=5 calls=1269
+ulmblas_strided2 n=2550 per_call=0.441 samples=5 calls=1
+ulmblas_strided2 n=1600 per_call=0.107 samples=5 calls=1
+ulmblas_strided2 n=400 per_call=0.00181 samples=5 calls=28
+ulmblas_strided2 n=1800 per_call=0.148 samples=5 calls=1
+ulmblas_strided2 n=150 per_call=0.000118 samples=5 calls=423
+ulmblas_strided2 n=350 per_call=0.00116 samples=5 calls=44
+ulmblas_strided2 n=1200 per_call=0.0453 samples=5 calls=2
+ulmblas_strided2 n=2300 per_call=0.312 samples=5 calls=1
+ulmblas_strided2 n=1150 per_call=0.039 samples=5 calls=2
+2026-11-02 09:08:52 freq strided2_ulmblas_strided2_t1_r4 cpu3=3299966 kHz load=0.72 0.74 0.89 2/1678 2180727
+ulmblas_strided2 n=3350 per_call=1.02 samples=5 calls=1
+ulmblas_strided2 n=1850 per_call=0.162 samples=5 calls=1
+ulmblas_strided2 n=750 per_call=0.0109 samples=5 calls=5
+ulmblas_strided2 n=2650 per_call=0.488 samples=5 calls=1
+ulmblas_strided2 n=2750 per_call=0.566 samples=5 calls=1
+2026-11-02 09:09:12 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.80 0.76 0.90 2/1678 2180749
+ulmblas_strided2 n=3950 per_call=1.7 samples=5 calls=1
+2026-11-02 09:09:32 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.86 0.78 0.90 2/1678 2180757
+ulmblas_strided2 n=3450 per_call=1.12 samples=5 calls=1
+ulmblas_strided2 n=1400 per_call=0.071 samples=5 calls=1
+ulmblas_strided2 n=1000 per_call=0.0264 samples=5 calls=2
+ulmblas_strided2 n=3300 per_call=0.973 samples=5 calls=1
+ulmblas_strided2 n=1450 per_call=0.0783 samples=5 calls=1
+ulmblas_strided2 n=1950 per_call=0.191 samples=5 calls=1
+ulmblas_strided2 n=800 per_call=0.0138 samples=5 calls=4
+ulmblas_strided2 n=1250 per_call=0.052 samples=5 calls=1
+2026-11-02 09:09:52 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.90 0.79 0.90 2/1678 2180776
+ulmblas_strided2 n=3600 per_call=1.27 samples=5 calls=1
+ulmblas_strided2 n=3800 per_call=1.5 samples=5 calls=1
+ulmblas_strided2 n=2500 per_call=0.415 samples=5 calls=1
+2026-11-02 09:10:12 freq strided2_ulmblas_strided2_t1_r4 cpu3=3299966 kHz load=0.93 0.81 0.91 2/1677 2180801
+ulmblas_strided2 n=2400 per_call=0.366 samples=5 calls=1
+ulmblas_strided2 n=3150 per_call=0.846 samples=5 calls=1
+ulmblas_strided2 n=2700 per_call=0.528 samples=5 calls=1
+ulmblas_strided2 n=2950 per_call=0.686 samples=5 calls=1
+ulmblas_strided2 n=850 per_call=0.0166 samples=5 calls=4
+2026-11-02 09:10:32 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.95 0.82 0.91 2/1677 2180809
+ulmblas_strided2 n=4000 per_call=1.72 samples=5 calls=1
+ulmblas_strided2 n=2600 per_call=0.463 samples=5 calls=1
+2026-11-02 09:10:53 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.96 0.83 0.91 2/1677 2180825
+ulmblas_strided2 n=3700 per_call=1.39 samples=5 calls=1
+ulmblas_strided2 n=3850 per_call=1.58 samples=5 calls=1
+ulmblas_strided2 n=950 per_call=0.0227 samples=5 calls=3
+2026-11-02 09:11:13 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300033 kHz load=0.97 0.85 0.91 2/1677 2180851
+ulmblas_strided2 n=1900 per_call=0.173 samples=5 calls=1
+ulmblas_strided2 n=50 per_call=8.76e-6 samples=5 calls=5708
+ulmblas_strided2 n=550 per_call=0.00438 samples=5 calls=12
+ulmblas_strided2 n=3200 per_call=0.885 samples=5 calls=1
+ulmblas_strided2 n=2100 per_call=0.239 samples=5 calls=1
+ulmblas_strided2 n=200 per_call=0.000259 samples=5 calls=193
+ulmblas_strided2 n=2900 per_call=0.654 samples=5 calls=1
+2026-11-02 09:11:33 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.98 0.86 0.92 2/1677 2180859
+ulmblas_strided2 n=3250 per_call=0.93 samples=5 calls=1
+ulmblas_strided2 n=1700 per_call=0.126 samples=5 calls=1
+ulmblas_strided2 n=2800 per_call=0.591 samples=5 calls=1
+ulmblas_strided2 n=3000 per_call=0.718 samples=5 calls=1
+ulmblas_strided2 n=600 per_call=0.00562 samples=5 calls=9
+ulmblas_strided2 n=1350 per_call=0.0645 samples=5 calls=1
+ulmblas_strided2 n=900 per_call=0.0193 samples=5 calls=3
+2026-11-02 09:11:53 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.99 0.87 0.92 2/1676 2180875
+ulmblas_strided2 n=2850 per_call=0.624 samples=5 calls=1
+ulmblas_strided2 n=1750 per_call=0.138 samples=5 calls=1
+ulmblas_strided2 n=2350 per_call=0.346 samples=5 calls=1
+ulmblas_strided2 n=450 per_call=0.00255 samples=5 calls=20
+ulmblas_strided2 n=500 per_call=0.00337 samples=5 calls=15
+ulmblas_strided2 n=1500 per_call=0.0857 samples=5 calls=1
+ulmblas_strided2 n=3050 per_call=0.755 samples=5 calls=1
+ulmblas_strided2 n=2450 per_call=0.396 samples=5 calls=1
+ulmblas_strided2 n=650 per_call=0.0072 samples=5 calls=7
+2026-11-02 09:12:13 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=0.99 0.88 0.92 2/1676 2180899
+ulmblas_strided2 n=3650 per_call=1.34 samples=5 calls=1
+ulmblas_strided2 n=2050 per_call=0.229 samples=5 calls=1
+ulmblas_strided2 n=300 per_call=0.000743 samples=5 calls=68
+ulmblas_strided2 n=1650 per_call=0.117 samples=5 calls=1
+ulmblas_strided2 n=1050 per_call=0.0303 samples=5 calls=2
+2026-11-02 09:12:33 freq strided2_ulmblas_strided2_t1_r4 cpu3=3300000 kHz load=1.00 0.89 0.92 2/1676 2180907
+ulmblas_strided2 n=3550 per_call=1.23 samples=5 calls=1
+ulmblas_strided2 n=1300 per_call=0.0576 samples=5 calls=1
+ulmblas_strided2 n=3750 per_call=1.44 samples=5 calls=1
+ulmblas_strided2 n=1100 per_call=0.0344 samples=5 calls=2
+2026-11-02 09:12:47 done  strided2_ulmblas_strided2_t1_r4 in 316 s load=0.92 0.87 0.92 1/1674 2180925
+2026-11-02 09:12:47 round 5 order ulmblas_strided2
+2026-11-02 09:12:47 start strided2_ulmblas_strided2_t1_r5 load=0.92 0.87 0.92 1/1674 2180925
+ulmblas_strided2 n=950 per_call=0.0228 samples=5 calls=3
+ulmblas_strided2 n=2600 per_call=0.463 samples=5 calls=1
+ulmblas_strided2 n=3100 per_call=0.81 samples=5 calls=1
+ulmblas_strided2 n=750 per_call=0.0109 samples=5 calls=5
+ulmblas_strided2 n=50 per_call=8.74e-6 samples=5 calls=5722
+ulmblas_strided2 n=450 per_call=0.00256 samples=5 calls=20
+2026-11-02 09:13:07 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.94 0.88 0.92 2/1677 2180940
+ulmblas_strided2 n=2250 per_call=0.294 samples=5 calls=1
+ulmblas_strided2 n=3300 per_call=0.971 samples=5 calls=1
+ulmblas_strided2 n=1300 per_call=0.0576 samples=5 calls=1
+ulmblas_strided2 n=1700 per_call=0.126 samples=5 calls=1
+ulmblas_strided2 n=900 per_call=0.0193 samples=5 calls=3
+ulmblas_strided2 n=250 per_call=0.000468 samples=5 calls=107
+ulmblas_strided2 n=1450 per_call=0.0784 samples=5 calls=1
+2026-11-02 09:13:27 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.96 0.89 0.92 2/1677 2180962
+ulmblas_strided2 n=3550 per_call=1.23 samples=5 calls=1
+ulmblas_strided2 n=3850 per_call=1.58 samples=5 calls=1
+2026-11-02 09:13:47 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.97 0.90 0.92 2/1677 2180978
+ulmblas_strided2 n=3000 per_call=0.719 samples=5 calls=1
+ulmblas_strided2 n=2900 per_call=0.654 samples=5 calls=1
+ulmblas_strided2 n=3500 per_call=1.19 samples=5 calls=1
+ulmblas_strided2 n=150 per_call=0.000116 samples=5 calls=433
+ulmblas_strided2 n=1000 per_call=0.0263 samples=5 calls=2
+ulmblas_strided2 n=2200 per_call=0.275 samples=5 calls=1
+2026-11-02 09:14:07 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.98 0.91 0.93 2/1677 2180986
+ulmblas_strided2 n=2650 per_call=0.488 samples=5 calls=1
+ulmblas_strided2 n=2350 per_call=0.344 samples=5 calls=1
+ulmblas_strided2 n=2300 per_call=0.313 samples=5 calls=1
+2026-11-02 09:14:27 freq strided2_ulmblas_strided2_t1_r5 cpu3=3299966 kHz load=0.99 0.91 0.93 2/1677 2181014
+ulmblas_strided2 n=4000 per_call=1.72 samples=5 calls=1
+ulmblas_strided2 n=550 per_call=0.00439 samples=5 calls=12
+ulmblas_strided2 n=1050 per_call=0.0303 samples=5 calls=2
+ulmblas_strided2 n=3450 per_call=1.11 samples=5 calls=1
+ulmblas_strided2 n=700 per_call=0.00887 samples=5 calls=6
+ulmblas_strided2 n=2800 per_call=0.592 samples=5 calls=1
+2026-11-02 09:14:47 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.99 0.92 0.93 2/1678 2181031
+ulmblas_strided2 n=3950 per_call=1.7 samples=5 calls=1
+ulmblas_strided2 n=1250 per_call=0.0521 samples=5 calls=1
+ulmblas_strided2 n=3600 per_call=1.27 samples=5 calls=1
+2026-11-02 09:15:07 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.99 0.93 0.93 2/1678 2181038
+ulmblas_strided2 n=2550 per_call=0.44 samples=5 calls=1
+ulmblas_strided2 n=1600 per_call=0.107 samples=5 calls=1
+ulmblas_strided2 n=2850 per_call=0.623 samples=5 calls=1
+ulmblas_strided2 n=2100 per_call=0.239 samples=5 calls=1
+ulmblas_strided2 n=1750 per_call=0.138 samples=5 calls=1
+ulmblas_strided2 n=2050 per_call=0.229 samples=5 calls=1
+2026-11-02 09:15:27 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=1.00 0.93 0.93 2/1678 2181059
+ulmblas_strided2 n=3150 per_call=0.852 samples=5 calls=1
+ulmblas_strided2 n=3700 per_call=1.38 samples=5 calls=1
+ulmblas_strided2 n=100 per_call=3.95e-5 samples=5 calls=1265
+ulmblas_strided2 n=800 per_call=0.0138 samples=5 calls=4
+2026-11-02 09:15:47 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=1.00 0.94 0.94 2/1678 2181079
+ulmblas_strided2 n=3650 per_call=1.33 samples=5 calls=1
+ulmblas_strided2 n=2750 per_call=0.561 samples=5 calls=1
+ulmblas_strided2 n=1900 per_call=0.173 samples=5 calls=1
+ulmblas_strided2 n=1800 per_call=0.149 samples=5 calls=1
+2026-11-02 09:16:08 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=1.00 0.94 0.94 2/1678 2181087
+ulmblas_strided2 n=3750 per_call=1.44 samples=5 calls=1
+ulmblas_strided2 n=1100 per_call=0.0344 samples=5 calls=2
+ulmblas_strided2 n=1200 per_call=0.0454 samples=5 calls=2
+ulmblas_strided2 n=300 per_call=0.00074 samples=5 calls=68
+ulmblas_strided2 n=3250 per_call=0.93 samples=5 calls=1
+ulmblas_strided2 n=2700 per_call=0.528 samples=5 calls=1
+ulmblas_strided2 n=850 per_call=0.0165 samples=5 calls=4
+ulmblas_strided2 n=2400 per_call=0.366 samples=5 calls=1
+2026-11-02 09:16:28 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=1.00 0.95 0.94 2/1678 2181111
+ulmblas_strided2 n=1950 per_call=0.192 samples=5 calls=1
+ulmblas_strided2 n=3400 per_call=1.06 samples=5 calls=1
+2026-11-02 09:16:48 freq strided2_ulmblas_strided2_t1_r5 cpu3=3200032 kHz load=0.94 0.94 0.94 2/1678 2181127
+ulmblas_strided2 n=3900 per_call=1.63 samples=5 calls=1
+ulmblas_strided2 n=1500 per_call=0.0857 samples=5 calls=1
+ulmblas_strided2 n=600 per_call=0.00559 samples=5 calls=9
+ulmblas_strided2 n=2950 per_call=0.686 samples=5 calls=1
+ulmblas_strided2 n=350 per_call=0.00115 samples=5 calls=44
+ulmblas_strided2 n=1550 per_call=0.0976 samples=5 calls=1
+2026-11-02 09:17:08 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.96 0.94 0.94 2/1678 2181134
+ulmblas_strided2 n=3350 per_call=1.02 samples=5 calls=1
+ulmblas_strided2 n=1850 per_call=0.162 samples=5 calls=1
+ulmblas_strided2 n=650 per_call=0.00719 samples=5 calls=7
+ulmblas_strided2 n=1400 per_call=0.0711 samples=5 calls=1
+ulmblas_strided2 n=400 per_call=0.00181 samples=5 calls=28
+ulmblas_strided2 n=3050 per_call=0.755 samples=5 calls=1
+ulmblas_strided2 n=200 per_call=0.000262 samples=5 calls=191
+ulmblas_strided2 n=1650 per_call=0.117 samples=5 calls=1
+ulmblas_strided2 n=2150 per_call=0.259 samples=5 calls=1
+ulmblas_strided2 n=2000 per_call=0.206 samples=5 calls=1
+2026-11-02 09:17:28 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.97 0.95 0.94 2/1678 2181161
+ulmblas_strided2 n=3200 per_call=0.885 samples=5 calls=1
+ulmblas_strided2 n=1150 per_call=0.0391 samples=5 calls=2
+ulmblas_strided2 n=1350 per_call=0.0643 samples=5 calls=1
+ulmblas_strided2 n=500 per_call=0.00336 samples=5 calls=15
+ulmblas_strided2 n=2500 per_call=0.416 samples=5 calls=1
+ulmblas_strided2 n=2450 per_call=0.394 samples=5 calls=1
+2026-11-02 09:17:48 freq strided2_ulmblas_strided2_t1_r5 cpu3=3300000 kHz load=0.98 0.95 0.94 2/1678 2181177
+ulmblas_strided2 n=3800 per_call=1.5 samples=5 calls=1
+2026-11-02 09:17:55 done  strided2_ulmblas_strided2_t1_r5 in 308 s load=0.98 0.95 0.94 1/1676 2181183
+2026-11-02 09:17:55 campaign finished

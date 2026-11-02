@@ -1,6 +1,6 @@
 # DGEMM on Intel Ice Lake (bwUniCluster 3.0)
 
-**Status: in progress.** Separate from the [Apple M5 report](REPORT.md); the two machines aren't compared directly here. See the [status table](#status).
+**Status: finished.** Separate from the [Apple M5 report](REPORT.md); the two machines aren't compared directly here. See the [status table](#status).
 
 The goal is the same as for the M5: understand why implementations differ, not declare a winner. Results below are labelled **measured** or **hypothesis**. Raw data: [`results/cluster-icelake`](../results/cluster-icelake); plots: `plots/cluster-icelake_*`.
 
@@ -93,9 +93,9 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 - **PureBLAS.jl through LBT doesn't use threads:** cpu/wall stays at 1.00 although `set_num_threads` was called, so `LinearAlgebra.BLAS.gemm!` stays at single-thread speed here. The native API does use them (cpu/wall about 15.7 and 31.4). The cause isn't established, and it may be intended.
 - **Clock:** the logged frequency isn't reliable for these runs, so per-core clocks under load aren't reported. Single-thread runs log about 3.3 GHz, which agrees with the FMA peak test.
 
-## Row stride 2 (preliminary: sweep still running)
+## Row stride 2
 
-**The stride sweep below is partial:** PureBLAS.jl 2 of 3 rounds, UlmBLAS.jl 3 of 5. These are finished processes only: all 400 checks pass with 0 bytes allocated, none of the 400 cells is excluded, and PureBLAS.jl's two rounds agree closely (median ratio 1.001).
+**Measured:** PureBLAS.jl 3 rounds, UlmBLAS.jl 5, n = 50:50:4000, one thread, on one node. All 640 checks pass with 0 bytes allocated, and none of the 640 cells is excluded. Rounds agree closely: the median max/min ratio is 1.002 for PureBLAS.jl and 1.005 for UlmBLAS.jl, and the worst is 1.056 (PureBLAS.jl at n = 1600). The FMA peak test gave the same result before and after the 10-hour job.
 
 ![Row stride 2](../plots/cluster-icelake_strided2_t1_gflops.svg)
 
@@ -105,9 +105,12 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 |---|---:|---:|---:|---:|---:|---:|---:|
 | PureBLAS.jl, GFLOP/s | 3.7 | 3.3 | 3.3 | 3.1 | 3.1 | 1.7 | 1.6 |
 | UlmBLAS.jl, GFLOP/s | 29 | 51 | 73 | 75 | 77 | 78 | 74 |
-| UlmBLAS.jl / PureBLAS.jl | 7.8 | 15 | 22 | 24 | 25 | 45 | 46 |
+| UlmBLAS.jl / PureBLAS.jl | 7.8 | 15 | 22 | 24 | 25 | 46 | 46 |
 
-The diagnostics below are finished: one round, three samples per point, all results verified. GFLOP/s:
+- **The ratio has two plateaus:** about 25× for n = 500 to 1000, and about 46× from n = 2000 (44.8 to 47.0).
+- **The step is PureBLAS.jl's:** it falls from 3.1 at n = 1000 to 1.7 at n = 2000, while UlmBLAS.jl stays between 74 and 79 from n = 500 on.
+
+The route diagnostics below use one round and three samples per point, with all results verified. GFLOP/s:
 
 ![Routes](../plots/cluster-icelake_strided2_diagnostics_routes.svg)
 
@@ -124,7 +127,7 @@ The diagnostics below are finished: one round, three samples per point, all resu
 
 > **The copy rows are a diagnostic, not a proposed optimization.** They need O(n²) workspace, as explained in the [M5 report](REPORT.md#is-the-generic-fallback-responsible-yes-for-essentially-the-whole-gap). That is unsuitable for a general-purpose BLAS suitable for LAPACK, where workspace has to be bounded and allocation predictable.
 
-- **The same fallback decides here too:** PureBLAS routes a stride-2 C to `_gemm_generic!`. UlmBLAS/PureBLAS is about 8× at n = 50, 25× at n = 1000 and 48× at n = 4000.
+- **The same fallback decides here too:** PureBLAS routes a stride-2 C to `_gemm_generic!`. In these diagnostics UlmBLAS/PureBLAS is about 8× at n = 50, 25× at n = 1000 and 48× at n = 4000, against 46× at n = 4000 in the sweep above.
 - **The fallback gets worse with size:** PureBLAS falls from 3.1 at n = 1000 to 1.5 at n = 4000, and `_gemm_generic!` falls on contiguous data too (8.0 to 3.5), once the unblocked loop outgrows the caches. **Hypothesis:** that is the cause. Not checked.
 - **Without the fallback, the gap closes at large n:** PureBLAS with copies (77) is level with UlmBLAS's direct path (74) at n = 4000.
 - **UlmBLAS.jl's direct path beats copying up to n = 1000:** 29 against 16 at n = 50, and 76 against 71 at n = 1000. Copies only win from about n = 2000 (+21% at n = 4000).
@@ -132,7 +135,6 @@ The diagnostics below are finished: one round, three samples per point, all resu
 
 ## Limitations
 
-- **The stride sweep is partial:** PureBLAS.jl 2 of 3 rounds, UlmBLAS.jl 3 of 5; see the status table.
 - **One CPU type, one socket for threads.** No Zen runs, and no 64-thread runs.
 - **Turbo on:** frequency wasn't locked, because users can't change it. The FMA peak test agrees across nodes and jobs to 0.02%, and the anchors are tight (p01 and p99 within 3% of the median in the sweep).
 - **PureBLAS.jl defaults:** `tune!()` wasn't run. A tuned install could differ, though GEMM's block sizes are derived rather than calibrated.
@@ -145,7 +147,7 @@ The diagnostics below are finished: one round, three samples per point, all resu
 | `bc-mt` | 16 and 32 threads, 10 sizes, 3 rounds | Finished |
 | `bc-diag` | Stride route diagnostics | Finished |
 | `bc-sweep-a`, `bc-sweep-b` | n = 50:50:4000, one thread, 5 rounds on two nodes; one-size controls at n = 1000, 4000, 3 rounds | Finished |
-| `bc-strided` | Row stride 2, PureBLAS.jl 3 rounds, UlmBLAS.jl 5 | **Running**: PureBLAS.jl 2 of 3 rounds and UlmBLAS.jl 3 of 5 finished |
+| `bc-strided` | Row stride 2, PureBLAS.jl 3 rounds, UlmBLAS.jl 5 | Finished |
 
 ## Reproduce
 

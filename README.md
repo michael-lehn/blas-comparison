@@ -9,7 +9,7 @@ It aims to understand *why* they differ, not to declare a winner.
 
 - **[Report](docs/REPORT.md):** results, GEMM analysis, stride analysis, findings, limitations
 - **[Methodology](docs/METHODOLOGY.md):** hardware, versions, thread settings, measurement, correctness checks
-- **[Intel Ice Lake cluster results](docs/CLUSTER_ICELAKE.md):** separate campaign on bwUniCluster 3.0, in progress
+- **[Intel Ice Lake cluster results](docs/CLUSTER_ICELAKE.md):** separate finished campaign on bwUniCluster 3.0
 
 Unless a section says otherwise, this page describes the Apple M5 results.
 
