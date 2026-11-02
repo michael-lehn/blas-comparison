@@ -108,7 +108,7 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 | UlmBLAS.jl / PureBLAS.jl | 7.8 | 15 | 22 | 24 | 25 | 46 | 46 |
 
 - **The ratio has two plateaus:** about 25× for n = 500 to 1000, and about 46× from n = 2000 (44.8 to 47.0).
-- **The step is PureBLAS.jl's:** it falls from 3.1 at n = 1000 to 1.7 at n = 2000, while UlmBLAS.jl stays between 74 and 79 from n = 500 on.
+- **The step is PureBLAS.jl's:** it falls from 3.1 at n = 1000 to 1.7 at n = 2000, while UlmBLAS.jl stays between 72 and 79 from n = 500 on.
 
 The route diagnostics below use one round and three samples per point, with all results verified. GFLOP/s:
 
