@@ -93,9 +93,21 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 - **PureBLAS.jl through LBT doesn't use threads:** cpu/wall stays at 1.00 although `set_num_threads` was called, so `LinearAlgebra.BLAS.gemm!` stays at single-thread speed here. The native API does use them (cpu/wall about 15.7 and 31.4). The cause isn't established, and it may be intended.
 - **Clock:** the logged frequency isn't reliable for these runs, so per-core clocks under load aren't reported. Single-thread runs log about 3.3 GHz, which agrees with the FMA peak test.
 
-## Row stride 2 (preliminary: diagnostics only)
+## Row stride 2 (preliminary: sweep still running)
 
-**The stride sweep is still running.** The diagnostics below are finished: one round, three samples per point, all results verified. GFLOP/s:
+**The stride sweep below is partial:** PureBLAS.jl 2 of 3 rounds, UlmBLAS.jl 3 of 5. These are finished processes only: all 400 checks pass with 0 bytes allocated, none of the 400 cells is excluded, and PureBLAS.jl's two rounds agree closely (median ratio 1.001).
+
+![Row stride 2](../plots/cluster-icelake_strided2_t1_gflops.svg)
+
+![Speedup](../plots/cluster-icelake_strided2_t1_speedup_ulmblas_vs_pureblas.svg)
+
+| n | 50 | 100 | 300 | 500 | 1000 | 2000 | 4000 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| PureBLAS.jl, GFLOP/s | 3.7 | 3.3 | 3.3 | 3.1 | 3.1 | 1.7 | 1.6 |
+| UlmBLAS.jl, GFLOP/s | 29 | 51 | 73 | 75 | 77 | 78 | 74 |
+| UlmBLAS.jl / PureBLAS.jl | 7.8 | 15 | 22 | 24 | 25 | 45 | 46 |
+
+The diagnostics below are finished: one round, three samples per point, all results verified. GFLOP/s:
 
 ![Routes](../plots/cluster-icelake_strided2_diagnostics_routes.svg)
 
@@ -120,7 +132,7 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 
 ## Limitations
 
-- **The stride sweep is incomplete**; see the status table.
+- **The stride sweep is partial:** PureBLAS.jl 2 of 3 rounds, UlmBLAS.jl 3 of 5; see the status table.
 - **One CPU type, one socket for threads.** No Zen runs, and no 64-thread runs.
 - **Turbo on:** frequency wasn't locked, because users can't change it. The FMA peak test agrees across nodes and jobs to 0.02%, and the anchors are tight (p01 and p99 within 3% of the median in the sweep).
 - **PureBLAS.jl defaults:** `tune!()` wasn't run. A tuned install could differ, though GEMM's block sizes are derived rather than calibrated.
@@ -133,7 +145,7 @@ Reported separately. Each size has 3 rounds, with 2 of 360 cells excluded by the
 | `bc-mt` | 16 and 32 threads, 10 sizes, 3 rounds | Finished |
 | `bc-diag` | Stride route diagnostics | Finished |
 | `bc-sweep-a`, `bc-sweep-b` | n = 50:50:4000, one thread, 5 rounds on two nodes; one-size controls at n = 1000, 4000, 3 rounds | Finished |
-| `bc-strided` | Row stride 2, PureBLAS.jl 3 rounds, UlmBLAS.jl 5 | **Running**: no finished process yet |
+| `bc-strided` | Row stride 2, PureBLAS.jl 3 rounds, UlmBLAS.jl 5 | **Running**: PureBLAS.jl 2 of 3 rounds and UlmBLAS.jl 3 of 5 finished |
 
 ## Reproduce
 

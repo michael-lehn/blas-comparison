@@ -1,0 +1,12 @@
+backend = "ulmblas_strided2"
+call_path = "UlmBLAS.mul!(C, A, B) -> ulmblas_dgemm_strided"
+env = Dict("VECLIB_MAXIMUM_THREADS" => "", "OMP_NUM_THREADS" => "1", "JULIA_NUM_THREADS" => "1", "JULIA_CPU_TARGET" => "", "BLIS_NUM_THREADS" => "1", "ULMBLAS_VARIANT" => "skylakex", "OPENBLAS_NUM_THREADS" => "1")
+julia = "1.13.3"
+library = "<repo>/.local/depot/artifacts/99384b6c0a6eb6834c392288fe6ec65649201424/lib/skylakex/libulmblas_lbt.so"
+operands = "view(P, 1:2:2n, 1:n), row stride 2, column stride 2n"
+sizes_order = "1650,650,1050,2700,3850,3050,1850,1500,900,2800,950,1600,800,250,2250,4000,2950,3200,150,2150,2650,1550,1350,1450,500,50,1900,400,3950,1800,1150,2000,3250,300,2500,2400,2900,2600,3700,2550,1300,750,2050,3450,1400,2200,1100,2750,3300,1950,2100,700,2300,1250,3900,450,3350,1750,350,200,600,3400,550,1700,1200,100,1000,2450,3750,3150,3100,850,2850,3650,3550,3600,3500,2350,3000,3800"
+strides_at_c_call(rA,cA,rB,cB,rC,cC) = "(2, 80, 2, 80, 2, 80) for n=40"
+threads_julia = 1
+threads_requested = 1
+variant = "skylakex"
+version = "0.1.0"
